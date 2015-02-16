@@ -16,7 +16,7 @@ _units = _display displayCtrl 3004;
 ctrlSetText [3003, ""];
 lbClear _units;
 
-if((FETCH_CONST(life_adminlevel) < 1)) then
+if(FETCH_CONST(life_adminlevel) < 1) then
 {
 	ctrlShow[3020,false];
 	ctrlShow[3021,false];
@@ -33,6 +33,6 @@ if((FETCH_CONST(life_adminlevel) < 1)) then
 		_units lbAdd format["%1 (%2)",_x getVariable["realname",name _x],_type];
 		_units lbSetData [(lbSize _units)-1,str(_x)];
 	};
-} foreach playableUnits;
+} ForEach playableUnits;
 
 lbSetCurSel [3004,0];
