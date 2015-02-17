@@ -49,7 +49,7 @@ switch(FETCH_CONST(life_donator)) do
 	case 2: {life_paycheck = life_paycheck + 300;};
 	case 3: {life_paycheck = life_paycheck + 400;};
 	case 4: {life_paycheck = life_paycheck + 500;};
-	case 5: {life_paycheck = life_paycheck + 750;};
+	case 5: {life_paycheck = life_paycheck + 600;};
 };
 //Parse side specific information.
 switch(playerSide) do {
