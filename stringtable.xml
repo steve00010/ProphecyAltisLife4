@@ -3330,12 +3330,26 @@
 			<Italian>Lingotto d'Oro</Italian>
 			<Portuguese>Barra de Ouro</Portuguese>
 		</Key>
+		<Key ID="STR_Item_GoldBarp">
+			<Original>Gold Scrap</Original>
+			<German>Gold Scrap</German>
+			<French>Gold Scrap</French>
+			<Italian>Gold Scrap</Italian>
+			<Portuguese>Gold Scrap</Portuguese>
+		</Key>
 		<Key ID="STR_Item_BCharge">
 			<Original>Blasting Charge</Original>
 			<German>Sprengladung</German>
 			<French>Charge de dynamite</French>
 			<Italian>Carica Esplosiva</Italian>
 			<Portuguese>Explosivo</Portuguese>
+		</Key>
+		<Key ID="STR_Item_BChargewater">
+			<Original>Water Charge</Original>
+			<German>Water Charge</German>
+			<French>Water Charge</French>
+			<Italian>Water Charge</Italian>
+			<Portuguese>Water Charge</Portuguese>
 		</Key>
 		<Key ID="STR_Item_BCutter">
 			<Original>Bolt Cutter</Original>
@@ -3364,6 +3378,132 @@
 			<French>Grand Conteneur de stockage</French>
 			<Italian>Contenitore grande</Italian>
 			<Portuguese>Caixa Grande</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Kidney">
+			<Original>Kidney</Original>
+			<German>Kidney</German>
+			<French>Kidney</French>
+			<Italian>Kidney</Italian>
+			<Portuguese>Kidney</Portuguese>
+		</Key>
+		<Key ID="STR_Item_SurgeryKnife">
+			<Original>SurgeryKnife</Original>
+			<German>SurgeryKnife</German>
+			<French>SurgeryKnife</French>
+			<Italian>SurgeryKnife</Italian>
+			<Portuguese>SurgeryKnife</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Zipties">
+			<Original>Zipties</Original>
+			<German>Zipties</German>
+			<French>Zipties</French>
+			<Italian>Zipties</Italian>
+			<Portuguese>Zipties</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Scratchcard">
+			<Original>Scratchcard</Original>
+			<German>Scratchcard</German>
+			<French>Scratchcarde</French>
+			<Italian>Scratchcard</Italian>
+			<Portuguese>Scratchcard</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Cornmeal">
+			<Original>Cornmeal</Original>
+			<German>Cornmeal</German>
+			<French>Cornmeal</French>
+			<Italian>Cornmeal</Italian>
+			<Portuguese>Cornmeal</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Beerp">
+			<Original>Processed Beer</Original>
+			<German>Processed Beer</German>
+			<French>Processed Beer</French>
+			<Italian>Processed Beer</Italian>
+			<Portuguese>Processed Beer</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Whiskey">
+			<Original>Whiskey"</Original>
+			<German>Whiskey"</German>
+			<French>Whiskey"</French>
+			<Italian>Whiskey"</Italian>
+			<Portuguese>Whiskey"</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Rye">
+			<Original>Rye</Original>
+			<German>Rye</German>
+			<French>Rye</French>
+			<Italian>Rye</Italian>
+			<Portuguese>Rye</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Hops">
+			<Original>Hops</Original>
+			<German>Hopsx</German>
+			<French>Hops</French>
+			<Italian>Hops</Italian>
+			<Portuguese>Hops</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Yeast">
+			<Original>Yeast</Original>
+			<German>Yeast</German>
+			<French>Yeast</French>
+			<Italian>Yeast</Italian>
+			<Portuguese>Yeast</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Bottles">
+			<Original>Bottles</Original>
+			<German>Bottles</German>
+			<French>Bottles</French>
+			<Italian>Bottles</Italian>
+			<Portuguese>Bottles</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Bottledshine">
+			<Original>Bottledshine</Original>
+			<German>Bottledshine</German>
+			<French>Bottledshine</French>
+			<Italian>Bottledshine</Italian>
+			<Portuguese>Bottledshine</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Bottledbeer">
+			<Original>Bottledbeer</Original>
+			<German>Bottledbeer</German>
+			<French>Bottledbeer</French>
+			<Italian>Bottledbeer</Italian>
+			<Portuguese>Bottledbeer</Portuguese>
+		</Key>
+		<Key ID="STR_Item_BottledWhiskey">
+			<Original>BottledWhiskey</Original>
+			<German>BottledWhiskey</German>
+			<French>BottledWhiskey</French>
+			<Italian>BottledWhiskey</Italian>
+			<Portuguese>BottledWhiskey</Portuguese>
+		</Key>
+		<Key ID="STR_Item_">
+			<Original>Large Storage Box</Original>
+			<German>Große Lagerbox</German>
+			<French>Grand Conteneur de stockage</French>
+			<Italian>Contenitore grande</Italian>
+			<Portuguese>Caixa Grande</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Moonshine">
+			<Original>Moonshine</Original>
+			<German>Moonshine</German>
+			<French>Moonshine</French>
+			<Italian>Moonshine</Italian>
+			<Portuguese>Moonshine</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Mash">
+			<Original>Mash</Original>
+			<German>Mash</German>
+			<French>Mash</French>
+			<Italian>Mash</Italian>
+			<Portuguese>Mash</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Monster">
+			<Original>Monster</Original>
+			<German>Monster</German>
+			<French>Monster</French>
+			<Italian>Monster</Italian>
+			<Portuguese>Monster</Portuguese>
 		</Key>
 		<Key ID="STR_Item_CocaineU">
 			<Original>Unprocessed Cocaine</Original>
@@ -3527,6 +3667,48 @@
 			<French>Droit de Propriété</French>
 			<Italian>Licenza possesso Casa</Italian>
 			<Portuguese>Licença de Casas</Portuguese>
+		</Key>
+		<Key ID="STR_License_Swat">
+			<Original>Swat License</Original>
+			<German>Swat License</German>
+			<French>Swat License</French>
+			<Italian>Swat License</Italian>
+			<Portuguese>Swat License</Portuguese>
+		</Key>
+		<Key ID="STR_License_Dea">
+			<Original>DEA License</Original>
+			<German>DEA License</German>
+			<French>DEA License</French>
+			<Italian>DEA License</Italian>
+			<Portuguese>DEA License</Portuguese>
+		</Key>
+		<Key ID="STR_License_Stiller">
+			<Original>Stillers License</Original>
+			<German>Stillers License</German>
+			<French>Stillers License</French>
+			<Italian>Stillers License</Italian>
+			<Portuguese>Stillers License</Portuguese>
+		</Key>
+		<Key ID="STR_License_Liquor">
+			<Original>Liquor License</Original>
+			<German>Liquor License</German>
+			<French>Liquor License</French>
+			<Italian>Liquor License</Italian>
+			<Portuguese>Liquor License</Portuguese>
+		</Key>
+		<Key ID="STR_License_Bottler">
+			<Original>Bottler License</Original>
+			<German>Bottler License</German>
+			<French>Bottler License</French>
+			<Italian>Bottler License</Italian>
+			<Portuguese>Bottler License</Portuguese>
+		</Key>
+		<Key ID="STR_License_Channel7">
+			<Original>Channel7 License</Original>
+			<German>Channel7 License</German>
+			<French>Channel7 License</French>
+			<Italian>Channel7 License</Italian>
+			<Portuguese>Channel7 License</Portuguese>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
