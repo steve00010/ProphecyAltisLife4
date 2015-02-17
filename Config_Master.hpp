@@ -53,19 +53,41 @@ class Life_Settings {
 	impound_air = 1000; //Price for impounding helicopters / planes
 
 	/* Car-shop Settings */
-	vehicleShop_rentalOnly[] = { "B_MRAP_01_hmg_F", "B_G_Offroad_01_armed_F" };
+	vehicleShop_rentalOnly[] = { "B_G_Offroad_01_armed_F" };
 
 	/* Job-related stuff */
 	delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
 
 	crimes[] = { 
-		{"STR_Crime_1","350","1"}, \\
-		{"STR_Crime_2","25000","2"}, 
-		{"STR_Crime_3","15000","3"}, 
-		{"STR_Crime_4","3500","4"}, 
-		{"STR_Crime_5","10000","5"}, 
-		{"STR_Crime_6","5000","6"}, 
-		{"STR_Crime_7","10000","7"} 
+		{"STR_Crime_1","350","1"} 			//Driving Without Lights
+		{"STR_Crime_2","1000","2"} 			//Driving Without License
+		{"STR_Crime_3","1000","3"} 			//Driving Over The Speed Limit
+		{"STR_Crime_4","500","4"} 			//Reckless Driving
+		{"STR_Crime_5","20000","5"}			//Driving Stolen Vehicle
+		{"STR_Crime_6","5000","6"} 			//Hit and Run
+		{"STR_Crime_7","10000","7"} 		//Attempted Murder
+		{"STR_Crime_187V","7500","8"}		//Vehicular Manslaughter
+		{"STR_Crime_187","25000","9"}		//Manslaughter
+		{"STR_Crime_901","15000","10"}		//Escaping Jail
+		{"STR_Crime_215","5000","11"}		//Attempted Auto Theft
+		{"STR_Crime_213","10000","12"}		//Use of Illegal Explosives
+		{"STR_Crime_211","10000","13"}		//Robbery
+		{"STR_Crime_207","5000","14"}		//Kidnapping
+		{"STR_Crime_207A","2500","15"}		//Attempted Kidnapping
+		{"STR_Crime_390","1000","16"}		//Public intoxication
+		{"STR_Crime_487","7500","17"}		//Grand Theft
+		{"STR_Crime_488","1000","18"}		//Petty Theft
+		{"STR_Crime_480","1500","19"}		//Hit and Run
+		{"STR_Crime_481","4000","20"}		//Drug Possession
+		{"STR_Crime_482","2500","21"}		//Intent to Distribute
+		{"STR_Crime_483","6000","22"}		//Drug Trafficking
+		{"STR_Crime_459","10000","23"}		//Burglary
+		{"STR_Crime_666","1500","24"}		//Tax Evasion
+		{"STR_Crime_667","10000","25"}		//Terrorism
+		{"STR_Crime_668","3000","26"}		//Unlicensed Hunting
+		{"STR_Crime_919","10000","27"}		//Organ Theft
+		{"STR_Crime_919A","5000","28"}		//Attempted Organ Theft
+
 	};
 	
 	sellArray[] = {
@@ -187,7 +209,7 @@ class Life_Settings {
 //Virtual Items
 class VirtualItems {
 	//Misc
- //VITEMMACRO(NAME,DISPLAYNAME,VARNAME,WEIGHT,BUYPRICE,SELLPRICE,ILLEGAL,EDIBLE,ICON) class NAME//
+	//VITEMMACRO(NAME,DISPLAYNAME,VARNAME,WEIGHT,BUYPRICE,SELLPRICE,ILLEGAL,EDIBLE,ICON) class NAME
 	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "icons\pickaxe.paa")
 	VITEMMACRO(fuelEmpty, "STR_Item_FuelE", "fuelEmpty", 2, -1, -1, false, -1, "icons\ico_fuelempty.paa")
 	VITEMMACRO(fuelFull, "STR_Item_FuelF", "fuelFull", 5, 850, 500, false, -1, "icons\ico_fuel.paa")
