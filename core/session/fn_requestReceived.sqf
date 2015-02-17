@@ -87,8 +87,8 @@ switch(playerSide) do {
 	};
 };
 
-if(count (SEL(_this,12)) > 0) then {
-	{life_vehicles pushBack _x;} foreach (SEL(_this,12));
+if(count (SEL(_this,14)) > 0) then {
+	{life_vehicles pushBack _x;} foreach (SEL(_this,14));
 };
 
 life_session_completed = true;
