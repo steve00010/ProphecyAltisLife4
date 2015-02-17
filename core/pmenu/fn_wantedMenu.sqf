@@ -16,13 +16,15 @@ _list = _display displayCtrl 2401;
 _players = _display displayCtrl 2406;
 lbClear _list;
 _units = [];
-
+if(FETCH_CONST(life_coplevel) < 3) then { ctrlShow [9800,false]; };
 lbClear _players;
 
 {
     _side = switch(side _x) do {case west: {"Cop"}; case civilian : {"Civ"}; default {"Unknown"};};
-    _players lbAdd format["%1 - %2", name _x,_side];
-    _players lbSetdata [(lbSize _players)-1,str(_x)];
+	if(_side == "Civ") then {
+		_players lbAdd format["%1 - %2", name _x,_side];
+		_players lbSetdata [(lbSize _players)-1,str(_x)];
+	};
 } foreach playableUnits;
 
 _list2 = CONTROL(2400,2407);
