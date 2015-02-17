@@ -160,21 +160,21 @@ class CfgVehicles {
 	};
 
 	class I_Truck_02_medical_F : Default {
-		vItemSpace = 150;
+		vItemSpace = 60;
 		storageFee[] = { 0, 0, 1500, 0 };
 		garageSell[] = { 0, 0, 5000, 0 };
 		chopShop = 3000;
 	};
 
 	class O_Truck_03_medical_F : Default {
-		vItemSpace = 200;
+		vItemSpace = 70;
 		storageFee[] = { 0, 0, 3000, 0 };
 		garageSell[] = { 0, 0, 10000, 0 };
 		chopShop = 7500;
 	};
 
 	class B_Truck_01_medical_F : Default {
-		vItemSpace = 250;
+		vItemSpace = 80;
 		storageFee[] = { 0, 0, 6500, 0 };
 		garageSell[] = { 0, 0, 25000, 0 };
 		chopShop = 12500;
@@ -195,7 +195,10 @@ class CfgVehicles {
 		garageSell[] = { 0, 85000, 0, 0 };
 		insurance = 16000;
 		chopShop = 45000;
-		textures[] = {};
+		textures[] = {
+			{ "Police", "cop", {
+                "textures\vehicles\ghosthawk_01.paa","cop","textures\vehicles\ghosthawk_02.paa"
+			} }
 	};
 
 	class B_MRAP_01_hmg_F : Default {
@@ -391,14 +394,26 @@ class CfgVehicles {
             { "Police", "cop", {
                 "textures\vehicles\offroad_police.paa"
             } },
+            { "Taxi", "civ", {
+	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
+            } },
+			{ "Med", "med", {
+                "textures\vehicles\offroad_paramedic.paa"
+            } },
+			{ "Monster", "civ", {
+                "textures\vehicles\offroad_monster.paa"
+            } },
+			{ "Captain", "civ", {
+                "textures\vehicles\offroad_captain.paa""
+            } },
+			{ "Drug", "civ", {
+                "textures\vehicles\offroad_drug.paa"
+            } },
 			{ "Dea", "cop", {
                 "textures\vehicles\offroad_dea.paa"
             } },
 			{ "Swat", "cop", {
                 "textures\vehicles\offroad_swat.paa"
-            } },
-            { "Taxi", "civ", {
-	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } }
 	    };
     };
@@ -424,27 +439,42 @@ class CfgVehicles {
         chopShop = 4500;
         textures[] = {
         	{ "Red", "civ", {
-                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
+              "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport01_co.paa"
             } },
 			{ "Dark Blue", "civ", {
-	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport02_co.paa"
+	            "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport02_co.paa"
             } },
 			{ "Orange", "civ", {
-	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport03_co.paa"
+	           "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport03_co.paa"
             } },
 			{ "Black / White", "civ", {
-	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport04_co.paa"
+	           "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport04_co.paa"
             } },
 			{ "Beige", "civ", {
-	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport05_co.paa"
+	           "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport05_co.paa"
             } },
 			{ "Green", "civ", {
-	                "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
+	           "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
             { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
-            } }
-        };
+               "#(ai,64,64,1)Fresnel(1.3,7)"
+            } },
+			{ "Highway", "cop", { 
+				 "textures\vehicles\HighwaySportscar.paa"
+			} },
+			{ "WRC", "civ", {
+				 "textures\vehicles\civ_hatchback_wrc.paa"
+			} },
+			{ "Redgull", "civ" {
+				 "textures\vehicles\redgull_hatchbacks.paa" 
+			} }, 
+			{ "Dayz", "civ" {
+				 "textures\vehicles\dayz_hatchbacks.paa"
+	        } },
+			{ "Dragon", "civ" {
+				 "textures\vehicles\dragon_sport.paa" 
+			} }	 
+		};
     };
 
 	class B_Quadbike_01_F {
@@ -546,6 +576,9 @@ class CfgVehicles {
             } },
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
+            } },
+			{ "Cop", "cop", {
+                "textures\vehicles\HighwaySportscar.paa"
             } }
         };
     };
@@ -569,8 +602,26 @@ class CfgVehicles {
 			{ "Orange", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
-            { "Cop", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Poly", "civ", {
+                "textures\vehicles\poly_suv.paa"
+            } },
+			{ "Cop", "cop", {
+                "textures\vehicles\suv_police.paa"
+            } },
+			{ "Med", "med", {
+                "textures\vehicles\suv_paramedic.paa"
+            } },
+			{ "Ferrari", "civ", {
+                "textures\vehicles\suv_ferrari.paa"
+            } },
+			{ "Flames", "civ", {
+                "textures\vehicles\suv_flames.paa"
+            } },
+			{ "Flames", "civ", {
+                "textures\vehicles\suv_camo.paa"
+            } },
+			{ "Taxi", "civ", {
+                "textures\vehicles\suv_taxi.paa"
             } }
 	        };
     };
@@ -671,8 +722,14 @@ class CfgVehicles {
 			{ "Rebel Digital", "reb", {
 	                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "Med", "med", {
+              "textures\vehicles\heli_paramedic.paa"
+            } },
+			{ "Cop", "cop", {
+              "textures\vehicles\heli_police.paa"
+            } },
+			{ "MSI", "civ", {
+              "textures\vehicles\msi_humm.paa"
             } }
         };
     };
