@@ -76,7 +76,8 @@ class CarShops {
 		vehicles[] = {
 			{ "C_Offroad_01_F", 5000, ""},
 			{ "C_SUV_01_F", 20000, "" },
-			{ "B_MRAP_01_F", 30000, "", { "life_coplevel", 3 } }
+			{ "C_Hatchback_01_sport_F", 40000, "", { "life_donator", 3 } },
+			{ "B_MRAP_01_F", 150000, "", { "life_coplevel", 4 } }
 		};
 	};
 
@@ -388,8 +389,14 @@ class CfgVehicles {
             { "Fed", "fed", {
 	                "#(ai,64,64,1)Fresnel(0.3,3)"
             } },
-			{ "Police", "cop", {
-	                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Police", "cop", {
+                "textures\vehicles\offroad_police.paa"
+            } },
+			{ "Dea", "cop", {
+                "textures\vehicles\offroad_dea.paa"
+            } },
+			{ "Swat", "cop", {
+                "textures\vehicles\offroad_swat.paa"
             } },
             { "Taxi", "civ", {
 	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"

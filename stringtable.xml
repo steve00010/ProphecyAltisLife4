@@ -5012,4 +5012,79 @@
 			<Portuguese>Attempted Murder</Portuguese>
 		</Key>
 	</Package>
+	<Package name="Smartphone">
+		<Key ID="STR_PM_Smartphone">
+			<Original>Smartphone</Original>
+			<English>Smartphone</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_TITLE">
+			<Original>Smartphone Menu</Original>
+			<English>Smartphone Menu</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_PLAYERLISTTITLE">
+			<Original>Playerlist</Original>
+			<English>Playerlist</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_MESSAGETITLE">
+			<Original>Nachrichten  | VON | WANN</Original>
+			<English>Messages  | From | When</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_RANDOMTITLE">
+			<Original>Nachricht zum lesen auswählen</Original>
+			<English>Message to read</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_SCHREIBEN">
+			<Original>Schreiben</Original>
+			<English>Compose</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_NOTRUF">
+			<Original>Notruf</Original>
+			<English>Emergency</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_Absenden">
+			<Original>Absenden</Original>
+			<English>Send</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_NACHRICHTTITLE">
+			<Original>Nachricht an:</Original>
+			<English>Message</English>
+		</Key>
+		<Key ID="STR_SMARTPHONE_Notruftitle">
+			<Original>NOTRUFE | Abuse führt zum BAN!</Original>
+			<English>Warning | Abuse leads to a BAN!</English>
+		</Key>
+		<Key ID="STR_Item_UCharge">
+			<Original>Underwater Charge</Original>
+		</Key>
+		<Key ID="STR_Item_GoldScrap">
+			<Original>Gold Scrap</Original>
+		</Key>
+		<Key ID="STR_pInAct_RevokeLicense">
+			<Orignal>Revoke Licenses</Orignal>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Marijuana">
+			<Original>Your Marijuana License has been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Heroin">
+			<Original>Your Heroin License has been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Coke">
+			<Original>Your Cocaine License has been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Air">
+			<Original>Your Pilot License has been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Driving">
+			<Original>Your Driving License has been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Rebel">
+			<Original>Your Rebel License has been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_AllMotor">
+			<Original>Your Motor Vehicle Licenses have been REVOKED by the Police!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_Firearm">
+			<Original>Your Firearms License has been REVOKED by the Police!</Original>
+		</Key>
+	</Package>
 </Project>

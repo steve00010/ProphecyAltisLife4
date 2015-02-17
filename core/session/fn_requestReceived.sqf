@@ -34,7 +34,7 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "l
 CASH = parseNumber (SEL(_this,2));
 BANK = parseNumber (SEL(_this,3));
 CONST(life_adminlevel,parseNumber (SEL(_this,4)));
-CONST(life_donator,0);
+CONST(life_donator,parseNumber (SEL(_this,5)));
 
 //Loop through licenses
 if(count (SEL(_this,6)) > 0) then {
@@ -43,19 +43,31 @@ if(count (SEL(_this,6)) > 0) then {
 
 life_gear = SEL(_this,8);
 [true] call life_fnc_loadGear;
-
+switch(FETCH_CONST(life_donator)) do
+{
+	case 1: {life_paycheck = life_paycheck + 200;};
+	case 2: {life_paycheck = life_paycheck + 300;};
+	case 3: {life_paycheck = life_paycheck + 400;};
+	case 4: {life_paycheck = life_paycheck + 500;};
+	case 5: {life_paycheck = life_paycheck + 750;};
+};
 //Parse side specific information.
 switch(playerSide) do {
 	case west: {
 		CONST(life_coplevel, parseNumber(SEL(_this,7)));
+		CONST(life_swatlevel, parseNumber(_this select 11));
 		CONST(life_medicLevel,0);
 		life_blacklisted = SEL(_this,9);
+		life_drug_level = SEL(_this,12);
+		life_addiction = (call compile format["%1",SEL(_this,13)]);
 	};
 	
 	case civilian: {
 		life_is_arrested = SEL(_this,7);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
+		life_drug_level = SEL(_this,12);
+		life_addiction = (call compile format["%1",SEL(_this,13)]);
 		life_houses = SEL(_this,9);
 		{
 			_house = nearestBuilding (call compile format["%1", SEL(_x,0)]);

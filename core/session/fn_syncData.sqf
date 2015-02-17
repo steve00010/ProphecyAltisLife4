@@ -34,4 +34,4 @@ hint localize "STR_Session_SyncData";
 	sleep (5 * 60);
 	life_session_time = false;
 };
-	
+[] spawn life_fnc_customUniforms;

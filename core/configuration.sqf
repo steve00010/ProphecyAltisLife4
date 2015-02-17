@@ -61,19 +61,32 @@ CASH = 0;
 life_istazed = false;
 life_vehicles = [];
 
+//CUSTOM
+
+life_god = false;
+life_frozen = false; 
+life_markers = false;
+life_drug_level = 0;
+life_used_drug = [0,0,0];
+life_drug_withdrawl = false;
+life_addiction = [0,0,0];
+life_cocaine_effect = false;
+
+
+
 switch (playerSide) do {
 	case west: {
-		BANK = 7000; //Starting Bank Money
+		BANK = 500000; //Starting Bank Money
 		life_paycheck = 500; //Paycheck Amount
 	};
 	
 	case civilian: {
-		BANK = 3000; //Starting Bank Money
+		BANK = 500000; //Starting Bank Money
 		life_paycheck = 350; //Paycheck Amount
 	};
 	
 	case independent: {
-		BANK = 6500;
+		BANK = 500000;
 		life_paycheck = 450;
 	};
 };

@@ -20,6 +20,6 @@ systemChat format["[Prophecy Database] Loading game server info...", _rscLayer];
 	{
 		sleep 1;
 		_counter = (240-(round(serverTime/60)));
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["Minutes until restart: %6 | Cops: %1 | Civs: %2 | Medics: %3 | BANK: %4 | GRIDREF: %5", west countSide playableUnits, civilian countSide playableUnits, independent countSide playableUnits,[BANK] call life_fnc_numberText,mapGridPosition player, _counter];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["Minutes until restart: %6 | FPS: %7 | Cops: %1 | Civs: %2 | Medics: %3 | BANK: %4 | GRIDREF: %5", west countSide playableUnits, civilian countSide playableUnits, independent countSide playableUnits,[BANK] call life_fnc_numberText,mapGridPosition player, _counter,round diag_fps];
 	}; 
 };

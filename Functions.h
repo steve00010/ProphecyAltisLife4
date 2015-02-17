@@ -146,6 +146,7 @@ class Life_Client_Core
 		class removeItem {};
 		class useItem {};
 		class cellphone {};
+		class cellphone2 {};
 		class keyMenu {};
 		class keyGive {};
 		class keyDrop {};
@@ -154,6 +155,7 @@ class Life_Client_Core
 		class settingsMenu {};
 		class s_onChar {};
 		class s_onCheckedChange {};
+		class smartphone {};
 	};
 	
 	class Functions
@@ -201,6 +203,8 @@ class Life_Client_Core
 		class nearATM {};
 		class EarPlugsOn {};
 		class EarPlugsOff {};
+		class cashUI {};
+		class customUniforms {};
 	};
 	
 	class Network
@@ -331,6 +335,7 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class scratchcard {};
 	};
 	
 	class Dialog_Controls
@@ -357,5 +362,14 @@ class Life_Client_Core
 		class vehicleGarage {};
 		class gangDeposit {};
 		class wireTransfer {};
+	};
+		class Drugs
+	{
+		file = "core\drugs";
+		class weed {};
+		class cocaine {};
+		class heroin {};
+		class overdose {};
+		class drugManage {};
 	};
 };

@@ -76,11 +76,38 @@ switch (true) do {
 			};
 		};
 	};
-
+	case (EQUAL(_item,"heroinp")):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_heroin;
+		};
+	};
+	
+	case (EQUAL(_item,"marijuana")):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_weed;
+		};
+	};
+	case (EQUAL(_item,"cocainep")):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_cocaine;
+		};
+	};
 	case (EQUAL(_item,"pickaxe")): {
 		[] spawn life_fnc_pickAxeUse;
 	};
-	
+	case (EQUAL(_item,"scratchcard")): 
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_scratchcard;
+		};
+	};
 	default {
 		hint localize "STR_ISTR_NotUsable";
 	};

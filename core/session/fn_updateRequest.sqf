@@ -4,7 +4,8 @@
 	Author: Tonic
 */
 private["_packet","_array","_flag"];
-_packet = [getPlayerUID player,(profileName),playerSide,CASH,BANK];
+_packet = [getPlayerUID player,(profileName),playerSide,CASH,BANK,life_drug_level,life_addiction];
+
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
 

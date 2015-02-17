@@ -21,7 +21,7 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	pbh_life_cash = pbh_life_cash + _value;
+	ADD(CASH,_value);
 	hint format [localize "STR_ANOTF_Success",[_value] call life_fnc_numberText];
 	closeDialog 0;
 	_msg = format["%1 compensated themselves $%2",profileName,_value];

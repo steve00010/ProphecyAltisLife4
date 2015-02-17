@@ -6,9 +6,11 @@
 #define IDC_LIFE_PICTURE_FOOD 1200
 #define IDC_LIFE_PICTURE_WATER 1201
 #define IDC_LIFE_PICTURE_HEALTH 1202
+#define IDC_LIFE_PICTURE_CASH 1203
 #define IDC_LIFE_FOOD_TEXT 1000
 #define IDC_LIFE_WATER_TEXT 1001
 #define IDC_LIFE_HEALTH_TEXT 1002
+#define IDC_LIFE_CASH_TEXT 1003
 /*
 	Name: Dillon "Itsyuka" Modine-Thuen
 	File: ui.hpp
@@ -31,9 +33,11 @@ class playerHUD {
 		LIFE_PICTURE_FOOD,
 		LIFE_PICTURE_WATER,
 		LIFE_PICTURE_HEALTH,
+		LIFE_PICTURE_CASH,
 		LIFE_FOOD_TEXT,
 		LIFE_WATER_TEXT,
-		LIFE_HEALTH_TEXT
+		LIFE_HEALTH_TEXT,
+		LIFE_CASH_TEXT
 	};
 
 	/* Background */
@@ -42,9 +46,9 @@ class playerHUD {
 		idc = IDD_LIFE_MAIN_DISP;
 		colorBackground[] = {0,0,0,0.5};
 		x = 0.925 * safezoneW + safezoneX;
-		y = 0.819 * safezoneH + safezoneY;
+		y = 0.78 * safezoneH + safezoneY;
 		w = 0.0825 * safezoneW;
-		h = 0.11 * safezoneH;
+		h = 0.15 * safezoneH;
 	};
 
 	/* Progress Bars */
@@ -52,7 +56,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_BAR_FOOD;
 		x = 0.958 * safezoneW + safezoneX;
-		y = 0.83 * safezoneH + safezoneY;
+		y = 0.787 * safezoneH + safezoneY;
 		w = 0.041875 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
@@ -60,7 +64,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_BAR_WATER;
 		x = 0.958 * safezoneW + safezoneX;
-		y = 0.863 * safezoneH + safezoneY;
+		y = 0.82 * safezoneH + safezoneY;
 		w = 0.041875 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
@@ -68,7 +72,7 @@ class playerHUD {
 	{
 		idc = 2202;
 		x = 0.958 * safezoneW + safezoneX;
-		y = 0.896 * safezoneH + safezoneY;
+		y = 0.85 * safezoneH + safezoneY;
 		w = 0.041875 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
@@ -80,7 +84,7 @@ class playerHUD {
 		idc = IDC_LIFE_FOOD_TEXT;
 		text = "";
 		x = 0.965906 * safezoneW + safezoneX;
-		y = 0.8344 * safezoneH + safezoneY;
+		y = 0.792 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
 		h = 0.011 * safezoneH;
 	};
@@ -89,7 +93,7 @@ class playerHUD {
 		idc = IDC_LIFE_WATER_TEXT;
 		text = "";
 		x = 0.965905 * safezoneW + safezoneX;
-		y = 0.8674 * safezoneH + safezoneY;
+		y = 0.825 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
 		h = 0.011 * safezoneH;
 	};
@@ -98,18 +102,28 @@ class playerHUD {
 		idc = IDC_LIFE_HEALTH_TEXT;
 		text = "";
 		x = 0.965906 * safezoneW + safezoneX;
-		y = 0.9004 * safezoneH + safezoneY;
+		y = 0.855 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
 		h = 0.011 * safezoneH;
 	};
-
+	class LIFE_CASH_TEXT: Life_RscText
+	{
+		idc = IDC_LIFE_CASH_TEXT;
+		text = "";
+		x = 0.952 * safezoneW + safezoneX;
+		y = 0.89 * safezoneH + safezoneY;
+		w = 0.05 * safezoneW;
+		h = 0.015 * safezoneH;
+	};
+	
+	
 	/* Icons */
 	class LIFE_PICTURE_FOOD: life_RscPicture
 	{
 		idc = IDC_LIFE_PICTURE_FOOD;
 		text = "icons\food.paa";
 		x = 0.93 * safezoneW + safezoneX;
-		y = 0.82 * safezoneH + safezoneY;
+		y = 0.779 * safezoneH + safezoneY;
 		w = 0.06; h = 0.06;
 	};
 	class LIFE_PICTURE_WATER: life_RscPicture
@@ -117,15 +131,24 @@ class playerHUD {
 		idc = IDC_LIFE_PICTURE_WATER;
 		text = "icons\water.paa";
 		x = 0.93 * safezoneW + safezoneX;
-		y = 0.853 * safezoneH + safezoneY;
+		y = 0.813 * safezoneH + safezoneY;
 		w = 0.06; h = 0.06;
 	};
 	class LIFE_PICTURE_HEALTH: life_RscPicture
 	{
 		idc = IDC_LIFE_PICTURE_HEALTH;
 		text = "icons\health.paa";
-		x = 0.93 * safezoneW + safezoneX;
-		y = 0.89 * safezoneH + safezoneY;
-		w = 0.06; h = 0.06;
+		x = 0.932 * safezoneW + safezoneX;
+		y = 0.85 * safezoneH + safezoneY;
+		w = 0.05; h = 0.05;
+	};
+	class LIFE_PICTURE_CASH : life_RscPicture
+	{
+				
+		idc = IDC_LIFE_PICTURE_CASH;
+		text = "icons\money.paa";
+		x = 0.932 * safezoneW + safezoneX;
+		y = 0.887 * safezoneH + safezoneY;
+		w = 0.05; h = 0.05;
 	};
 };

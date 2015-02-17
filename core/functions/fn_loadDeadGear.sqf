@@ -62,3 +62,4 @@ if(!(EQUAL(_handgun,""))) then {[_handgun,true,false,false,false] spawn life_fnc
 
 if(!(EQUAL(_headgear,""))) then {player addHeadGear _headgear};
 if(!(EQUAL(_goggles,""))) then {player addGoggles _goggles};
+[] spawn life_fnc_customUniforms;

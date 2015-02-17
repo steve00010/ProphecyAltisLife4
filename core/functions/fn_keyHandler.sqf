@@ -15,15 +15,21 @@ _alt = SEL(_this,4);
 _speed = speed cursorTarget;
 _handled = false;
 
+_pushToTalkKeyArray = actionKeys "PushToTalk";
+_pushToTalkDirectKeyArray = actionKeys "PushToTalkDirect";
+_pushToTalkSideKeyArray = actionKeys "PushToTalkSide";
+_allTalkKeys = _pushToTalkKeyArray + _pushToTalkDirectKeyArray + _pushToTalkSideKeyArray;
+
 _interactionKey = if((EQUAL(count (actionKeys "User10"),0))) then {219} else {(actionKeys "User10") select 0};
 _mapKey = SEL(actionKeys "ShowMap",0);
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
-
+_commandKey = actionKeys "TacticalView" select 0;
 //Vault handling...
 if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player GVAR ["restrained",false])}) exitWith {
 	true;
 };
+_isTalkKeys = ( _code in _allTalkKeys );
 
 if(life_action_inUse) exitWith {
 	if(!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
@@ -55,12 +61,18 @@ switch (_code) do {
 			_handled = true;
 		};
 	};
+		case _commandKey:
+	{
+		hint "You are not allowed to use Tactical View";
+		_handled = true;
+	};
 	
 	//Map Key
 	case _mapKey: {
 		switch (playerSide) do {
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}};
 		};
 	};
 	
@@ -92,37 +104,39 @@ switch (_code) do {
 	};
 	
 	//Restraining or robbing (Shift + R)
-	case 19:
+		case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget GVAR "Escorting") && !(cursorTarget GVAR "restrained") && speed cursorTarget < 1) then
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !(player getVariable "restrained") && speed cursorTarget < 1) then
+		{
+			Diag_log "Restrain Progressing to fnc_restrainAction";
+			[] call life_fnc_restrainAction;
+		}
+		else
+		{
+			// Temp logging for restrain issue
+			if (playerSide == west) then
+			{
+				// Log if west only
+				Diag_log format["Restrain Log : Speed of target (%1) , Distance to target (%2) , Is restrained already? (%3) , Are you restrained (%4) , Is target being escorted? (%5)",speed cursorTarget, cursorTarget distance player, cursorTarget getVariable "restrained", player getVariable "restrained", cursorTarget getVariable "Escorting"];
+				
+			};
+		};
+		
+		
+		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "surrender") && !(cursorTarget getVariable "restrained") && !(player getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
 		};
 		
-		//Robbing
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+		if(_ctrlKey) then {_handled = true;};
+		if (_ctrlKey) then
 		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == RIFLE OR currentWeapon player == PISTOL) && currentWeapon player != "" && !life_knockout && !(player GVAR["restrained",false]) && !life_istazed && !(player GVAR["surrender",false])) then
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
 			{
-				[cursorTarget] spawn life_fnc_knockoutAction;
-			};
-			_handled = true;
-		};
-	};
-	
-	//Shift + G (surrender)
-	case 34:
-	{
-		if(_shift) then {_handled = true;};
-
-		if (_shift) then
-		{
-			if (vehicle player == player && !(player GVAR ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
-			{
-				if (player GVAR ["surrender", false]) then
+				if (player getVariable ["surrender", false]) then
 				{
-					player SVAR ["surrender", false, true];
+					player setVariable ["surrender", false, true];
 				} else
 				{
 					[] spawn life_fnc_surrender;
@@ -248,6 +262,55 @@ switch (_code) do {
 				};
 			};
 		};
+	};
+	default
+	{
+		// Push To Talk Direct
+		if ( _code in _pushToTalkDirectKeyArray ) then
+		{
+			_Talking = player getVariable["Talking", false ];
+			if ( !(_Talking) ) then
+			{
+				player setVariable["Talking", true, true];
+			};
+		};
+		
+		if ( _code in _pushToTalkSideKeyArray ) then
+		{
+			hint "You cannot use voice in Side Chat"; 
+			_handled = true; 
+		};
+		
+		// Push to Talk 
+		if ( _code in _pushToTalkKeyArray ) then
+		{
+			_chan = "";
+			disableSerialization;
+			//waitUntil { !isNull (findDisplay 24) };
+			_chan = ctrlText ((findDisplay 63) displayCtrl 101);
+			if ( ( _chan == localize "str_channel_direct" ) OR ( _chan == "Direct communication" ) ) then 
+			{
+				_Talking = player getVariable["Talking", false ];
+				if ( !(_Talking) ) then
+				{
+					player setVariable["Talking", true, true];
+				};
+			};
+			
+			if ( ( _chan == localize "str_channel_side" ) OR ( _chan == "Side Channel" ) ) then 
+			{
+				[] spawn life_fnc_PunishSideChat;
+				hint "You cannot use voice in Side Chat"; 
+				_handled = true; 
+			};
+		};
+
+		if ( _code in _CommandMode ) then
+		{
+			hint "You cannot use Command Mode"; 
+			_handled = true; 
+		};
+		
 	};
 };
 
