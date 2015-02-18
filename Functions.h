@@ -10,7 +10,6 @@ class Socket_Reciever
 		class updateRequest {};
 		class syncData {};
 		class updatePartial {};
-		class moneyCheck {};
 	};
 };
 
@@ -110,7 +109,6 @@ class Life_Client_Core
 		class gutAnimal {};
 		class surrender {};
 		class takeOrgans {};
-		class surrender {};
 		class robShops {};
 		class relinquishLicense {};
 		class processCasinoSlots {};
@@ -226,7 +224,6 @@ class Life_Client_Core
 		class EarPlugsOff {};
 		class cashUI {};
 		class customUniforms {};
-		class autoSave {};
 		class isDonarVehicle {};
 		class emptyFuel {};
 		class slotMachineRewards {};
