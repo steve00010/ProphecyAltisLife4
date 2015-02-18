@@ -214,6 +214,7 @@ class Life_Client_Core
 		class cashUI {};
 		class customUniforms {};
 		class autoSave {};
+		class isDonarVehicle {};
 	};
 	
 	class Network
@@ -329,8 +330,11 @@ class Life_Client_Core
 		class virt_update {};
 		class virt_sell {};
 		class chopShopMenu {};
+		class chopShopMenuV2 {};
+		class chopShopV2 {};
 		class chopShopSelection {};
 		class chopShopSell {};
+		class chopShopLBChange {};
 		class sprayShopMenu {};
 		class sprayShopSelection {};
 		class sprayShopPaint {};

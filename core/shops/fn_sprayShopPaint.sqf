@@ -13,11 +13,15 @@ if((lbCurSel 2302) == -1) exitWith {hint "You did not pick a vehicle!"};
 _className = lbData[2302,(lbCurSel 2302)];
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
-_ind = [_className,(call life_garage_sell)] call TON_fnc_index;
-_price = ((call life_garage_sell) select _ind) select 1;
-_price = round (_price / 4);
 
-if (life_cash < _price) exitWith { hint "You do not have the cash required!"};
+_price = switch(playerSide) do {
+	case civilian: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"garageSell"),0)};
+	case west: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"garageSell"),1)};
+	case independent: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,__className,"garageSell"),2)};
+	case east: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"garageSell"),4)};
+};
+
+if (CASH < _price) exitWith { hint "You do not have the cash required!"};
 
 
 _nearVehicles = nearestObjects[getPos (player),["Car","Air","Truck"],25]; //Fetch vehicles within 30m.

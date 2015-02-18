@@ -9,7 +9,8 @@
 private["_type","_index","_price","_amount","_name"];
 if(EQUAL(lbCurSel 2402,-1)) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
-_price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
+_index = [_type,FETCH_CONST(sell_array)] call TON_fnc_index;
+_price = SEL(SEL(FETCH_CONST(sell_array),_index),1);
 if(EQUAL(_price,-1)) exitWith {};
 
 _amount = ctrlText 2405;
