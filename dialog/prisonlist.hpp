@@ -1,6 +1,6 @@
-class life_wanted_menu {
-	idd = 2400;
-	name= "life_wanted_menu";
+class life_prison_list {
+	idd = 8100;
+	name= "life_prison_list";
 	movingEnable = false;
 	enableSimulation = true;
 	
@@ -30,7 +30,7 @@ class life_wanted_menu {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = -1;
-			text = "$STR_Wanted_Title";
+			text = "High Security prison";
 			x = 0.1;
 			y = 0.2;
 			w = 0.6;
@@ -38,17 +38,17 @@ class life_wanted_menu {
 		};
 		
 		class WantedConnection : Title {
-			idc = 2404;
+			idc = 8104;
 			style = 1;
 			text = "";
 		};
 		
 		class WantedList : Life_RscListBox 
 		{
-			idc = 2401;
+			idc = 8101;
 			text = "";
 			sizeEx = 0.035;
-			onLBSelChanged = "[] call life_fnc_wantedInfo";
+			onLBSelChanged = "[] call life_fnc_p_prisonbreak";
 			
 			x = 0.12; y = 0.26;
 			w = 0.2; h = 0.4;
@@ -56,7 +56,7 @@ class life_wanted_menu {
 		
 		class WantedDetails : Life_RscListBox
 		{
-			idc = 2402;
+			idc = 8102;
 			text = "";
 			sizeEx = 0.035;
 			colorBackground[] = {0, 0, 0, 0};
@@ -69,7 +69,7 @@ class life_wanted_menu {
 		
 		class BountyPrice : Life_RscText
 		{
-			idc = 2403;
+			idc = 8103;
 			text = "";
 			x = 0.34;
 			y = 0.03;
@@ -88,9 +88,9 @@ class life_wanted_menu {
 		};
 		
 		class PardonButtonKey : Life_RscButtonMenu {
-			idc = 2405;
-			text = "$STR_Wanted_Pardon";
-			onButtonClick = "[] call life_fnc_pardon; closeDialog 0;";
+			idc = 8105;
+			text = "Break Out!";
+			onButtonClick = "[] call life_fnc_prisonbreak; closeDialog 0;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);

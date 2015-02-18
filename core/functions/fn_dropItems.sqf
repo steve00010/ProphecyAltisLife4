@@ -88,7 +88,7 @@ _unit = SEL(_this,0);
 			};
 		};
 		
-		case "pbh_life_cash": {
+		case "life_cash": {
 			if(CASH > 0) then {
 				_pos = _unit modelToWorld[0,3,0];
 				_pos = [SEL(_pos,0), SEL(_pos,1), 0];
@@ -96,7 +96,7 @@ _unit = SEL(_this,0);
 				_obj SVAR ["item",["money",GVAR_MNS [_item,0]],true];
 				_obj setPos _pos;
 				[[_obj],"life_fnc_simDisable",nil,true] call life_fnc_MP;
-				SVAR_MNS ["pbh_life_cash",0];
+				SVAR_MNS ["life_cash",0];
 			};
 		};
 		
@@ -112,4 +112,4 @@ _unit = SEL(_this,0);
 			};
 		};
 	};
-} foreach (("true" configClasses (missionConfigFile >> "VirtualItems")) + ["pbh_life_cash"]);
+} foreach (("true" configClasses (missionConfigFile >> "VirtualItems")) + ["life_cash"]);
