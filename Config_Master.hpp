@@ -268,6 +268,8 @@ class VirtualItems {
 	VITEMMACRO(redgull, "STR_Item_RedGull", "redgull", 1, 1500, 200, false, 100, "icons\ico_redgull.paa")
 	VITEMMACRO(coffee, "STR_Item_Coffee", "coffee", 1, 10, 5, false, 100, "icons\coffee.paa")
 	VITEMMACRO(waterBottle, "STR_Item_WaterBottle", "waterBottle", 1, 10, 5, false, 100, "icons\ico_waterBottle.paa")
+	VITEMMACRO(monster, "STR_Item_Monster", "monster", 1, 1500, 200, false, 100, "icons\monster.paa")
+	
 
 	//Food
 	VITEMMACRO(apple, "STR_Item_Apple", "apple", 1, 65, 50, false, 10, "icons\apple.paa")
