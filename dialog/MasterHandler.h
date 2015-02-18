@@ -27,3 +27,4 @@
 #include "compensate.hpp"
 #include "smartphone.hpp"
 #include "market.hpp"
+#include "spray_shop.h"

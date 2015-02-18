@@ -331,6 +331,11 @@ class Life_Client_Core
 		class chopShopMenu {};
 		class chopShopSelection {};
 		class chopShopSell {};
+		class sprayShopMenu {};
+		class sprayShopSelection {};
+		class sprayShopPaint {};
+		class sprayShopColSelection {};
+		class sprayShopClose{};
 	};
 	
 	class Items
