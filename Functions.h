@@ -143,6 +143,7 @@ class Life_Client_Core
 		class vehicleWeightCfg {};
 		class seizeCfg {};
 		class itemIcon {};
+		class vehicleShopColorCfg {};
 	};
 
 	class Player_Menu

@@ -1,4 +1,3 @@
-#include <macro.h>
 /*
 	File: fn_moneyCheck.sqf
 	Author: Steve

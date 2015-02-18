@@ -44,15 +44,19 @@ _vehicleInfo select 9
 
 _ctrl = CONTROL(2300,2304);
 lbClear _ctrl;
-_colorArray = M_CONFIG(getArray,CONFIG_VEHICLES,_className,"textures");
+_colorArray = [_className] call life_fnc_vehicleShopColorCfg;
 
+for "_i" from 0 to count(_colorArray)-1 do 
 {
-	_flag = SEL(_x,1);
-	_textureName = SEL(_x,0);
-	if(EQUAL(SEL(life_veh_shop,2),_flag)) then {
-		_ctrl lbAdd _textureName;
-		_ctrl lbSetValue [(lbSize _ctrl)-1,_forEachIndex];
+	if(((_colorArray select _i) select 1 == (life_veh_shop select 2)) or ((_colorArray select _i) select 1 == steamid)) then 
+	{
+		if((_colorArray select _i) select 0 != "BUFFER") then {
+			_temp = [_className,_i] call life_fnc_vehicleColorStr;
+			_ctrl lbAdd format["%1",_temp];
+			_ctrl lbSetValue [(lbSize _ctrl)-1,_i];
+		};
 	};
+};
 } foreach _colorArray;
 
 if(_className in (LIFE_SETTINGS(getArray,"vehicleShop_rentalOnly"))) then {
