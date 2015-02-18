@@ -465,13 +465,13 @@ class CfgVehicles {
 			{ "WRC", "civ", {
 				 "textures\vehicles\civ_hatchback_wrc.paa"
 			} },
-			{ "Redgull", "civ" {
+			{ "Redgull", "civ", {
 				 "textures\vehicles\redgull_hatchbacks.paa" 
 			} }, 
-			{ "Dayz", "civ" {
+			{ "Dayz", "civ", {
 				 "textures\vehicles\dayz_hatchbacks.paa"
 	        } },
-			{ "Dragon", "civ" {
+			{ "Dragon", "civ", {
 				 "textures\vehicles\dragon_sport.paa" 
 			} }	 
 		};
