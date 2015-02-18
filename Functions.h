@@ -265,6 +265,7 @@ class Life_Client_Core
 		class waterChargeTimer {};
 		class hasOrgan {};
 		class civInteractionMenu {};
+		class freezePlayer {};
 	};
 	
 	class Vehicle
