@@ -23,7 +23,7 @@ switch(_type) do
 	{
 		life_smartphoneTarget = call compile format["%1",_playerData];
 		ctrlSetText[88886, format["Message from: %1",name life_smartphoneTarget]];
-		if((__GETC__(life_adminlevel) < 1)) then
+		if((FETCH_CONST(life_adminlevel) < 1)) then
 		{
 			ctrlShow[888897,false];
 		};
@@ -86,7 +86,7 @@ switch(_type) do
 	//emergencyloading
 	case 6:
 	{
-		if((__GETC__(life_adminlevel) < 1)) then
+		if((FETCH_CONST(life_adminlevel) < 1)) then
 		{
 			ctrlShow[888898,false];
 			ctrlShow[888896,true];
