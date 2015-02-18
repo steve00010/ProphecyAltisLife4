@@ -49,7 +49,7 @@ class life_wanted_menu {
 			idc = 2401;
 			text = "";
 			sizeEx = 0.035;
-			onLBSelChanged = "[] spawn life_fnc_wantedGrab";
+			onLBSelChanged = "[] call life_fnc_wantedInfo";
 			
 			x = 0.12; y = 0.28;
 			w = 0.2; h = 0.3;
