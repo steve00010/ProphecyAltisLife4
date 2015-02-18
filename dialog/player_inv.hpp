@@ -268,8 +268,7 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-		
-			
+	
 		class ButtonKeys : Life_RscButtonMenu {
 			idc = 2013;
 			text = "$STR_PM_KeyChain";
@@ -279,17 +278,17 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-			
+		
 		class ButtonCell : Life_RscButtonMenu {
 			idc = 2014;
 			text = "$STR_PM_CellPhone";
-			onButtonClick = "[] call life_fnc_cellphone2;";
+			onButtonClick = "[] call life_fnc_cellphone2";
 			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-			
+		
 		class ButtonAdminMenu : Life_RscButtonMenu {
 			idc = 2021;
 			text = "$STR_PM_AdminMenu";
@@ -299,7 +298,7 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-			
+		
 		class ButtonSyncData : life_RscButtonMenu {
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
@@ -310,7 +309,6 @@ class playerSettings {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
-		
 		class ButtonMarket : Life_RscButtonMenu {
 			idc = -1;
 			text = "Market";
