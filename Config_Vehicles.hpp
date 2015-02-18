@@ -404,7 +404,7 @@ class CfgVehicles {
                 "textures\vehicles\offroad_monster.paa"
             } },
 			{ "Captain", "civ", {
-                "textures\vehicles\offroad_captain.paa""
+                "textures\vehicles\offroad_captain.paa"
             } },
 			{ "Drug", "civ", {
                 "textures\vehicles\offroad_drug.paa"
