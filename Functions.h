@@ -213,6 +213,7 @@ class Life_Client_Core
 		class EarPlugsOff {};
 		class cashUI {};
 		class customUniforms {};
+		class autoSave {};
 	};
 	
 	class Network

@@ -144,7 +144,7 @@ class Clothing {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
 			{ "V_RebreatherB", "Re-breather", 800, { "", "", -1 } },
 			{ "V_TacVest_blk_POLICE", "Tac Vest Police", 800, { "", "", -1 } },
-			{ "V_PlateCarrier2_rgr", "PlateCarrier", 1500, { "life_coplevel", "SCALAR", 2 } }
+			{ "V_PlateCarrier2_blk", "PlateCarrier", 1500, { "life_coplevel", "SCALAR", 2 } }
 		};
 
 		backpacks[] = {
