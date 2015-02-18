@@ -102,9 +102,12 @@ life_fnc_moveIn = compileFinal
 "
 	player moveInCargo (_this select 0);
 ";
+player setVariable["missingOrgan",false,true];//sets variables to false on start
+player setVariable["hasOrgan",false,true];
 
 [] spawn life_fnc_survival;
 [] execVM "scripts\earplug\earplugInit.sqf";
+[[0,player,"economy"],"TON_fnc_getprices",false,false] spawn life_fnc_MP;
 CONSTVAR(life_paycheck); //Make the paycheck static.
 if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
 [[getPlayerUID player,player getVariable["realname",name player]],"life_fnc_wantedProfUpdate",false,false] spawn life_fnc_MP;

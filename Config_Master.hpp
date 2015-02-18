@@ -59,35 +59,34 @@ class Life_Settings {
 	delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
 
 	crimes[] = { 
-		{"STR_Crime_1","350","1"} 			//Driving Without Lights
-		{"STR_Crime_2","1000","2"} 			//Driving Without License
-		{"STR_Crime_3","1000","3"} 			//Driving Over The Speed Limit
-		{"STR_Crime_4","500","4"} 			//Reckless Driving
-		{"STR_Crime_5","20000","5"}			//Driving Stolen Vehicle
-		{"STR_Crime_6","5000","6"} 			//Hit and Run
-		{"STR_Crime_7","10000","7"} 		//Attempted Murder
-		{"STR_Crime_187V","7500","8"}		//Vehicular Manslaughter
-		{"STR_Crime_187","25000","9"}		//Manslaughter
-		{"STR_Crime_901","15000","10"}		//Escaping Jail
-		{"STR_Crime_215","5000","11"}		//Attempted Auto Theft
-		{"STR_Crime_213","10000","12"}		//Use of Illegal Explosives
-		{"STR_Crime_211","10000","13"}		//Robbery
-		{"STR_Crime_207","5000","14"}		//Kidnapping
-		{"STR_Crime_207A","2500","15"}		//Attempted Kidnapping
-		{"STR_Crime_390","1000","16"}		//Public intoxication
-		{"STR_Crime_487","7500","17"}		//Grand Theft
-		{"STR_Crime_488","1000","18"}		//Petty Theft
-		{"STR_Crime_480","1500","19"}		//Hit and Run
-		{"STR_Crime_481","4000","20"}		//Drug Possession
-		{"STR_Crime_482","2500","21"}		//Intent to Distribute
-		{"STR_Crime_483","6000","22"}		//Drug Trafficking
-		{"STR_Crime_459","10000","23"}		//Burglary
-		{"STR_Crime_666","1500","24"}		//Tax Evasion
-		{"STR_Crime_667","10000","25"}		//Terrorism
-		{"STR_Crime_668","3000","26"}		//Unlicensed Hunting
-		{"STR_Crime_919","10000","27"}		//Organ Theft
-		{"STR_Crime_919A","5000","28"}		//Attempted Organ Theft
-
+		{"STR_Crime_1","350","1"}, 			//Driving Without Lights
+		{"STR_Crime_2","1000","2"}, 			//Driving Without License
+		{"STR_Crime_3","1000","3"}, 			//Driving Over The Speed Limit
+		{"STR_Crime_4","500","4"}, 			//Reckless Driving
+		{"STR_Crime_5","20000","5"},			//Driving Stolen Vehicle
+		{"STR_Crime_6","5000","6"}, 			//Hit and Run
+		{"STR_Crime_7","10000","7"}, 		//Attempted Murder
+		{"STR_Crime_187V","7500","8"},		//Vehicular Manslaughter
+		{"STR_Crime_187","25000","9"},		//Manslaughter
+		{"STR_Crime_901","15000","10"},		//Escaping Jail
+		{"STR_Crime_215","5000","11"},		//Attempted Auto Theft
+		{"STR_Crime_213","10000","12"},		//Use of Illegal Explosives
+		{"STR_Crime_211","10000","13"},		//Robbery
+		{"STR_Crime_207","5000","14"},		//Kidnapping
+		{"STR_Crime_207A","2500","15"},		//Attempted Kidnapping
+		{"STR_Crime_390","1000","16"},		//Public intoxication
+		{"STR_Crime_487","7500","17"},		//Grand Theft
+		{"STR_Crime_488","1000","18"},		//Petty Theft
+		{"STR_Crime_480","1500","19"},		//Hit and Run
+		{"STR_Crime_481","4000","20"},		//Drug Possession
+		{"STR_Crime_482","2500","21"},		//Intent to Distribute
+		{"STR_Crime_483","6000","22"},		//Drug Trafficking
+		{"STR_Crime_459","10000","23"},		//Burglary
+		{"STR_Crime_666","1500","24"},		//Tax Evasion
+		{"STR_Crime_667","10000","25"},		//Terrorism
+		{"STR_Crime_668","3000","26"},		//Unlicensed Hunting
+		{"STR_Crime_919","10000","27"},		//Organ Theft
+		{"STR_Crime_919A","5000","28"}
 	};
 	
 	sellArray[] = {
@@ -208,25 +207,11 @@ class Life_Settings {
 
 //Virtual Items
 class VirtualItems {
-	//Misc
-	//VITEMMACRO(NAME,DISPLAYNAME,VARNAME,WEIGHT,BUYPRICE,SELLPRICE,ILLEGAL,EDIBLE,ICON) class NAME
-	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "icons\pickaxe.paa")
-	VITEMMACRO(fuelEmpty, "STR_Item_FuelE", "fuelEmpty", 2, -1, -1, false, -1, "icons\ico_fuelempty.paa")
-	VITEMMACRO(fuelFull, "STR_Item_FuelF", "fuelFull", 5, 850, 500, false, -1, "icons\ico_fuel.paa")
-	VITEMMACRO(spikeStrip, "STR_Item_SpikeStrip", "spikeStrip", 15, 2500, 1200, false, -1, "icons\spikestrip.paa")
-	VITEMMACRO(lockpick, "STR_Item_Lockpick", "lockpick", 1, 150, 75, false, -1, "icons\lockpick.paa")
-	VITEMMACRO(goldbar, "STR_Item_GoldBar", "goldBar", 12, -1, 150000, false, -1, "icons\goldbar.paa")
-	VITEMMACRO(goldbarp, "STR_Item_GoldBarp", "goldBarp", 12, -1, 85000, false, -1, "icons\goldbarp.paa")
-	VITEMMACRO(blastingcharge, "STR_Item_BCharge", "blastingCharge", 15, 35000, -1, true, -1, "icons\ico_blastingCharge.paa")
-	VITEMMACRO(underwatercharge, "STR_Item_BChargewater", "underwatercharge", 15, 35000, -1, true, -1, "icons\underwatercharge.paa")
-	VITEMMACRO(boltcutter, "STR_Item_BCutter", "boltCutter", 5, 7500, -1, true, -1, "icons\ico_boltcutters.paa")
-	VITEMMACRO(defusekit, "STR_Item_DefuseKit", "defuseKit", 2, 2500, -1, false, -1, "icons\defusekit.paa")
-	VITEMMACRO(storagesmall, "STR_Item_StorageBS", "storageSmall", 5, 75000, -1, false, -1, "icons\ico_storageSmall.paa")
-	VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 150000, -1, false, -1, "icons\ico_storageBig.paa")
-	VITEMMACRO(kidney, "STR_Item_Kidney", "kidney", 10, 35000, 45000, true, -1, "icons\kidney.paa")
-	VITEMMACRO(surgeryknife, "STR_Item_SurgeryKnife", "surgeryknife", 5, 25000, 25000, true, -1, "icons\surgeryknife.paa")
-	VITEMMACRO(zipties, "STR_Item_Zipties", "zipties", 2, 300, 200, true, -1, "icons\zipties.paa")
-	VITEMMACRO(scratchcard, "STR_Item_Scratchcard", "scratchcard", 2, 5000, 2500, false, -1, "icons\scratchcard.paa")
+	//Added
+	VITEMMACRO(kidney, "STR_Item_kidney", "Kidney", 15, 40000, 35000, false, -1, "icons\kidney.paa")
+	VITEMMACRO(surgeryknife, "STR_Item_SurgeryKnife", "surgeryknife", 2, 25000, 27000, false, -1, "icons\surgeryknife.paa")
+	VITEMMACRO(zipties, "STR_Item_Zipties", "zipties", 1, 500, 20, true, -1, "icons\zipties.paa")
+	VITEMMACRO(scratchcard, "STR_Item_ScratchCard", "scratchcard", 1, 500, 20, true, -1, "icons\scratchcard.paa")
 	VITEMMACRO(cornmeal, "STR_Item_Cornmeal", "cornmeal", 2, 100, 80,false, -1, "icons\cornmeal.paa")
 	VITEMMACRO(beerp, "STR_Item_Beerp", "beerp", 3, -1, 1000, false, -1, "")
 	VITEMMACRO(whiskey, "STR_Item_Whiskey", "whiskey", 3, -1, 1500, false, -1, "")
@@ -239,7 +224,22 @@ class VirtualItems {
 	VITEMMACRO(bottledwhiskey, "STR_Item_BottledWhiskey", "bottledwhiskey", 5, 3500, 4500, true, 5, "icons\bottledwhiskey.paa") 
 	VITEMMACRO(moonshine, "STR_Item_Moonshine", "moonshine", 3, 4000, 5000, true, 3, "icons\moonshine.paa")
 	VITEMMACRO(mash, "STR_Item_Mash", "mash", 2, 10, 10, false, 1, "icons\mash.paa")
+	VITEMMACRO(goldbarp, "STR_Item_GoldBarp", "goldBarp", 12, -1, 85000, false, -1, "icons\goldbarp.paa")
+	VITEMMACRO(underwatercharge, "STR_Item_BChargewater", "underwatercharge", 15, 35000, -1, true, -1, "icons\underwatercharge.paa")
 	
+	//Misc
+	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "icons\pickaxe.paa")
+	VITEMMACRO(fuelEmpty, "STR_Item_FuelE", "fuelEmpty", 2, -1, -1, false, -1, "icons\ico_fuelempty.paa")
+	VITEMMACRO(fuelFull, "STR_Item_FuelF", "fuelFull", 5, 850, 500, false, -1, "icons\ico_fuel.paa")
+	VITEMMACRO(spikeStrip, "STR_Item_SpikeStrip", "spikeStrip", 15, 2500, 1200, false, -1, "icons\spikestrip.paa")
+	VITEMMACRO(lockpick, "STR_Item_Lockpick", "lockpick", 1, 150, 75, false, -1, "icons\lockpick.paa")
+	VITEMMACRO(goldbar, "STR_Item_GoldBar", "goldBar", 12, -1, 95000, false, -1, "icons\goldbar.paa")
+	VITEMMACRO(blastingcharge, "STR_Item_BCharge", "blastingCharge", 15, 35000, -1, true, -1, "icons\ico_blastingCharge.paa")
+	VITEMMACRO(boltcutter, "STR_Item_BCutter", "boltCutter", 5, 7500, -1, true, -1, "icons\ico_boltcutters.paa")
+	VITEMMACRO(defusekit, "STR_Item_DefuseKit", "defuseKit", 2, 2500, -1, false, -1, "icons\defusekit.paa")
+	VITEMMACRO(storagesmall, "STR_Item_StorageBS", "storageSmall", 5, 75000, -1, false, -1, "icons\ico_storageSmall.paa")
+	VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 150000, -1, false, -1, "icons\ico_storageBig.paa")
+
 	//Mined Items
 	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 7, -1, -1, false, -1, "icons\oil_unprocessed.paa")
 	VITEMMACRO(oil_processed, "STR_Item_OilP", "oilProcessed", 6, -1, 3200, false, -1, "icons\oil_processed.paa")
@@ -266,17 +266,16 @@ class VirtualItems {
 
 	//Drink
 	VITEMMACRO(redgull, "STR_Item_RedGull", "redgull", 1, 1500, 200, false, 100, "icons\ico_redgull.paa")
-	VITEMMACRO(coffee, "STR_Item_Coffee", "coffee", 1, 10, 5, false, 40, "icons\coffee.paa")
-	VITEMMACRO(waterBottle, "STR_Item_WaterBottle", "waterBottle", 1, 10, 5, false, 60, "icons\ico_waterBottle.paa")
-	VITEMMACRO(monster, "STR_Item_Monster", "monster", 1, 1500, 200, false, 100, "icons\monster.paa")
-	
+	VITEMMACRO(coffee, "STR_Item_Coffee", "coffee", 1, 10, 5, false, 100, "icons\coffee.paa")
+	VITEMMACRO(waterBottle, "STR_Item_WaterBottle", "waterBottle", 1, 10, 5, false, 100, "icons\ico_waterBottle.paa")
+
 	//Food
-	VITEMMACRO(apple, "STR_Item_Apple", "apple", 1, 65, 50, false, 10, "icons\food.paa")
-	VITEMMACRO(peach, "STR_Item_Peach", "peach", 1, 68, 55, false, 10, "icons\food.paa")
+	VITEMMACRO(apple, "STR_Item_Apple", "apple", 1, 65, 50, false, 10, "icons\apple.paa")
+	VITEMMACRO(peach, "STR_Item_Peach", "peach", 1, 68, 55, false, 10, "icons\peach.paa")
 	VITEMMACRO(tbacon, "STR_Item_TBacon", "tbacon", 1, 75, 25, false, 40, "icons\ico_tbacon.paa")
-	VITEMMACRO(donut, "STR_Item_Donuts", "donut", 1, 120, 60, false, 20, "icons\food.paa")
+	VITEMMACRO(donut, "STR_Item_Donuts", "donut", 1, 120, 60, false, 30, "icons\donut.paa")
 	VITEMMACRO(rabbit_raw, "STR_Item_Rabbit", "rabbitRaw", 2, -1, 65, false, -1, "icons\food.paa")
-	VITEMMACRO(rabbit_grilled, "STR_Item_RabbitGrilled", "rabbitGrilled", 1, 150, 150, false, 30, "icons\ico_cookedMeat.paa")
+	VITEMMACRO(rabbit_grilled, "STR_Item_RabbitGrilled", "rabbitGrilled", 1, 150, 115, false, 20, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(salema_raw, "STR_Item_Salema", "salemaRaw", 2, -1, 45, false, -1, "icons\food.paa")
 	VITEMMACRO(salema_grilled, "STR_Item_SalemaGrilled", "salemaGrilled", 1, 75, 55, false, 30, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(ornate_raw, "STR_Item_OrnateMeat", "ornateRaw", 2, -1, 40, false, -1, "icons\food.paa")
@@ -284,19 +283,19 @@ class VirtualItems {
 	VITEMMACRO(mackerel_raw, "STR_Item_MackerelMeat", "mackerelRaw", 4, -1, 175, false, -1, "icons\food.paa")
 	VITEMMACRO(mackerel_grilled, "STR_Item_MackerelGrilled", "mackerelGrilled", 2, 250, 200, false, 30, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(tuna_raw, "STR_Item_TunaMeat", "tunaRaw", 6, -1, 700, false, -1, "icons\food.paa")
-	VITEMMACRO(tuna_grilled, "STR_Item_TunaGrilled", "tunaGrilled", 3, 1250, 1000, false, 60, "icons\ico_cookedMeat.paa")
+	VITEMMACRO(tuna_grilled, "STR_Item_TunaGrilled", "tunaGrilled", 3, 1250, 1000, false, 100, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(mullet_raw, "STR_Item_MulletMeat", "mulletRaw", 4, -1, 250, false, -1, "icons\food.paa")
 	VITEMMACRO(mullet_fried, "STR_Item_MulletFried", "mulletFried", 2, 600, 400, false, 80, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(catshark_raw, "STR_Item_CatSharkMeat", "catsharkRaw", 6, -1, 300, false, -1, "icons\food.paa")
-	VITEMMACRO(catshark_fried, "STR_Item_CatSharkFried", "catsharkFried", 3, 750, 500, false, 80, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(turtle_raw, "STR_Item_TurtleMeat", "turtleRaw", 6, 4000, 3000, true, -1, "icons\food.paa")
-	VITEMMACRO(turtle_soup, "STR_Item_TurtleSoup", "turtleSoup", 2, 2500, 1000, false, 80, "icons\ico_cookedMeat.paa")
+	VITEMMACRO(catshark_fried, "STR_Item_CatSharkFried", "catsharkFried", 3, 750, 500, false, 100, "icons\ico_cookedMeat.paa")
+	VITEMMACRO(turtle_raw, "STR_Item_TurtleMeat", "turtleRaw", 6, 4000, 3000, true, -1, "icons\turtle.paa")
+	VITEMMACRO(turtle_soup, "STR_Item_TurtleSoup", "turtleSoup", 2, 2500, 1000, false, 100, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(hen_raw, "STR_Item_HenRaw", "henRaw", 1, -1, 35, false, -1, "icons\food.paa")
 	VITEMMACRO(hen_fried, "STR_Item_HenFried", "henFried", 1, 115, 85, false, 65, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(rooster_raw, "STR_Item_RoosterRaw", "roosterRaw", 1, -1, 35, false, -1, "icons\food.paa")
 	VITEMMACRO(rooster_grilled, "STR_Item_RoosterGrilled", "roosterGrilled", 115, 85, false, 45, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(sheep_raw, "STR_Item_SheepRaw", "sheepRaw", 2, -1, 50, false, -1, "icons\food.paa")
-	VITEMMACRO(sheep_grilled, "STR_Item_SheepGrilled", "sheepGrilled", 2, 155, 115, false, 90, "icons\ico_cookedMeat.paa")
+	VITEMMACRO(sheep_grilled, "STR_Item_SheepGrilled", "sheepGrilled", 2, 155, 115, false, 100, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(goat_raw, "STR_Item_GoatRaw", "goatRaw", 2, -1, 75, false, -1, "icons\food.paa")
 	VITEMMACRO(goat_grilled, "STR_Item_GoatGrilled", "goatGrilled", 2, 175, 135, false, 100, "icons\ico_cookedMeat.paa")
 };
@@ -331,29 +330,22 @@ class Licenses {
 	LICENSEMACRO(cement,"STR_License_Cement","cement",6500,false,"civ")
 	LICENSEMACRO(mAir,"STR_License_Pilot","mAir",15000,false,"med")
 	LICENSEMACRO(home,"STR_License_Home","home",75000,false,"civ")
-	LICENSEMACRO(swat,"STR_License_Swat","swat",100000000,false,"cop")
-	LICENSEMACRO(dea,"STR_License_Dea","dea",100000000,false,"cop")
-	LICENSEMACRO(stiller,"STR_License_Stiller","bar",150000,false,"civ")
-	LICENSEMACRO(liquor,"STR_License_Liquor","bar",150000,false,"civ")
-	LICENSEMACRO(bottler,"STR_License_Bottler","bar",150000,false,"civ")
-	LICENSEMACRO(channel7,"STR_License_Channel7","home",10000000,false,"civ")
-	
 };
 
 class VirtualShops {
 	class market {
 		name = "STR_Shops_Market";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig" };
+		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig", "scratchcard" };
 	};
 
 	class rebel {
 		name = "STR_Shops_Rebel";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "scratchcard" };
 	};
 
 	class gang {
 		name = "STR_Shops_Gang";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "scratchcard" };
 	};
 
 	class wongs {
@@ -415,6 +407,10 @@ class VirtualShops {
 		name = "STR_Shops_Gold";
 		items[] = { "goldbar" };
 	};
+	class organ {
+		name = "STR_Shops_Organ";
+		items[]  = {"kidney","surgeryknife"};
+	}
 };
 
 #include "Config_Vehicles.hpp"

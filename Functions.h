@@ -28,7 +28,14 @@ class Life_Client_Core
 		class welcomeNotification {};
 		class survival {};
 	};
-	
+		class economy
+	{
+		file = "core\economy";
+		class virt_updatePrice {};
+		class addsubstract {};
+		class openEconomy {};
+		class virt_updateEconomy {};
+	};
 	class Admin
 	{
 		file = "core\admin";
@@ -101,6 +108,7 @@ class Life_Client_Core
 		class gather {};
 		class gutAnimal {};
 		class surrender {};
+		class takeOrgans {};
 	};
 	
 	class Housing
@@ -235,6 +243,7 @@ class Life_Client_Core
 		class demoChargeTimer {};
 		class civLoadout {};
 		class handleDowned {};
+		class hasOrgan {};
 	};
 	
 	class Vehicle

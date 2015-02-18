@@ -3330,26 +3330,12 @@
 			<Italian>Lingotto d'Oro</Italian>
 			<Portuguese>Barra de Ouro</Portuguese>
 		</Key>
-		<Key ID="STR_Item_GoldBarp">
-			<Original>Gold Scrap</Original>
-			<German>Gold Scrap</German>
-			<French>Gold Scrap</French>
-			<Italian>Gold Scrap</Italian>
-			<Portuguese>Gold Scrap</Portuguese>
-		</Key>
 		<Key ID="STR_Item_BCharge">
 			<Original>Blasting Charge</Original>
 			<German>Sprengladung</German>
 			<French>Charge de dynamite</French>
 			<Italian>Carica Esplosiva</Italian>
 			<Portuguese>Explosivo</Portuguese>
-		</Key>
-		<Key ID="STR_Item_BChargewater">
-			<Original>Water Charge</Original>
-			<German>Water Charge</German>
-			<French>Water Charge</French>
-			<Italian>Water Charge</Italian>
-			<Portuguese>Water Charge</Portuguese>
 		</Key>
 		<Key ID="STR_Item_BCutter">
 			<Original>Bolt Cutter</Original>
@@ -3379,33 +3365,44 @@
 			<Italian>Contenitore grande</Italian>
 			<Portuguese>Caixa Grande</Portuguese>
 		</Key>
+		<Key ID="STR_Item_CocaineU">
+			<Original>Unprocessed Cocaine</Original>
+			<German>Unverarbeitetes Kokain</German>
+			<French>Feuille de Coca</French>
+			<Italian>Cocaina non processata</Italian>
+			<Portuguese>Cocaína não Refinada</Portuguese>
+		</Key>
+		<Key ID="STR_Item_CocaineP">
+			<Original>Processed Cocaine</Original>
+			<German>Verarbeitetes Kokain</German>
+			<French>Cocaine</French>
+			<Italian>Cocaina processata</Italian>
+			<Portuguese>Cocaína Refinada</Portuguese>
+		</Key>
+		<Key ID="STR_Item_SpikeStrip">
+			<Original>Spike Strip</Original>
+			<German>Nagelband</German>
+			<French>Herse</French>
+			<Italian>Striscia Chiodata</Italian>
+			<Portuguese>Spike Strip</Portuguese>
+		</Key>
 		<Key ID="STR_Item_Kidney">
-			<Original>Kidney</Original>
-			<German>Kidney</German>
-			<French>Kidney</French>
-			<Italian>Kidney</Italian>
-			<Portuguese>Kidney</Portuguese>
+			<Original>Human Kidney</Original>
 		</Key>
 		<Key ID="STR_Item_SurgeryKnife">
-			<Original>SurgeryKnife</Original>
-			<German>SurgeryKnife</German>
-			<French>SurgeryKnife</French>
-			<Italian>SurgeryKnife</Italian>
-			<Portuguese>SurgeryKnife</Portuguese>
+			<Original>Surgery Knife</Original>
 		</Key>
 		<Key ID="STR_Item_Zipties">
 			<Original>Zipties</Original>
-			<German>Zipties</German>
-			<French>Zipties</French>
-			<Italian>Zipties</Italian>
-			<Portuguese>Zipties</Portuguese>
-		</Key>
-		<Key ID="STR_Item_Scratchcard">
+		</Key>		
+		<Key ID="STR_Item_scratchcard">
 			<Original>Scratchcard</Original>
-			<German>Scratchcard</German>
-			<French>Scratchcarde</French>
-			<Italian>Scratchcard</Italian>
-			<Portuguese>Scratchcard</Portuguese>
+		</Key>
+		<Key ID="STR_Item_TurtleMeat">
+			<Original>Turtle Meat</Original>
+		</Key>
+		<Key ID="STR_Item_GoldScrap">
+			<Original>Gold Scrap</Original>
 		</Key>
 		<Key ID="STR_Item_Cornmeal">
 			<Original>Cornmeal</Original>
@@ -3477,13 +3474,6 @@
 			<Italian>BottledWhiskey</Italian>
 			<Portuguese>BottledWhiskey</Portuguese>
 		</Key>
-		<Key ID="STR_Item_">
-			<Original>Large Storage Box</Original>
-			<German>Große Lagerbox</German>
-			<French>Grand Conteneur de stockage</French>
-			<Italian>Contenitore grande</Italian>
-			<Portuguese>Caixa Grande</Portuguese>
-		</Key>
 		<Key ID="STR_Item_Moonshine">
 			<Original>Moonshine</Original>
 			<German>Moonshine</German>
@@ -3505,26 +3495,12 @@
 			<Italian>Monster</Italian>
 			<Portuguese>Monster</Portuguese>
 		</Key>
-		<Key ID="STR_Item_CocaineU">
-			<Original>Unprocessed Cocaine</Original>
-			<German>Unverarbeitetes Kokain</German>
-			<French>Feuille de Coca</French>
-			<Italian>Cocaina non processata</Italian>
-			<Portuguese>Cocaína não Refinada</Portuguese>
-		</Key>
-		<Key ID="STR_Item_CocaineP">
-			<Original>Processed Cocaine</Original>
-			<German>Verarbeitetes Kokain</German>
-			<French>Cocaine</French>
-			<Italian>Cocaina processata</Italian>
-			<Portuguese>Cocaína Refinada</Portuguese>
-		</Key>
-		<Key ID="STR_Item_SpikeStrip">
-			<Original>Spike Strip</Original>
-			<German>Nagelband</German>
-			<French>Herse</French>
-			<Italian>Striscia Chiodata</Italian>
-			<Portuguese>Spike Strip</Portuguese>
+		<Key ID="STR_Item_BChargewater">
+			<Original>Water Charge</Original>
+			<German>Water Charge</German>
+			<French>Water Charge</French>
+			<Italian>Water Charge</Italian>
+			<Portuguese>Water Charge</Portuguese>
 		</Key>
 	</Package>
 	<Package name="Life_License">
@@ -5143,6 +5119,7 @@
 			<Italian>Attempted Organ Theft</Italian>		
 			<Portuguese>Attempted Organ Theft</Portuguese>
 		</Key>
+		
 		<Key ID="STR_Crime_1">
 			<Original>Driving without Lights</Original>
 			<German>Driving without Lights</German>

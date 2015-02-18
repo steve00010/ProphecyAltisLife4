@@ -22,8 +22,15 @@ ctrlSetText[2403,localize (M_CONFIG(getText,"VirtualShops",life_shop_type,"name"
 _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 
 {
+
+	_index = [_x,FETCH_CONST(buy_array)] call TON_fnc_index;
+	if(_index >0 ) then {
+		_price = SEL(SEL(FETCH_CONST(buy_array),_index),1);
+	}else {
+		_price = M_CONFIG(getNumber,"VirtualItems",_x,"buyPrice");	
+	};
 	_displayName = M_CONFIG(getText,"VirtualItems",_x,"displayName");
-	_price = M_CONFIG(getNumber,"VirtualItems",_x,"buyPrice");
+	
 	if(!(EQUAL(_price,-1))) then {
 		_item_list lbAdd format["%1  ($%2)",(localize _displayName),[_price] call life_fnc_numberText];
 		_item_list lbSetData [(lbSize _item_list)-1,_x];
@@ -33,6 +40,7 @@ _shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 			_item_list lbSetPicture [(lbSize _item_list)-1,_icon];
 		};
 	};
+
 } foreach _shopItems;
 
 {

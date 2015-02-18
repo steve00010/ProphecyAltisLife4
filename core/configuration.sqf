@@ -72,7 +72,8 @@ life_drug_withdrawl = false;
 life_addiction = [0,0,0];
 life_cocaine_effect = false;
 
-
+buy_array=[];
+sell_array=[];
 
 switch (playerSide) do {
 	case west: {

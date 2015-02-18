@@ -97,6 +97,9 @@ life_hunger = 100;
 life_thirst = 100;
 life_carryWeight = 0;
 CASH = 0;
+_unit setVariable["missingOrgan",FALSE,TRUE]; //I DONT KNOW WHY SOMETIMES THEY ARE CAPS or not
+_unit setVariable["hasOrgan",FALSE,TRUE]; 
+
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] call life_fnc_MP;
