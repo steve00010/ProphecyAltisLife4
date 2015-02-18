@@ -1,6 +1,6 @@
 class SpyGlass {
-	civSlotNumber = 75;
-	copSlotNumber = 19;
+	civSlotNumber = 72;
+	copSlotNumber = 24;
 	medSlotNumber = 4;
 	
 	/* 
