@@ -3401,9 +3401,6 @@
 		<Key ID="STR_Item_TurtleMeat">
 			<Original>Turtle Meat</Original>
 		</Key>
-		<Key ID="STR_Item_GoldScrap">
-			<Original>Gold Scrap</Original>
-		</Key>
 		<Key ID="STR_Item_Cornmeal">
 			<Original>Cornmeal</Original>
 			<German>Cornmeal</German>
@@ -3643,13 +3640,6 @@
 			<French>Droit de Propriété</French>
 			<Italian>Licenza possesso Casa</Italian>
 			<Portuguese>Licença de Casas</Portuguese>
-		</Key>
-		<Key ID="STR_License_Swat">
-			<Original>Swat License</Original>
-			<German>Swat License</German>
-			<French>Swat License</French>
-			<Italian>Swat License</Italian>
-			<Portuguese>Swat License</Portuguese>
 		</Key>
 		<Key ID="STR_License_Dea">
 			<Original>DEA License</Original>

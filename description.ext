@@ -1,6 +1,6 @@
-author = "Tonic";
-onLoadName = "Altis Life RPG v4.0";
-onLoadMission = "An RPG game mode developed by Tonic";
+author = "Tonic, Prophecy";
+onLoadName = "Altis Life RPG v4.1";
+onLoadMission = "An RPG game mode developed by Tonic and expanded by Prophecy Gaming";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -15,7 +15,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 75;
+	maxPlayers = 100;
 };
 
 wreckLimit = 3;
