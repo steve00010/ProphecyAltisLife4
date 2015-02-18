@@ -29,7 +29,10 @@ class Clothing {
 			{ "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
 			{ "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
 			{ "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
-			{ "U_NikosAgedBody", "Casual Wears", 5000, { "", "", -1 } }
+			{ "U_NikosBody", "Casual Wears", 5000, { "", "", -1 } }
+			{ "U_I_Protagonist_VR", "Green VR Suit", 20000, { "", "", -1 } },
+			{ "U_O_Protagonist_VR", "Red VR Suit", 20000, { "", "", -1 } },
+			{ "U_B_Protagonist_VR", "Blue VR Suit", 20000, { "", "", -1 } }
 		};
 
 		headgear[] = {
@@ -76,6 +79,7 @@ class Clothing {
 
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } }
+			{ "V_Rangemaster_belt", "RangeMaster Belt", 4000, { "", "", -1 } },
 		};
 
 		backpacks[] = {
@@ -99,9 +103,10 @@ class Clothing {
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
+			{ "U_B_Wetsuit", "WetSuit", 25, { "", "", -1 } },
 			{ "U_B_CombatUniform_mcam_worn", "Senior Uniform", 550, { "life_coplevel", "SCALAR", 3 } },
 			{ "U_B_HeliPilotCoveralls", "Pilot Uniform", 550, { "life_coplevel", "SCALAR", 2 } },
-			{ "U_B_CTRG_1", "Swat Uniform", 550, { "life_coplevel", "SCALAR", 2 } },
+			{ "U_B_CTRG_1", "Swat Uniform", 550, { "life_swatlevel", "SCALAR", 1 } },
 			{ "U_B_GhillieSuit", "Ghillie Swat", 550, { "life_swatLevel", "SCALAR", 2 } },
 			{ "U_B_CTRG_3", "DEA Uniform", 550, { "life_coplevel", "SCALAR", 1 } }
 		};
@@ -113,8 +118,9 @@ class Clothing {
 			{ "H_HelmetB_plain_blk", "Combat Helmet", 100, { "life_coplevel", "SCALAR", 2 } },
 			{ "H_Cap_blk", "Cap", 100, { "life_coplevel", "SCALAR", 2 } },
 			{ "H_PilotHelmetHeli_B", "Pilot Helmet", 100, { "life_coplevel", "SCALAR", 2 } },
-			{ "H_Beret_blk_POLICE", "Police Beret", 100, { "life_coplevel", "SCALAR", 3 } },
-			{ "H_Watchcap_bl", "Police Beanie", 100, { "life_coplevel", "SCALAR", 3 } }
+			{ "H_Beret_blk_POLICE", "Police Beret", 100, { "life_coplevel", "SCALAR", 4 } },
+			{ "H_Watchcap_bl", "Police Beanie", 100, { "life_coplevel", "SCALAR", 4 } }
+			
 		};
 
 		goggles[] = {
