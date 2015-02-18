@@ -17,7 +17,7 @@ _ind = [_className,(call life_garage_sell)] call TON_fnc_index;
 _price = ((call life_garage_sell) select _ind) select 1;
 _price = round (_price / 4);
 
-if (pbh_life_cash_life_cash < _price) exitWith { hint "You do not have the cash required!"};
+if (life_cash < _price) exitWith { hint "You do not have the cash required!"};
 
 
 _nearVehicles = nearestObjects[getPos (player),["Car","Air","Truck"],25]; //Fetch vehicles within 30m.

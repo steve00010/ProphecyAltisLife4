@@ -40,7 +40,7 @@ switch (_type) do
 };
 _winAmount = 0;
 
-if(pbh_life_cash_life_cash >= _cost) then
+if(life_cash >= _cost) then
 {
 	//Setup our background
 	disableSerialization;
@@ -92,7 +92,7 @@ if(pbh_life_cash_life_cash >= _cost) then
 	};
 	if(player distance _source > 3.5) exitWith {hint "You need to stay within 3.5m to play."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	
-	pbh_life_cash_life_cash = pbh_life_cash_life_cash - _cost;
+	life_cash = life_cash - _cost;
 	
 	//At the moment results are calculated by the combination of the 3 end positions of the rolls
 	_winAmount = [_idxA,_idxB,_idxC,_type] call life_fnc_slotMachineRewards; 
@@ -100,7 +100,7 @@ if(pbh_life_cash_life_cash >= _cost) then
 	//now see if we won
 	if(_winAmount > 0) then
 	{
-		pbh_life_cash_life_cash = pbh_life_cash_life_cash + _winAmount;
+		life_cash = life_cash + _winAmount;
 		if(_winAmount >= 100000) then
 		{
 			//5 cutText ["","PLAIN"];
@@ -149,7 +149,7 @@ if(pbh_life_cash_life_cash >= _cost) then
 }
 else
 {
-	if(pbh_life_cash_life_cash < _cost) exitWith {hint (format["You need $%1 to play this machine.",_cost]); 
+	if(life_cash < _cost) exitWith {hint (format["You need $%1 to play this machine.",_cost]); 
 	//5 cutText ["","PLAIN"]; 
 	life_is_processing = false;};
 };
