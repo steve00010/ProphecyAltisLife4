@@ -40,6 +40,17 @@ switch (_mode) do
 			case "cement": {_var = "license_civ_cement"};
 			case "mair": {_var = "license_med_air"};
 			case "home": {_var = "license_civ_home"};
+			case "liquor": {_var = "license_civ_liquor"};
+			case "beer": {_var = "license_civ_liquor"};
+			case "stiller": {_var = "license_civ_stiller"};
+			case "whiskey": {_var = "license_civ_stiller"};
+			case "moonshine": {_var = "license_civ_stiller"};
+			case "mash": {_var = "license_civ_stiller"};
+			case "bottledshine": {_var = "license_civ_bottler"};
+			case "bottledbeer": {_var = "license_civ_bottler"};
+			case "bottledwhiskey": {_var = "license_civ_bottler"};
+			case "bottler": {_var = "license_civ_bottler"};
+			case "glassbottle": {_var = "license_civ_bottler"};
 			default {_var = ""};
 		};
 	};
@@ -54,6 +65,7 @@ switch (_mode) do
 			case "license_civ_gun": {_var = "gun"}; //Firearm/gun license cost
 			case "license_civ_dive": {_var = "dive"}; //Diving license cost
 			case "license_civ_oil": {_var = "oil"}; //Oil processing license cost
+			case "license_cop_dea": {_var = "dea" };
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
 			case "license_cop_swat": {_var = "swat"}; //Swat License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
@@ -72,6 +84,7 @@ switch (_mode) do
 			case "license_civ_cement": {_var = "cement"};
 			case "license_med_air": {_var = "mair"};
 			case "license_civ_home": {_var = "home"};
+			case "license_civ_channelseven": {_var = "channelseven" };
 			default {_var = ""};
 		};
 	};
