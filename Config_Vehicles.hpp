@@ -12,7 +12,7 @@ class CarShops {
 			{ "C_Hatchback_01_F", 6500, "driver" }, 
 			{ "C_Offroad_01_F", 7500, "driver" },
 			{ "C_SUV_01_F", 10000, "driver" },
-			{ "C_Hatchback_01_sport_F", 30000, "driver", { "life_donator", 2 }}
+			{ "C_Hatchback_01_sport_F", 30000, "driver", { "life_donator", 2 }},
 			{ "C_Van_01_transport_F", 25000, "driver" }
 		};
 	};
