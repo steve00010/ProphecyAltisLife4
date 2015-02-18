@@ -3401,6 +3401,12 @@
 		<Key ID="STR_Item_TurtleMeat">
 			<Original>Turtle Meat</Original>
 		</Key>
+		<Key ID="STR_Item_UCharge">
+			<Original>Underwater Charge</Original>
+		</Key>
+		<Key ID="STR_Item_GoldBarp">
+			<Original>Gold Scrap</Original>
+		</Key>
 		<Key ID="STR_Item_Cornmeal">
 			<Original>Cornmeal</Original>
 			<German>Cornmeal</German>
@@ -3450,7 +3456,7 @@
 			<Italian>Bottles</Italian>
 			<Portuguese>Bottles</Portuguese>
 		</Key>
-		<Key ID="STR_Item_Bottledshine">
+		<Key ID="STR_Item_Bottleshine">
 			<Original>Bottledshine</Original>
 			<German>Bottledshine</German>
 			<French>Bottledshine</French>
@@ -5201,12 +5207,7 @@
 			<Original>NOTRUFE | Abuse führt zum BAN!</Original>
 			<English>Warning | Abuse leads to a BAN!</English>
 		</Key>
-		<Key ID="STR_Item_UCharge">
-			<Original>Underwater Charge</Original>
-		</Key>
-		<Key ID="STR_Item_GoldScrap">
-			<Original>Gold Scrap</Original>
-		</Key>
+
 		<Key ID="STR_pInAct_RevokeLicense">
 			<Orignal>Revoke Licenses</Orignal>
 		</Key>
