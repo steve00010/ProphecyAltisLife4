@@ -10,6 +10,7 @@ class Socket_Reciever
 		class updateRequest {};
 		class syncData {};
 		class updatePartial {};
+		class moneyCheck {};
 	};
 };
 
@@ -109,6 +110,10 @@ class Life_Client_Core
 		class gutAnimal {};
 		class surrender {};
 		class takeOrgans {};
+		class surrender {};
+		class robShops {};
+		class relinquishLicense {};
+		class processCasinoSlots {};
 	};
 	
 	class Housing
@@ -137,6 +142,8 @@ class Life_Client_Core
 		class vehicleAnimate {};
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
+		class seizeCfg {};
+		class itemIcon {};
 	};
 
 	class Player_Menu
@@ -164,11 +171,17 @@ class Life_Client_Core
 		class s_onChar {};
 		class s_onCheckedChange {};
 		class smartphone {};
+		class newMsg {};
+		class showMsg {};
+		class deleteMsg {};
+		class p_prisonbreak {};
+		class revokeLicense {};
 	};
 	
 	class Functions
 	{
 		file = "core\functions";
+		class autoSave {};
 		class calWeightDiff {};
 		class fetchCfgDetails {};
 		class handleInv {};
@@ -215,6 +228,10 @@ class Life_Client_Core
 		class customUniforms {};
 		class autoSave {};
 		class isDonarVehicle {};
+		class emptyFuel {};
+		class slotMachineRewards {};
+		class slotMachineRandomizer{};
+		class updateCash {};
 	};
 	
 	class Network
@@ -245,7 +262,10 @@ class Life_Client_Core
 		class demoChargeTimer {};
 		class civLoadout {};
 		class handleDowned {};
+		class freezePlayer {};
+		class waterChargeTimer {};
 		class hasOrgan {};
+		class civInteractionMenu {};
 	};
 	
 	class Vehicle
@@ -278,6 +298,7 @@ class Life_Client_Core
 		class ticketPay {};
 		class ticketPrompt {};
 		class copSiren {};
+		class copSiren2 {};
 		class spikeStripEffect {};
 		class radar {};
 		class questionDealer {};
@@ -291,6 +312,11 @@ class Life_Client_Core
 		class copLoadout {};
 		class ticketPaid {};
 		class wantedGrab {};
+		class seizeObjects {};                  
+		class seizePlayerWeapon {};           
+		class seizePlayerWeaponAction {};
+		class copOpener {};
+		class breathalyzer {};
 	};
 	
 	class Gangs
@@ -308,6 +334,7 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
+		class gangMarkers {};
 	};
 	
 	class Shops
@@ -354,7 +381,13 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class underwaterCharge {};
+		class CarAlarmSound {};
 		class scratchcard {};
+		class drinkbeer {};
+		class drinkmoonshine {};
+		class drinkwhiskey {};
+		class SlotJackpotSound {};
 	};
 	
 	class Dialog_Controls
@@ -380,9 +413,14 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
+		class gangWithdraw {};
 		class wireTransfer {};
+		class safeInvGold {};
+		class safeGold {};
+		class goldTake {};
 	};
-		class Drugs
+	
+	class Drugs
 	{
 		file = "core\drugs";
 		class weed {};
@@ -390,5 +428,22 @@ class Life_Client_Core
 		class heroin {};
 		class overdose {};
 		class drugManage {};
+	};
+		
+	class SlotMachine 
+	{
+		file = "core\casino";
+		class slotInit {};
+		class slotPlay {};
+		class slotReceive {};
+		class RaidCasino {};
+		class CasinoRaidSuccess {};
+		class InitCasinoRaid {};
+	};
+	
+	class IntroCam {
+		file="core";
+		class IntroCam {};
+
 	};
 };
