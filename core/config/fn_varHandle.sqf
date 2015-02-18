@@ -38,7 +38,7 @@ switch (_mode) do
 			case "donuts": {"life_inv_donuts"};
 			case "fuelE": {"life_inv_fuelE"};
 			case "fuelF": {"life_inv_fuelF"};
-			case "money": {"pbh_pbh_life_cash"};
+			case "money": {"pbh_life_cash_life_cash"};
 			case "pickaxe": {"life_inv_pickaxe"};
 			case "copperore": {"life_inv_copperore"};
 			case "ironore": {"life_inv_ironore"};
@@ -113,7 +113,7 @@ switch (_mode) do
 			case "life_inv_donuts": {"donuts"};
 			case "life_inv_fuelE": {"fuelE"};
 			case "life_inv_fuelF": {"fuelF"};
-			case "pbh_pbh_life_cash": {"money"};
+			case "pbh_life_cash_life_cash": {"money"};
 			case "life_inv_pickaxe": {"pickaxe"};
 			case "life_inv_copperore": {"copperore"};
 			case "life_inv_ironore": {"ironore"};
