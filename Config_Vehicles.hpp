@@ -199,6 +199,7 @@ class CfgVehicles {
 			{ "Police", "cop", {
                 "textures\vehicles\ghosthawk_01.paa","cop","textures\vehicles\ghosthawk_02.paa"
 			} }
+		};
 	};
 
 	class B_MRAP_01_hmg_F : Default {
@@ -623,7 +624,7 @@ class CfgVehicles {
 			{ "Taxi", "civ", {
                 "textures\vehicles\suv_taxi.paa"
             } }
-	        };
+	    };
     };
 
 	class C_Van_01_transport_F {
