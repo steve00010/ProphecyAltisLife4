@@ -51617,7 +51617,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=405;
+		items=407;
 		class Item0
 		{
 			position[]={8316.7881,80.619583,25059.641};
@@ -54917,6 +54917,24 @@ class Mission
 			type="c_unknown";
 			colorName="ColorGreen";
 			angle=360.61313;
+		};
+		class Item405
+		{
+			position[]={6356.0439,146.18633,18058.377};
+			name="hunting_zone";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWhite";
+			a=1000;
+			b=1000;
+		};
+		class Item406
+		{
+			position[]={6203.0679,164.18927,18091.307};
+			name="hunting_marker";
+			text="Hunting Grounds";
+			type="mil_join";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
