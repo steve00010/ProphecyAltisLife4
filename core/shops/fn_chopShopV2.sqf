@@ -42,7 +42,7 @@ else
 	{
 		hint "Claiming vehicle please wait....";
 		life_action_inUse = true;
-		_price2 = pbh_life_cash - _price;
+		_price2 =life_cash - _price;
 		[[player,_vehicle,_price,_price2],"TON_fnc_chopShopClaim",false,false] spawn life_fnc_MP;
 		closeDialog 0;
 	}
