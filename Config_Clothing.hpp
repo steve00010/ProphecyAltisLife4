@@ -29,7 +29,7 @@ class Clothing {
 			{ "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
 			{ "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
 			{ "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
-			{ "U_NikosBody", "Casual Wears", 5000, { "", "", -1 } }
+			{ "U_NikosBody", "Casual Wears", 5000, { "", "", -1 } },
 			{ "U_I_Protagonist_VR", "Green VR Suit", 20000, { "", "", -1 } },
 			{ "U_O_Protagonist_VR", "Red VR Suit", 20000, { "", "", -1 } },
 			{ "U_B_Protagonist_VR", "Blue VR Suit", 20000, { "", "", -1 } }
@@ -78,8 +78,8 @@ class Clothing {
 		};
 
 		vests[] = {
-			{ "NONE", "Remove Vest", 0, { "", "", -1 } }
-			{ "V_Rangemaster_belt", "RangeMaster Belt", 4000, { "", "", -1 } },
+			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
+			{ "V_Rangemaster_belt", "RangeMaster Belt", 4000, { "", "", -1 } }
 		};
 
 		backpacks[] = {
@@ -234,7 +234,7 @@ class Clothing {
 
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
-			{"B_AssaultPack_cbr", "", 2500, { "", "", -1 }},
+			{"B_AssaultPack_cbr", "", 2500, { "", "", -1 } },
 			{ "B_Kitbag_mcamo", "", 4500, { "", "", -1 } },
 			{ "B_TacticalPack_oli", "", 3500, { "", "", -1 } },
 			{ "B_FieldPack_ocamo", "", 3000, { "", "", -1 } },
