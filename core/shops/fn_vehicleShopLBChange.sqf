@@ -57,7 +57,7 @@ for "_i" from 0 to count(_colorArray)-1 do
 		};
 	};
 };
-} foreach _colorArray;
+
 
 if(_className in (LIFE_SETTINGS(getArray,"vehicleShop_rentalOnly"))) then {
 	ctrlEnable [2309,false];
