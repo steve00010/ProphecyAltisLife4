@@ -91,7 +91,6 @@ class Life_my_smartphone {
 		{
 			idc = 88882;
 			onLBSelChanged = "[(lbCurSel 88882)] call life_fnc_showMsg;";
-			//sizeEx = 0.04;
 			sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 			colorBackground[] = {0, 0, 0, 0.0};
 			columns[] = {0,0.3};
