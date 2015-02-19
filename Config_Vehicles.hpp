@@ -427,10 +427,10 @@ class CfgVehicles {
             } },
 			{ "Dea", "cop", {
                 "textures\vehicles\offroad_dea.paa"
-            } },
+            },{"life_coplevel",5}},
 			{ "Swat", "cop", {
                 "textures\vehicles\offroad_swat.paa"
-            } }
+            },{"life_swatlevel",1} }
 	    };
     };
 
@@ -680,12 +680,22 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "Regular", "cop", {
-                "\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa"
+        	{ "Police", "cop", {
+                "textures\vehicles\cop_hunter_body.paa",
+				"textures\vehicles\cop_hunter_back.jpg"
             } },
-            { "Black", "fed", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
+            { "Rebel", "civ", {
+                "\a3\soft_f\MRAP_01\data\mrap_01_base_co.paa",
+				"\a3\soft_f\MRAP_01\data\mrap_01_adds_co.paa"
+            } },
+			{ "DEA", "cop", {
+                "textures\vehicles\deahunterbody.paa",
+				"textures\vehicles\cop_hunter_back.jpg"				
+            },{"life_coplevel",4} },
+			{ "SWAT", "cop", {
+                "textures\vehicles\swathunterbody.paa",
+				"textures\vehicles\cop_hunter_back.jpg"
+            },{"life_swatlevel",1} }
         };
     };
 

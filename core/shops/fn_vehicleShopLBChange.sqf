@@ -44,18 +44,21 @@ _vehicleInfo select 9
 
 _ctrl = CONTROL(2300,2304);
 lbClear _ctrl;
-_colorArray = [_className] call life_fnc_vehicleShopColorCfg;
-
+_colorArray = M_CONFIG(getArray,CONFIG_VEHICLES,_className,"textures");
 
 {
 	_flag = SEL(_x,1);
 	_textureName = SEL(_x,0);
+	_levelData = SEL(_x,3);
+	_passOver = false;
 	if(EQUAL(SEL(life_veh_shop,2),_flag)) then {
-		_ctrl lbAdd _textureName;
-		_ctrl lbSetValue [(lbSize _ctrl)-1,_forEachIndex];
+		if(!isNil "_levelData" && {_var = GVAR_MNS (SEL(_levelData,0));!(FETCH_CONST(_var) >= (SEL(_levelData,1)))}) then {_passOver = true;};
+		if(!_passOver) then {
+			_ctrl lbAdd _textureName;
+			_ctrl lbSetValue [(lbSize _ctrl)-1,_forEachIndex];
+		};
 	};
-}forEach _colorArray;
-
+} foreach _colorArray;
 
 if(_className in (LIFE_SETTINGS(getArray,"vehicleShop_rentalOnly"))) then {
 	ctrlEnable [2309,false];
@@ -71,4 +74,5 @@ if((lbSize _ctrl)-1 != -1) then {
 } else {
 	ctrlShow[2304,false];
 };
+true;
 true;
