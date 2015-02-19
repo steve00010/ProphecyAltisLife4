@@ -28,19 +28,26 @@ if (playerSide == west) then
 	};	
 };
 
-if (playerSide == independent) then
+case independent:
 {
-	sleep 1;
-	
-	player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.paa"];
+	if(backpack _unit == "B_Carryall_mcamo") then {
+		if (_propagate) then {
+			[[_unit, "textures\uniforms\mediccarryall.paa",backpack _unit], "life_fnc_ReTexBackpack", true, true] spawn life_fnc_MP ;
+		} else {
+			[_unit, "textures\uniforms\mediccarryall.paa",backpack _unit] call life_fnc_ReTexBackpack;	
+		};
+	};
 
-	_Count = 0;
-	while {_Count < 5} do
+	switch (uniform _unit) do 
 	{
-		
-		player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.paa"];
-		_Count = _Count + 1;
-		sleep 2;
+		case "U_B_CombatUniform_mcam_worn": 
+		{
+			if (_propagate) then {
+				[[_unit, "textures\uniforms\medic_uniform.paa",uniform _unit], "life_fnc_ReTexUniform", true, true] spawn life_fnc_MP ;
+			} else {
+				[_unit, "textures\uniforms\medic_uniform.paa",uniform _unit] call life_fnc_ReTexUniform;	
+			};
+		};
 	};
 };
 
