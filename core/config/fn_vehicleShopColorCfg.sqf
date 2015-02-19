@@ -115,7 +115,7 @@ switch (_vehicle) do
 		if(license_cop_dea) then {
 			_ret pushBack ["textures\vehicles\offroad_dea.paa","cop"];
 		};
-		if(__GETC__(life_swatlevel) > 0) then {
+		if(FETCH_CONST(life_swatlevel) > 0) then {
 				if(!license_cop_dea) then {
 					_ret pushBack ["BUFFER","cop","BUFFER"];
 				};
@@ -255,7 +255,7 @@ switch (_vehicle) do
 		if(license_cop_dea) then {
 			_ret pushBack ["textures\vehicles\deahunterbody.paa","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
-		if(__GETC__(life_swatlevel) > 0) then {
+		if(FETCH_CONST(life_swatlevel) > 0) then {
 				if(!license_cop_dea) then {
 					_ret pushBack ["BUFFER","cop","BUFFER"];
 				};

@@ -10,7 +10,7 @@ _fnc_scriptName = "Player Synchronization";
 private["_exit"];
 if(isNil "life_session_time") then {life_session_time = false;};
 if(life_session_time) exitWith {hint localize "STR_Session_SyncdAlready";};
-
+[] execVM "scripts\fn_statusBar.sqf";
 switch (typeName life_fnc_MP_packet) do
 {
 	case "ARRAY":
@@ -25,8 +25,12 @@ switch (typeName life_fnc_MP_packet) do
 };
 
 if(!isNil "_exit") exitWith {hint localize "STR_Session_SyncCheater";};
-
+if(playerside == west) then {  //THIS IS WHAT I ADDED
+	[] call life_fnc_saveGear;
+};
+	
 [] call SOCK_fnc_updateRequest;
+
 hint localize "STR_Session_SyncData";
 [] spawn
 {
