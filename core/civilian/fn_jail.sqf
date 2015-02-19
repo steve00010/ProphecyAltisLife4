@@ -27,7 +27,7 @@ if(_bad) then {
 };
 
 //Check to make sure they goto check
-if(player distance (getMarkerPos "jail_marker") > 40) then {
+if(player distance (getMarkerPos "jail_marker") > 60) then {
 	player setPos (getMarkerPos "jail_marker");
 };
 
@@ -43,6 +43,14 @@ life_is_arrested = true;
 
 removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
+//Lets add jail outfits
+removeUniform player; //Add line
+removeVest player;//Add line
+removeBackpack player;//Add line
+removeHeadgear player;
+
+player addUniform "U_C_WorkerCoveralls";//Add line
+[[player,0,"textures\uniforms\prisoner_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
 [[player,_bad],"life_fnc_jailSys",false,false] call life_fnc_MP;
 [5] call SOCK_fnc_updatePartial;
