@@ -213,8 +213,8 @@ class VirtualItems {
 	VITEMMACRO(zipties, "STR_Item_Zipties", "zipties", 1, 500, 20, true, -1, "icons\zipties.paa")
 	VITEMMACRO(scratchcard, "STR_Item_ScratchCard", "scratchcard", 1, 500, 20, true, -1, "icons\scratchcard.paa")
 	VITEMMACRO(cornmeal, "STR_Item_Cornmeal", "cornmeal", 2, 100, 80,false, -1, "icons\cornmeal.paa")
-	VITEMMACRO(beerp, "STR_Item_Beerp", "beerp", 3, -1, 1000, false, -1, "")
-	VITEMMACRO(whiskey, "STR_Item_Whiskey", "whiskey", 3, -1, 1500, false, -1, "")
+	VITEMMACRO(beerp, "STR_Item_Beerp", "beerp", 3, -1, 1000, false, -1, "icons\beerp.paa")
+	VITEMMACRO(whiskey, "STR_Item_Whiskey", "whiskey", 3, -1, 1500, false, -1, "icons\whiskey.paa")
 	VITEMMACRO(rye, "STR_Item_Rye", "rye", 2, 50, 100, false, -1, "icons\rye.paa")
 	VITEMMACRO(hops, "STR_Item_Hops", "hops", 2, 50, 100, false, -1, "icons\hops.paa")
 	VITEMMACRO(yeast, "STR_Item_Yeast", "yeast", 2, 50, 100, false, -1, "icons\yeast.paa")
@@ -410,7 +410,7 @@ class VirtualShops {
 
 	class gold {
 		name = "STR_Shops_Gold";
-		items[] = { "goldbar" };
+		items[] = { "goldbar","goldbarp" };
 	};
 	class organ {
 		name = "STR_Shops_Organ";
