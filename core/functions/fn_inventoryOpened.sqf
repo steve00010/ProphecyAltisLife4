@@ -12,6 +12,7 @@ _container = SEL(_this,1);
 
 _isPack = FETCH_CONFIG2(getNumber,CONFIG_VEHICLES,typeOf _container,"isBackpack");
 if(EQUAL(_isPack,1)) exitWith {
+	playsound "bagopen";
 	hint localize "STR_MISC_Backpack";
 	true;
 };

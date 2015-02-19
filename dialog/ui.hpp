@@ -44,7 +44,7 @@ class playerHUD {
 	class LIFE_UI_BACK: Life_RscBackground
 	{
 		idc = IDD_LIFE_MAIN_DISP;
-		colorBackground[] = {0,0,0,0.5};
+		colorBackground[] = {0,0,0,0.0};
 		x = 0.925 * safezoneW + safezoneX;
 		y = 0.78 * safezoneH + safezoneY;
 		w = 0.0825 * safezoneW;
@@ -55,25 +55,25 @@ class playerHUD {
 	class LIFE_BAR_FOOD: Life_RscProgress
 	{
 		idc = IDC_LIFE_BAR_FOOD;
-		x = 0.958 * safezoneW + safezoneX;
+		x = 0.952 * safezoneW + safezoneX;
 		y = 0.787 * safezoneH + safezoneY;
-		w = 0.041875 * safezoneW;
+		w = 0.042475 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
 	class LIFE_BAR_WATER: Life_RscProgress
 	{
 		idc = IDC_LIFE_BAR_WATER;
-		x = 0.958 * safezoneW + safezoneX;
+		x = 0.952 * safezoneW + safezoneX;
 		y = 0.82 * safezoneH + safezoneY;
-		w = 0.041875 * safezoneW;
+		w = 0.042475 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
 	class LIFE_BAR_HEALTH: Life_RscProgress
 	{
 		idc = 2202;
-		x = 0.958 * safezoneW + safezoneX;
+		x = 0.952 * safezoneW + safezoneX;
 		y = 0.85 * safezoneH + safezoneY;
-		w = 0.041875 * safezoneW;
+		w = 0.042475 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
 
@@ -130,7 +130,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_PICTURE_WATER;
 		text = "icons\water.paa";
-		x = 0.93 * safezoneW + safezoneX;
+		x = 0.928 * safezoneW + safezoneX;
 		y = 0.813 * safezoneH + safezoneY;
 		w = 0.06; h = 0.06;
 	};
@@ -138,7 +138,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_PICTURE_HEALTH;
 		text = "icons\health.paa";
-		x = 0.932 * safezoneW + safezoneX;
+		x = 0.93 * safezoneW + safezoneX;
 		y = 0.85 * safezoneH + safezoneY;
 		w = 0.05; h = 0.05;
 	};
@@ -147,7 +147,7 @@ class playerHUD {
 				
 		idc = IDC_LIFE_PICTURE_CASH;
 		text = "icons\money.paa";
-		x = 0.932 * safezoneW + safezoneX;
+		x = 0.93 * safezoneW + safezoneX;
 		y = 0.887 * safezoneH + safezoneY;
 		w = 0.05; h = 0.05;
 	};

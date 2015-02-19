@@ -57,7 +57,7 @@ SUB(_units,[player]);
 					};
 				};
 			};
-			
+			if(_x getVariable ["speaking",false]) then {_text = "[Talking...] " + _text};
 			_idc ctrlSetStructuredText parseText _text;
 			_idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
 			_idc ctrlSetScale scale;
