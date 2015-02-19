@@ -668,7 +668,7 @@ class CfgVehicles {
             } },
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
-            } }
+            } },
 			{ "Ambulance", "med", {
 				"textures\vehicles\ambulanceB.paa",
 				"textures\vehicles\ambulanceF.paa"

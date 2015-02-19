@@ -42,7 +42,7 @@ class playerSettings {
 			sizeEx = 0.020;
 			text = "";
 			x = 0.105;
-			y = 0.30;
+			y = 0.0.27;
 			w = 0.3; h = 0.6;
 		};
 		
@@ -62,8 +62,10 @@ class playerSettings {
 			text = "$STR_PM_cItems";
 			sizeEx = 0.04;
 			
-			x = 0.62; y = 0.26;
-			w = 0.275; h = 0.04;
+			x = 0.62;
+			y = 0.26;
+			w = 0.275;
+			h = 0.04;
 		};
 		
 		class licenseHeader : Life_RscText
@@ -73,8 +75,10 @@ class playerSettings {
 			text = "$STR_PM_Licenses";
 			sizeEx = 0.04;
 			
-			x = 0.336; y = 0.26;
-			w = 0.275; h = 0.04;
+			x = 0.62;
+			y = 0.26;
+			w = 0.275;
+			h = 0.04;
 		};
 		
 		class moneySHeader : Life_RscText
@@ -84,8 +88,10 @@ class playerSettings {
 			text = "$STR_PM_MoneyStats";
 			sizeEx = 0.04;
 			
-			x = 0.11; y = 0.26;
-			w = 0.219; h = 0.04;
+			x = 0.11; 
+			y = 0.26;
+			w = 0.8;
+			h = 0.04;
 		};
 	
 		class itemList : life_RscListBox 
@@ -93,8 +99,10 @@ class playerSettings {
 			idc = item_list;
 			sizeEx = 0.030;
 			
-			x = 0.62; y = 0.30;
-			w = 0.275; h = 0.3;
+			x = 0.62;
+			y = 0.30;
+			w = 0.275;
+			h = 0.3;
 		};
 		
 		class moneyEdit : Life_RscEdit 
@@ -128,12 +136,12 @@ class playerSettings {
 		
 		class itemEdit : Life_RscEdit {
 		
-		idc = item_edit;
-		
-		text = "1";
-		sizeEx = 0.030;
-		x = 0.62; y = 0.61;
-		w = 0.275; h = 0.03;
+			idc = item_edit;
+			
+			text = "1";
+			sizeEx = 0.030;
+			x = 0.62; y = 0.61;
+			w = 0.275; h = 0.03;
 		
 		};
 		class iNearPlayers : Life_RscCombo
