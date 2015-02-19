@@ -47,13 +47,10 @@
 			<French>Café de Gyro</French>
 		</Key>
 		<Key ID="STR_Shops_DrugDealer">
-			<Original>Amazing Narcotics</Original>
+			<Original>Tonic's Narcotics</Original>
 			<German>Drogendealer</German>
 			<Italian>Spacciatore</Italian>
 			<French>Dealer de Drogue</French>
-		</Key>
-		<Key ID="STR_Shops_Bar">
-			<Original>The Lounge</Original>
 		</Key>
 		<Key ID="STR_Shops_Oil">
 			<Original>Oil Trader</Original>
@@ -5149,30 +5146,34 @@
 		</Key>
 		<Key ID="STR_SMARTPHONE_PLAYERLISTTITLE">
 			<Original>Playerlist</Original>
-
 		</Key>
 		<Key ID="STR_SMARTPHONE_MESSAGETITLE">
-			<Original>Nachrichten  | VON | WANN</Original>
+			<Original>Messages  | From | When</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_RANDOMTITLE">
-			<Original>Nachricht zum lesen auswählen</Original>
+			<Original>Message to read</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_SCHREIBEN">
-			<Original>Schreiben</Original>
+			<Original>Compose</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_NOTRUF">
-			<Original>Notruf</Original>
+			<Original>Emergency</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_Absenden">
-			<Original>Absenden</Original>
+			<Original>Send</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_NACHRICHTTITLE">
-			<Original>Nachricht an:</Original>
+			<Original>Message</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_Notruftitle">
-			<Original>NOTRUFE | Abuse führt zum BAN!</Original>
+			<Original>Warning | Abuse leads to a BAN!</Original>
 		</Key>
-
+		<Key ID="STR_Global_Delete">
+			<Original>Delete selected message</Original>
+		</Key>
+		
+	</Package>
+	<Package name="RevokeLicenses">
 		<Key ID="STR_pInAct_RevokeLicense">
 			<Orignal>Revoke Licenses</Orignal>
 		</Key>
