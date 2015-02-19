@@ -40,8 +40,7 @@ class CarShops {
 	class med_air_hs {
 		side = "med";
 		vehicles[] = {
-			{ "B_Heli_Light_01_F", 50000, "mAir",{ "life_mediclevel", 1 } },
-			{ "O_Heli_Light_02_unarmed_F", 75000, "mAir",{ "life_mediclevel", 2 } }
+			{ "O_Heli_Light_02_unarmed_F", 50000, "mAir",{ "life_mediclevel", 1 } }
 		};
 	};
 
@@ -670,6 +669,10 @@ class CfgVehicles {
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
             } }
+			{ "Ambulance", "med", {
+				"textures\vehicles\ambulanceB.paa",
+				"textures\vehicles\ambulanceF.paa"
+            } }
         };
     };
 	class B_MRAP_01_F {
@@ -746,9 +749,6 @@ class CfgVehicles {
             } },
 			{ "Rebel Digital", "reb", {
 	                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
-            } },
-            { "Med", "med", {
-              "textures\vehicles\heli_paramedic.paa"
             } },
 			{ "Cop", "cop", {
               "textures\vehicles\heli_police.paa"
