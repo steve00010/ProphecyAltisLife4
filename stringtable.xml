@@ -47,10 +47,13 @@
 			<French>Café de Gyro</French>
 		</Key>
 		<Key ID="STR_Shops_DrugDealer">
-			<Original>Tonic's Narcotics</Original>
+			<Original>Amazing Narcotics</Original>
 			<German>Drogendealer</German>
 			<Italian>Spacciatore</Italian>
 			<French>Dealer de Drogue</French>
+		</Key>
+		<Key ID="STR_Shops_Bar">
+			<Original>The Lounge</Original>
 		</Key>
 		<Key ID="STR_Shops_Oil">
 			<Original>Oil Trader</Original>

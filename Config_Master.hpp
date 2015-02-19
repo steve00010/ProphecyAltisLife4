@@ -365,8 +365,8 @@ class VirtualShops {
 		items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
 	};
 	class bar {
-		name="STR_Shops_DrugDealer";
-		items[] = {};
+		name="STR_Shops_Bar";
+		items[] = {"bottledbeer","bottledwhiskey","bottledshine","moonshine"};
 	};
 	class oil {
 		name = "STR_Shops_Oil";
