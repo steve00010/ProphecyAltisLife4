@@ -106,6 +106,7 @@ player setVariable["missingOrgan",false,true];//sets variables to false on start
 player setVariable["hasOrgan",false,true];
 
 [] spawn life_fnc_survival;
+[] execVM "core\welcome.sqf";
 [] execVM "scripts\earplug\earplugInit.sqf";
 [[0,player,"economy"],"TON_fnc_getprices",false,false] spawn life_fnc_MP;
 CONSTVAR(life_paycheck); //Make the paycheck static.
