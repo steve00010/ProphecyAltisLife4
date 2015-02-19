@@ -58,7 +58,7 @@ class CarShops {
 			{ "O_Truck_03_covered_F", 450000, "trucking",{ "life_donator", 2 } },
 			{ "O_Truck_01_transport_F", 450000, "trucking",{ "life_donator", 3 } },
 			{ "O_Truck_03_device_F", 1200000, "trucking",{ "life_donator", 4 } },
-			{ "B_Truck_01_covered_F", 800000, "trucking",{ "life_mdonator", 5 } }			
+			{ "B_Truck_01_covered_F", 800000, "trucking",{ "life_donator", 5 } }			
 
 		};
 	};
