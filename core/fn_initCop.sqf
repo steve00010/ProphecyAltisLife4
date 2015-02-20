@@ -17,12 +17,12 @@ if(life_blacklisted) exitWith
 };
 
 
-if(!(str(player) in [""])) then {
-	if((FETCH_CONST(life_coplevel) < 1) && (FETCH_CONST(life_adminlevel) == 0)) then {
-		["NotWhitelisted",false,true] call BIS_fnc_endMission;
-		sleep 60;
-	};
+
+if((FETCH_CONST(life_coplevel) < 1) && (FETCH_CONST(life_adminlevel) == 0)) then {
+	["NotWhitelisted",false,true] call BIS_fnc_endMission;
+	sleep 60;
 };
+
 switch (FETCH_CONST(life_coplevel)) do 
 {
 	case 1: {life_paycheck = life_paycheck + 0;}; // Rank 1
