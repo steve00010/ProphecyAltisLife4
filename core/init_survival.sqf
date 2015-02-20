@@ -52,8 +52,6 @@
 		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
 		_load = round(_cfg / 8);
 		life_maxWeight = life_maxWeightT + _load;
-		if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // <---- Backpack invisible for COPS
-        if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [0,""];}; // <----- Backpack invisible for MEDS
 		waitUntil {backpack player != _bp};
 		if(backpack player == "") then 
 		{
@@ -61,24 +59,7 @@
 		};
 	};
 };
-[] spawn  {
-	while{true} do
-	{
-		waitUntil {(player getVariable "missingOrgan")};
-		life_max_health = .50;
-		while{(player getVariable "missingOrgan")} do {
-			life_thirst =  50;
-			life_hunger =  50;
-			if(damage player < (1 - life_max_health)) then {player setDamage (1 - life_max_health);};
-			"dynamicBlur" ppEffectEnable true;
-			"dynamicBlur" ppEffectAdjust [2];
-			"dynamicBlur" ppEffectCommit 1;
-			sleep 5;
-		};
-		"dynamicBlur" ppEffectEnable false;
-		life_max_health = 1;
-	};
-};
+
 [] spawn
 {
 	while {true} do
@@ -122,5 +103,164 @@
 			};
 			_myLastPos = (getPos player select 0) + (getPos player select 1);
 		};
+	};
+};
+[] spawn
+{
+	private["_bp","_load","_cfg"];
+	while{true} do
+	{
+		waitUntil {backpack player != ""};
+		_bp = backpack player;
+		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
+		_load = round(_cfg / 4);
+		life_maxWeight = life_maxWeightT + _load;
+		if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		waitUntil {backpack player != _bp};
+		if(backpack player == "") then 
+		{
+			life_maxWeight = life_maxWeightT;
+		};
+	};
+};
+[] spawn  {
+	while{true} do
+	{
+		waitUntil {(player getVariable "missingOrgan")};
+		life_max_health = .50;
+		while{(player getVariable "missingOrgan")} do {
+			life_thirst =  50;
+			life_hunger =  50;
+			if(damage player < (1 - life_max_health)) then {player setDamage (1 - life_max_health);};
+			"dynamicBlur" ppEffectEnable true;
+			"dynamicBlur" ppEffectAdjust [2];
+			"dynamicBlur" ppEffectCommit 1;
+			sleep 5;
+		};
+		"dynamicBlur" ppEffectEnable false;
+		life_max_health = 1;
+	};
+};
+[] spawn
+{
+	waitUntil { life_session_completed };
+	while{true} do {
+		for "_i" from 0 to (count life_addiction)-1 do
+		{
+			_new = life_addiction select _i;
+			if (_new > 0) then
+			{
+				_new = _new - 0.04;
+				if (_new < 0) then { _new = 0; };
+				life_addiction set [_i, _new];
+				if (_new > 0 && (time - (life_used_drug select _i)) > 600) then
+				{
+					switch (true) do
+					{
+						case (_new > 0.4 && _new <= 0.6): { 
+							systemChat "Damn man you need to get high, you're starting to get the shakes."; 
+							resetCamShake;							
+							
+							[_i] spawn { 
+								private["_dt"];
+								_dt = _this select 0;
+								for "_j" from 0 to 55 do
+								{
+									addCamShake [random 2, 4, 1];
+									if((time - (life_used_drug select _dt)) < 600) exitWith {
+										systemChat "Ooh much better!"; 
+									};
+									"DynamicBlur" ppEffectEnable true;    
+									"DynamicBlur" ppEffectAdjust [random 2];   
+									"DynamicBlur" ppEffectCommit 1;
+									sleep 4;
+								};
+								"DynamicBlur" ppEffectEnable false;
+								resetCamShake;
+							};
+							life_drug_withdrawl = false; 
+						};
+						case (_new > 0.6 && _new <= 0.9): { 
+							systemChat "Aghh, you're reaaaallly needing a fix!"; 
+							resetCamShake;
+							
+							[_i] spawn { 
+								private["_dt"];
+								_dt = _this select 0;
+								for "_j" from 0 to 55 do
+								{
+									addCamShake [random 3, 4, 3];
+									if((time -  (life_used_drug select _dt)) < 600) exitWith {
+										systemChat "You feel all warm inside!"; 
+									};
+									"DynamicBlur" ppEffectEnable true;    
+									"DynamicBlur" ppEffectAdjust [random 3];   
+									"DynamicBlur" ppEffectCommit 1;
+									sleep 4;
+								};
+								"DynamicBlur" ppEffectEnable false;
+								resetCamShake;
+							};
+							life_drug_withdrawl = false; 
+						};
+						case (_new > 0.9):
+						{
+							systemChat "This is getting out of control, get your stuff quickly man!";
+							if (!life_drug_withdrawl) then { 
+								[_i] spawn { 
+									private["_dt"];
+									_dt = _this select 0;
+									while {life_drug_withdrawl} do { 
+										if((time -  (life_used_drug select _dt)) < 600) exitWith {systemChat "Uggghhh that's the stuff!!"; };
+										resetCamShake; 
+										addCamShake [3, 8, 3];
+										"DynamicBlur" ppEffectEnable true;    
+										"DynamicBlur" ppEffectAdjust [random 4];   
+										"DynamicBlur" ppEffectCommit 1;
+										sleep 3;
+									}; 
+								resetCamShake;
+								"DynamicBlur" ppEffectEnable false;
+
+								};
+							};
+							life_drug_withdrawl = true;
+						};
+					};
+				};
+			};
+		};
+		sleep 240;
+		life_drug_level = life_drug_level - 0.5;
+		if (life_drug_level < 0) then { life_drug_level = 0; };
+	};
+};
+[] spawn
+{
+	while {true} do
+	{
+		waitUntil {(life_drink > 0)};
+		while{(life_drink > 0)} do {
+		
+			if(life_drink > 0.08) then {
+			"radialBlur" ppEffectEnable true;
+			"radialBlur" ppEffectAdjust[0.08, 0,0.35,0.37];
+			"radialBlur" ppEffectCommit 3;
+			sleep 240;
+			life_drink = life_drink - 0.02;
+			} else {
+			"radialBlur" ppEffectEnable true;
+			"radialBlur" ppEffectAdjust[0.05, 0,0.36,0.38];
+			"radialBlur" ppEffectCommit 1;
+			sleep 180;
+			life_drink = life_drink - 0.02;
+			};
+		};
+		
+		"radialBlur" ppEffectAdjust  [0,0,0,0];
+		"radialBlur" ppEffectCommit 5;
+		"radialBlur" ppEffectEnable false;
+		life_drink = 0;
+		
 	};
 };

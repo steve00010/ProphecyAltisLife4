@@ -12,7 +12,7 @@ closeDialog 0; //Close the interaction menu.
 life_action_inUse = true; //Lock out the interaction menu for a bit..
 _weight = [_vehicle] call life_fnc_vehicleWeight;
 if((_weight select 1) >= (_weight select 0)) exitWith {hint localize "STR_NOTF_DeviceFull"; life_action_inUse = false;};
-_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","lead_1","iron_1","salt_1","sand_1","diamond_1","oil_1","oil_2","rock_1"];
+_resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","lead_1","iron_1","salt_1","sand_1","diamond_1","oil_1","oil_2","rock_1","rye_1","hops_1","yeast_1"];
 _zone = "";
 
 //Find out what zone we're near
@@ -39,12 +39,15 @@ _item = switch(true) do {
 	case (_zone in ["diamond_1"]): {"diamond"};
 	case (_zone in ["oil_1","oil_2"]): {"oilu"};
 	case (_zone in ["rock_1"]): {"rock"};
+	case (_zone in ["rye_1"]): {"rye"};
+	case (_zone in ["yeast_1"]): {"yeast"};
+	case (_zone in ["hops_1"]): {"hops"}; 
 	default {""};
 };
 
 if(_item == "") exitWith {hint "Bad Resource?"; life_action_inUse = false;};
 _vehicle setVariable ["mining",true,true]; //Lock the device
-[_vehicle,"life_fnc_soundDevice",true,false] call life_fnc_MP; //Broadcast the 'mining' sound of the device for nearby units.
+[_vehicle,"life_fnc_soundDevice",true,false] spawn life_fnc_MP; //Broadcast the 'mining' sound of the device for nearby units.
 
 life_action_inUse = false; //Unlock it since it's going to do it's own thing...
 
@@ -83,7 +86,7 @@ while {true} do {
 	if(local _vehicle) then {
 		_vehicle setFuel (fuel _vehicle)-0.045;
 	} else {
-		[[_vehicle,(fuel _vehicle)-0.04],"life_fnc_setFuel",_vehicle,false] call life_fnc_MP;
+		[[_vehicle,(fuel _vehicle)-0.04],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
 	};
 	
 	if(fuel _vehicle == 0) exitWith {titleText[localize "STR_NOTF_OutOfFuel","PLAIN"];};
