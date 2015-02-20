@@ -55,25 +55,28 @@ class playerHUD {
 	class LIFE_BAR_FOOD: Life_RscProgress
 	{
 		idc = IDC_LIFE_BAR_FOOD;
-		x = 0.952 * safezoneW + safezoneX;
-		y = 0.787 * safezoneH + safezoneY;
-		w = 0.042475 * safezoneW;
+		colorBackground[] = {0.153,0.682,0.376,1};
+		x = 0.947 * safezoneW + safezoneX;
+		y = 0.785 * safezoneH + safezoneY;
+		w = 0.0515 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
 	class LIFE_BAR_WATER: Life_RscProgress
 	{
 		idc = IDC_LIFE_BAR_WATER;
-		x = 0.952 * safezoneW + safezoneX;
+		colorBackground[] = {0.153,0.682,0.376,1};
+		x = 0.947 * safezoneW + safezoneX;
 		y = 0.82 * safezoneH + safezoneY;
-		w = 0.042475 * safezoneW;
+		w = 0.0515 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
 	class LIFE_BAR_HEALTH: Life_RscProgress
 	{
 		idc = 2202;
-		x = 0.952 * safezoneW + safezoneX;
-		y = 0.85 * safezoneH + safezoneY;
-		w = 0.042475 * safezoneW;
+		colorBackground[] = {0.753,0.224,0.169,1};
+		x = 0.947 * safezoneW + safezoneX;
+		y = 0.855 * safezoneH + safezoneY;
+		w = 0.0515 * safezoneW;
 		h = 0.022 * safezoneH;
 	};
 
@@ -83,8 +86,8 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_FOOD_TEXT;
 		text = "";
-		x = 0.965906 * safezoneW + safezoneX;
-		y = 0.792 * safezoneH + safezoneY;
+		x = 0.96 * safezoneW + safezoneX;
+		y = 0.79 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
 		h = 0.011 * safezoneH;
 	};
@@ -92,7 +95,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_WATER_TEXT;
 		text = "";
-		x = 0.965905 * safezoneW + safezoneX;
+		x = 0.96 * safezoneW + safezoneX;
 		y = 0.825 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
 		h = 0.011 * safezoneH;
@@ -101,18 +104,19 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_HEALTH_TEXT;
 		text = "";
-		x = 0.965906 * safezoneW + safezoneX;
-		y = 0.855 * safezoneH + safezoneY;
+		x = 0.96 * safezoneW + safezoneX;
+		y = 0.86 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
 		h = 0.011 * safezoneH;
 	};
 	class LIFE_CASH_TEXT: Life_RscText
 	{
 		idc = IDC_LIFE_CASH_TEXT;
+		colorText[] = {0.161,0.502,0.725,1};
 		text = "";
-		x = 0.952 * safezoneW + safezoneX;
-		y = 0.89 * safezoneH + safezoneY;
-		w = 0.05 * safezoneW;
+		x = 0.944 * safezoneW + safezoneX;
+		y = 0.895 * safezoneH + safezoneY;
+		w = 0.06 * safezoneW;
 		h = 0.015 * safezoneH;
 	};
 	
@@ -122,15 +126,15 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_PICTURE_FOOD;
 		text = "icons\food.paa";
-		x = 0.93 * safezoneW + safezoneX;
-		y = 0.779 * safezoneH + safezoneY;
+		x = 0.92 * safezoneW + safezoneX;
+		y = 0.777 * safezoneH + safezoneY;
 		w = 0.06; h = 0.06;
 	};
 	class LIFE_PICTURE_WATER: life_RscPicture
 	{
 		idc = IDC_LIFE_PICTURE_WATER;
 		text = "icons\water.paa";
-		x = 0.928 * safezoneW + safezoneX;
+		x = 0.92 * safezoneW + safezoneX;
 		y = 0.813 * safezoneH + safezoneY;
 		w = 0.06; h = 0.06;
 	};
@@ -138,8 +142,8 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_PICTURE_HEALTH;
 		text = "icons\health.paa";
-		x = 0.93 * safezoneW + safezoneX;
-		y = 0.85 * safezoneH + safezoneY;
+		x = 0.922 * safezoneW + safezoneX;
+		y = 0.853 * safezoneH + safezoneY;
 		w = 0.05; h = 0.05;
 	};
 	class LIFE_PICTURE_CASH : life_RscPicture
@@ -147,8 +151,8 @@ class playerHUD {
 				
 		idc = IDC_LIFE_PICTURE_CASH;
 		text = "icons\money.paa";
-		x = 0.93 * safezoneW + safezoneX;
-		y = 0.887 * safezoneH + safezoneY;
+		x = 0.9243 * safezoneW + safezoneX;
+		y = 0.8915 * safezoneH + safezoneY;
 		w = 0.05; h = 0.05;
 	};
 };

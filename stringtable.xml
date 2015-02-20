@@ -1082,7 +1082,7 @@
 	</Package>
 	<Package name="Player_Menu">
 		<Key ID="STR_PM_Title">
-			<Original>Player Menu</Original>
+			<Original>Player Menu - ProphecyGaming.co.uk</Original>
 			<German>Spieler Menü</German>
 			<French>Menu du Joueur</French>
 			<Italian>Menu Giocatore</Italian>
