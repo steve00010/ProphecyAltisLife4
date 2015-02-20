@@ -21,7 +21,7 @@ class Life_server_rules {
 			x = 0.1;
 			y = 0.5 - (1 / 25);
 			w = 0.8;
-			h = 0.1
+			h = 0.1;
 		};
 	};
 	
