@@ -15,7 +15,11 @@ if((FETCH_CONST(life_medicLevel)) < 1) exitWith {
 	sleep 35;
 };
 
+
+[] spawn life_fnc_welcomeNotification;
+waitUntil{!isNull (findDisplay 2300)}; //Wait for the welcome to be open.
+waitUntil{isNull (findDisplay 2300)}; //Wait for the welcome to be done.
+
 [] call life_fnc_spawnMenu;
-[] execVM "core\welcome.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.

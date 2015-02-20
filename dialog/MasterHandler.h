@@ -35,3 +35,4 @@
 #include "revoke_license.h"
 #include "slot.hpp"
 #include "slotmachine.hpp"
+#include "vidintro.hpp"

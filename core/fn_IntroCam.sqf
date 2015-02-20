@@ -1,6 +1,7 @@
 
 
 private ["_camera", "_camDistance","_randCamX","_randCamY","_camTime"];
+waitUntil {!(isNil "BIS_fnc_titlecard_finished")};
 _camDistance = 100;
 _randCamX = 45 - floor(random 150);
 _randCamY = 45 - floor(random 150);

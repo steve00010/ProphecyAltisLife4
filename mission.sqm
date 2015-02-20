@@ -39001,7 +39001,7 @@ class Mission
 		class Item3723
 		{
 			position[]={3272.7937,2.1949012,12969.235};
-			offsetY=0.60000002;
+			offsetY=0.40000001;
 			id=3825;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -39011,7 +39011,7 @@ class Mission
 		class Item3724
 		{
 			position[]={3274.1897,2.2023463,12969.235};
-			offsetY=0.60000002;
+			offsetY=0.40000001;
 			id=3826;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
