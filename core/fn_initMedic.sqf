@@ -14,7 +14,7 @@ if((FETCH_CONST(life_medicLevel)) < 1) exitWith {
 	["Notwhitelisted",FALSE,TRUE] call BIS_fnc_endMission;
 	sleep 35;
 };
-
+player setVariable["medlevel",(FETCH_CONST(life_medicLevell)),true];
 
 [] spawn life_fnc_welcomeNotification;
 waitUntil{!isNull (findDisplay 2300)}; //Wait for the welcome to be open.
