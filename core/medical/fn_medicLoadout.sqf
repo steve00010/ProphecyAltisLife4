@@ -5,24 +5,20 @@
 	Description:
 	Loads the medic out with the default gear.
 */
-
+private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-["U_B_CombatUniform_mcam_worn",true] call life_fnc_handleItem;
+player addUniform "U_B_CombatUniform_mcam_worn";
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";
-player addItem "FirstAidKit";
-player addItem "FirstAidKit";
-player addItem "FirstAidKit";
-player addItem "ItemGPS";
-player assignItem "ItemGPS";
-removeGoggles player;
-removeHeadGear player;
-if(hmd player != "") then {
-	player unlinkItem (hmd player);
-};
+player addItem "ItemMap";
+player assignItem "ItemMap";
+player addItem "ItemCompass";
+player assignItem "ItemCompass";
+player addItem "ItemWatch";
+player assignItem "ItemWatch";
 
-waitUntil {uniform player == "U_B_CombatUniform_mcam_worn"};
-[player, true] call life_fnc_HandleUniforms; 
+[[player,0,"textures\medic_uniform.jpg"],"life_fnc_setTexture",true,false] call life_fnc_MP;
+
 [] call life_fnc_saveGear;
