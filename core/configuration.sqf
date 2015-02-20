@@ -14,7 +14,9 @@ life_session_completed = false;
 life_garage_store = false;
 life_session_tries = 0;
 life_net_dropped = false;
+life_hit_explosive = false;
 life_siren_active = false;
+life_siren2_active = false;
 life_clothing_filter = 0;
 life_clothing_uniform = -1;
 life_redgull_effect = time;
@@ -33,6 +35,17 @@ life_vdFoot = viewDistance;
 life_vdCar = viewDistance;
 life_vdAir = viewDistance;
 tawvd_addon_disable = true;
+life_god = false;
+life_frozen = false; 
+life_markers = false;
+life_drug_level = 0;
+life_used_drug = [0,0,0];
+life_drug_withdrawl = false;
+life_addiction = [0,0,0];
+life_cocaine_effect = false;
+life_fatigue = 0.5; //Set the max fatigue limit (50%)
+life_request_timer = false;
+life_drink = 0;
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
