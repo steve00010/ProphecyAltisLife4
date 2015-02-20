@@ -31,7 +31,9 @@ if(isNull _curTarget) exitWith {
 if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith {
 	[_curTarget] call life_fnc_houseMenu;
 };
-
+if(!alive _curTarget && _curTarget isKindOf "Animal" && !(EQUAL((typeOf _curTarget),"Turtle_F"))) exitWith {
+	[_curTarget] call life_fnc_gutAnimal;
+};
 if(dialog) exitWith {}; //Don't bother when a dialog is open.
 if(vehicle player != player) exitWith {}; //He's in a vehicle, cancel!
 life_action_inUse = true;

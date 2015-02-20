@@ -46,9 +46,10 @@ if(life_cash >= _cost) then
 	disableSerialization;
 	
 	_source say3D "caching";
-	
-	5 cutRsc ["life_slotmachine","PLAIN"];
-	_ui = uiNameSpace getVariable "life_slotmachine";
+	createdialog "life_slotmachine";
+	//5 cutRsc ["life_slotmachine","PLAIN"];
+	//_ui = uiNameSpace getVariable "life_slotmachine";
+	_ui = findDisplay 38205;
 	_rollA = _ui displayCtrl 38207;
 	_rollB = _ui displayCtrl 38208;
 	_rollC = _ui displayCtrl 38209;
