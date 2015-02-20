@@ -33,4 +33,5 @@
 #include "prisonlist.hpp"
 #include "rules.hpp"
 #include "revoke_license.h"
+#include "slot.hpp"
 #include "slotmachine.hpp"
