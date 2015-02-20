@@ -26,7 +26,7 @@ class life_spawn_selection
 		class backgroundpic: Life_RscPicture
 		{
 			idc = -1;
-			text = "images\skullbg.paa";
+			text = "images\spawnmenu.paa";
 			x = 0;
 			y = 0;
 			w = 1;
