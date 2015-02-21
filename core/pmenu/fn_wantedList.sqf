@@ -16,10 +16,11 @@ _units = [];
 {
 	_units pushBack (_x getVariable["realname",name _x]);
 } foreach playableUnits;
-
+diag_log format ["aa %1",_units];
+diag_log format ["ab %1",_info];
 {
 	_entry = _x;
-	if((_entry select 0) in _units) then
+	if((_entry select 1) in _units) then
 	{
 		_list lbAdd format["%1", _entry select 0];
 		_list lbSetData [(lbSize _list)-1,str(_entry)];
