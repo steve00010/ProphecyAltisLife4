@@ -36,42 +36,9 @@ SUB(_units,[player]);
 		_sPos = worldToScreen _pos;
 		_distance = _pos distance player;
 		if(count _sPos > 1 && {_distance < 15}) then {
-					_hiddengoggles = [
-					"G_Bandanna_tan",
-					"G_Balaclava_blk",
-					"G_Balaclava_combat",
-					"G_Balaclava_lowprofile",
-					"G_Balaclava_oli",
-					"G_Bandanna_aviator",
-					"G_Bandanna_beast",
-					"G_Bandanna_blk",
-					"G_Bandanna_oli",
-					"G_Bandanna_khk",
-					"G_Bandanna_shades",
-					"G_Bandanna_sport"
-			];
-			_hiddenheadgear = [
-					"H_Shemag_olive",
-					"H_Shemag_olive_hs",
-					"H_ShemagOpen_khk",
-					"H_ShemagOpen_tan",
-					"H_Shemag_khk",
-					"H_Shemag_tan",
-					"H_RacingHelmet_1_black_F",
-					"H_RacingHelmet_1_blue_F",
-					"H_RacingHelmet_1_green_F",
-					"H_RacingHelmet_1_orange_F",
-					"H_RacingHelmet_1_F",
-					"H_RacingHelmet_2_F",
-					"H_RacingHelmet_3_F",
-					"H_RacingHelmet_4_F",
-					"H_RacingHelmet_1_red_F",
-					"H_RacingHelmet_1_yellow_F",
-					"H_RacingHelmet_1_white_F"
-			];
 			_text = switch (true) do {
 				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x GVAR ["realname",name _x])];};
-								//Dead Players
+								//Dead Players _x GVAR ["realname",name _x]
 				case (!alive _x): {
 					_text = format["<t color='#000000'>%1</t>", _name];
 				};
@@ -87,20 +54,21 @@ SUB(_units,[player]);
 						case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa",format["Chief %1", _x GVAR ["realname",name _x]]};
 						default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa",format["Cadet %1", _x GVAR ["realname",name _x]]};
 					}]};
-				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]]};
+				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {
+					format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]];
+				};
+				//Medics
+				case(_x getVariable["medlevel", 0] > 0): {
+					_icon = "a3\ui_f\data\map\MapControl\hospital_ca.paa";
+					_name = format["Medic %1",name _x];
+					_text = format["<img image='%2' size='1'></img><t color='#FF0000'> %1</t>", _name, _icon];
+				};
+				
 				default {
 					if(!isNil {(group _x) GVAR "gang_name"}) then {
-						if(((headgear _x) in _hiddenheadgear) or ((goggles _x) in _hiddengoggles)) then {
-							format["<t color='#669900'>Identity Hidden</t><br/><t size='0.8' color='#B6B6B6'>%2</t>",(group _x) GVAR ["gang_name",""]];
-						} else {
-							format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x GVAR ["realname",name _x],(group _x) GVAR ["gang_name",""]];
-						};
-					} else {						
-						if(((headgear _x) in _hiddenheadgear) or ((goggles _x) in _hiddenheadgear)) then {
-							"<t color='#669900'>Identity Hidden</t>";
-						}else {
-							_x GVAR ["realname",name _x];
-						};
+						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x GVAR ["realname",name _x],(group _x) GVAR ["gang_name",""]];
+					} else {
+						_x GVAR ["realname",name _x];
 					};
 				};
 			};
