@@ -93,8 +93,7 @@ class Clothing {
 			{ "B_Carryall_oli", "", 5000, { "", "", -1 } },
 			{ "B_Carryall_khk", "", 5000, { "", "", -1 } },
 			{ "B_OutdoorPack_blk", "", 5000, { "", "", -1 } },
-			{ "B_OutdoorPack_tan", "", 5000, { "", "", -1 } },
-			{ "B_OutdoorPack_blu", "", 5000, { "", "", -1 } }
+			{ "B_OutdoorPack_tan", "", 5000, { "", "", -1 } }
 		};
 	};
 
