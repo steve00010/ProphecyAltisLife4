@@ -208,8 +208,7 @@ class Life_Settings {
 	"scratchcard","bottledshine","bottledwhiskey","bottledbeer","moonshine","whiskey","beerp","cornmeal",
 	"mash","bottles","monster","hen_raw","rabbit_raw","salema_raw","ornate_raw","mackerel_raw",
 	"tuna_raw","mullet_raw","catshark_raw","turtle_raw","rooster_raw","sheep_raw","goat_raw","scratchcard",
-	"oil_processed","copper_refined","iron_refined","salt_refined","diamond_cut","cement","heroin_processed",
-	"marijuana","cocaine_processed","monster"};
+	"oil_processed","copper_refined","iron_refined","salt_refined","diamond_cut","cement","monster"};
 };
 
 //Virtual Items
