@@ -263,7 +263,7 @@ class Clothing {
 			{ "B_Bergen_blu", "", 4500, { "", "", -1 } },
 			{ "B_Kitbag_cbr", "", 4500, { "", "", -1 } },
 			{ "B_Carryall_oli", "", 5000, { "", "", -1 } },
-			{ "B_Carryall_khk", "", 5000, { "", "", -1 } }
+			{ "B_Carryall_khk", "", 5000, { "", "", -1 } },
 			{ "B_Carryall_oucamo", "", 5000, { "", "", -1 } },
 			{ "B_Carryall_cbr", "", 5000, { "", "", -1 } }
 		};
