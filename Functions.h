@@ -226,6 +226,8 @@ class Life_Client_Core
 		class slotMachineRewards {};
 		class slotMachineRandomizer{};
 		class updateCash {};
+		class prisionbreak {};
+		class progressBar {};
 	};
 	
 	class Network
