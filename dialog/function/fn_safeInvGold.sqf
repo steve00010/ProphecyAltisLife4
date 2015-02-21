@@ -1,4 +1,5 @@
 #include <macro.h>
+
 /*
 	File: fn_safeInventory.sqf
 	Author: Bryan "Tonic" Boardwine
