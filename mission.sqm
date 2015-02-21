@@ -43067,7 +43067,7 @@ class Mission
 		};
 		class Item21
 		{
-			position[]={14282.735,2.5089307,13069.584};
+			position[]={14320.04,2.9132483,13019.611};
 			name="OilP";
 			text="Oil Processing";
 			type="loc_Bunker";
@@ -43644,14 +43644,14 @@ class Mission
 		};
 		class Item91
 		{
-			position[]={13734.528,-0.12062114,13410.657};
+			position[]={11525.852,79.763649,7068.1323};
 			name="oil_2";
 			text="Oil Field";
 			type="loc_Bunker";
 		};
 		class Item92
 		{
-			position[]={13734.473,-0.11426039,13414.548};
+			position[]={11525.418,79.821831,7069.4956};
 			name="oil_1";
 			text="Oil Field";
 			type="loc_Bunker";
@@ -43806,7 +43806,7 @@ class Mission
 			name="Gen_3_1_1";
 			text="Market";
 			type="c_unknown";
-			colorName="ColorGreen";
+			colorName="ColorGUER";
 		};
 		class Item113
 		{
@@ -44077,7 +44077,7 @@ class Mission
 		};
 		class Item146
 		{
-			position[]={14279.577,0.04249382,13078.565};
+			position[]={14320.589,1.9133717,13076.465};
 			name="boat_2_1";
 			text="Boat Shop";
 			type="c_ship";
@@ -44162,7 +44162,7 @@ class Mission
 		};
 		class Item157
 		{
-			position[]={14278.998,-0.0063225692,13088.946};
+			position[]={14318.633,0.26059818,13134.31};
 			name="dive_shop_1";
 			text="Diving Shop";
 			type="mil_box";
@@ -45659,7 +45659,7 @@ class Mission
 			name="Gen_3_1_1_4";
 			text="Market";
 			type="c_unknown";
-			colorName="ColorGreen";
+			colorName="ColorGUER";
 			angle=6.1675601;
 		};
 		class Item340
@@ -46162,7 +46162,7 @@ class Mission
 		};
 		class Item399
 		{
-			position[]={6356.0439,146.18633,18058.377};
+			position[]={10599.063,52.369217,8453.9707};
 			name="hunting_zone";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -46174,7 +46174,7 @@ class Mission
 		};
 		class Item400
 		{
-			position[]={6353.7974,146.66161,18058.816};
+			position[]={10596.816,52.299137,8454.4102};
 			name="hunting_marker";
 			text="Hunting Grounds";
 			type="loc_Tree";
