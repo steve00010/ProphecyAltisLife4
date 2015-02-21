@@ -22,9 +22,9 @@ _itemInfo = switch (_type) do
 	case "iron": {["ironore","iron_r",1120,"Processing Iron"]};
 	case "sand": {["sand","glass",650,"Processing Sand"]};
 	case "salt": {["salt","salt_r",450,"Processing Salt"]};
-	case "cocaine": {["cocaine","cocainep",1500,"Making Cocaine"]};
+	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1500,"Making Cocaine"]};
 	case "marijuana": {["cannabis","marijuana",500,"Drying and Bagging Marijuana"]};
-	case "heroin": {["heroinu","heroinp",1720,"Processing Heroin"]};
+	case "heroin": {["heroin_unproccessed","heroin_processed",1720,"Processing Heroin"]};
 	case "cement": {["rock","cement",350,"Mixing Cement"]};
 	case "mash": {["water","mash",100,"Mixing Grain Mash",true,"cornmeal"]};//new
 	case "whiskey": {["yeast","whiskey",300,"Fermenting Whiskey",true,"rye"]};//new
