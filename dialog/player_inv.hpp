@@ -117,8 +117,7 @@ class playerSettings {
 		};
 		class iNearPlayers : Life_RscCombo
 		{
-			idc = 2025;
-			
+			idc = 2023;
 			x = 0.392;
 			y = 0.522;
 			w = 0.228;
