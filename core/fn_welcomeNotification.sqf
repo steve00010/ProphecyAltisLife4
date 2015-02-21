@@ -8,33 +8,12 @@
 private["_display","_rules"];
 
 ["images\introvid.ogv"] spawn BIS_fnc_titlecard;
-createDialog "life_vidintro";
-disableSerialization;
-_di = findDisplay 230222;
-_text = _di displayCtrl 2302;
-[_text] spawn {
-	disableSerialization;
-	_text1 = _this select 0;
-	while{(isNil "BIS_fnc_titlecard_finished")} do {
-		_text1 ctrlSetStructuredText parseText "<t color='#0099FF' size='2'>Loading character information from the Server</t>";
-		sleep 7;
-		_text1 ctrlSetStructuredText parseText "<t color='#0099FF' size='2'>Loading character information from the Server</t><br /><br /><br /><t color='#D60D0D' size='2'>Initialising load...</t>";
-		sleep 4;
-_text1 ctrlSetStructuredText parseText "";
-	};
-	if(!(isNil "BIS_fnc_titlecard_finished")) exitWith {};
-	
-};
-
 waitUntil {!(isNil "BIS_fnc_titlecard_finished")};
-closeDialog 0;
-titleText ["", "BLACK FADED", 0];
 
 
 createDialog "life_server_rules";
-
+disableSerialization;
 _display = findDisplay 2300;
-noesckey = (findDisplay 2300) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"]; 
 _rules = _display displayCtrl 2302;
 _news = _display displayCtrl 2303;
 

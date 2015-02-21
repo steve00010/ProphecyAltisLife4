@@ -28,31 +28,22 @@ if (playerSide == west) then
 	};	
 };
 
-case independent:
+if (playerSide == independent) then
 {
-	if(backpack _unit == "B_Carryall_mcamo") then {
-		if (_propagate) then {
-			[[_unit, "textures\uniforms\mediccarryall.paa",backpack _unit], "life_fnc_ReTexBackpack", true, true] spawn life_fnc_MP ;
-		} else {
-			[_unit, "textures\uniforms\mediccarryall.paa",backpack _unit] call life_fnc_ReTexBackpack;	
-		};
+	if((backpack player) == "B_Carryall_mcamo") then {
+		
+		(unitBackpack player) setObjectTextureGlobal [0,"textures\uniforms\mediccarryall.paa"];
 	};
 
-	switch (uniform _unit) do 
+	if(uniform player == "U_B_CombatUniform_mcam_worn") then
 	{
-		case "U_B_CombatUniform_mcam_worn": 
-		{
-			if (_propagate) then {
-				[[_unit, "textures\uniforms\medic_uniform.paa",uniform _unit], "life_fnc_ReTexUniform", true, true] spawn life_fnc_MP ;
-			} else {
-				[_unit, "textures\uniforms\medic_uniform.paa",uniform _unit] call life_fnc_ReTexUniform;	
-			};
-		};
+		player setObjectTextureGlobal [0,"textures\uniforms\nhsuniform.paa"];
 	};
+	
 };
 
 // Make Backpack invisible
-if ( (playerSide == independent) or (playerSide == west) ) then
+if (playerSide == west) then
 {
 	if(backpack player != "") then 
 	{

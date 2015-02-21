@@ -14,7 +14,10 @@ switch(playerSide) do {
 	case west: {
 		ctrlShow[2011,false];
 	};
-	
+	case independent: {
+		ctrlShow[2011,false];
+		ctrlShow[2012,false];
+	};
 	case civilian: {
 		ctrlShow[2012,false];
 	};

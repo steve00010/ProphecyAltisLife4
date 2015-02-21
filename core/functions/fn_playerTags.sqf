@@ -53,8 +53,10 @@ SUB(_units,[player]);
 						case 7: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa",format["Chief %1", _x GVAR ["realname",name _x]]};
 						case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa",format["Chief %1", _x GVAR ["realname",name _x]]};
 						default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa",format["Cadet %1", _x GVAR ["realname",name _x]]};
-					}};
-				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]]};
+					}]};
+				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {
+					format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]];
+				};
 				//Medics
 				case(_x getVariable["medlevel", 0] > 0): {
 					_icon = "a3\ui_f\data\map\MapControl\hospital_ca.paa";
