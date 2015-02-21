@@ -5,8 +5,8 @@ waitUntil {!(isNil "BIS_fnc_titlecard_finished")};
 _camDistance = 100;
 _randCamX = 45 - floor(random 150);
 _randCamY = 45 - floor(random 150);
-_camTime = 8;
-player say3D "introsong";
+_camTime = 2;
+
 
 showCinemaBorder true;
 camUseNVG false;
