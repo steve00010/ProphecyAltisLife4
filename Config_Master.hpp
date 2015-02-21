@@ -341,7 +341,7 @@ class Licenses {
 	LICENSEMACRO(stiller,"STR_License_Stiller","stiller",75000,false,"civ")
 	LICENSEMACRO(liquor,"STR_License_Liquor","liquor",75000,false,"civ")
 	LICENSEMACRO(bottler,"STR_License_Bottler","bottler",75000,false,"civ")
-	LICENSEMACRO(channelseven,"STR_License_ChannelSeven","channelseven7",0,false,"civ)"
+	LICENSEMACRO(channelseven,"STR_License_ChannelSeven","channelseven7",0,false,"civ")
 	
 };
 
