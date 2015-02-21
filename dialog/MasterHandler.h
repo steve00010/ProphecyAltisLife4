@@ -26,7 +26,6 @@
 #include "settings.h"
 #include "federalReserve.h"
 #include "compensate.hpp"
-#include "smartphone.hpp"
 #include "market.hpp"
 #include "spray_shop.h"
 #include "goldSafe.h"
