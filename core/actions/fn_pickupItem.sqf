@@ -9,7 +9,9 @@
 */
 private ["_itemInfo","_itemName","_illegal","_diff"];
 if((time - life_action_delay) < 2) exitWith {hint "You can't rapidly use action keys!"; INUSE(_this);};
-if(player distance _this > 3) exitWith {};
+_obj = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+if((_obj getVariable["PickedUp",false])) exitWith {deleteVehicle _obj;}; //Object was already picked up.
+if(player distance _obj > 3) exitWith {};
 _itemInfo = _this GVAR ["item",[]]; 
 if(EQUAL(count _itemInfo,0)) exitWith {deleteVehicle _this;};
 _itemName = ITEM_NAME(SEL(_itemInfo,0));
