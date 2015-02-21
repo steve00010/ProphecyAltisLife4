@@ -25,7 +25,7 @@ for "_i" from 0 to (count life_vehicles)-1 do
 	_veh = life_vehicles select _i;
 	if(!isNull _veh && alive _veh) then
 	{
-		_skinI = _vehicle getVariable "Life_VEH_color";
+		_skinI = _veh getVariable "Life_VEH_color";
 		_skin = SEL(SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"textures"),_skinI),0);
 		_text = format["(%1)",_skin];
 		if(_text == "()") then
