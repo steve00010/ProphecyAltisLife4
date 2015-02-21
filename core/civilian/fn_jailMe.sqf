@@ -31,37 +31,10 @@ if(count _ret > 0) then {
 _esc = false; 
 _bail = false;
 
-[_bad] spawn
+[_time] spawn
 {
 	life_canpay_bail = false;
-	if(_this select 0) then
-	{
-		if(life_bail_amount < 25000) then {
-			_time = time + (20*30);
-		} else {
-			if(life_bail_amount > 24999 && life_bail_amount < 50000) then  {
-				_time = time + (26*30);
-			}
-			else {
-			_time = time +(30*30);
-			};
-		};
-		sleep _time;
-	}
-		else
-	{
-		if(life_bail_amount < 25000) then {
-			_time = time + (20*30);
-		} else {
-			if(life_bail_amount > 24999 && life_bail_amount < 50000) then  {
-				_time = time + (26*30);
-			}
-			else {
-			_time = time +(30*30);
-			};
-		};
-		sleep _time;
-	};
+	sleep (_time/2);
 	life_canpay_bail = nil;
 };
 
