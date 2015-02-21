@@ -79,7 +79,8 @@ class Clothing {
 
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
-			{ "V_Rangemaster_belt", "RangeMaster Belt", 4000, { "", "", -1 } }
+			{ "V_Rangemaster_belt", "RangeMaster Belt", 4000, { "", "", -1 } },
+			{ "V_HarnessO_brn", "Harness", 4000, { "", "", -1 } }
 		};
 
 		backpacks[] = {
@@ -146,7 +147,7 @@ class Clothing {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
 			{ "V_RebreatherB", "Re-breather", 800, { "", "", -1 } },
 			{ "V_TacVest_blk_POLICE", "Tac Vest Police", 800, { "", "", -1 } },
-			{ "V_PlateCarrier2_blk", "PlateCarrier", 1500, { "life_coplevel", "SCALAR", 2 } }
+			{ "V_PlateCarrier1_blk", "PlateCarrier", 1500, { "", "", -1 } }
 		};
 
 		backpacks[] = {
@@ -219,7 +220,7 @@ class Clothing {
 			{ "H_CrewHelmetHeli_O", "Crew helmet", 2500, { "", "", -1 } },
 			{ "H_HelmetSpecO_blk", "Spec Op Black", 2500, { "", "", -1 } },
 			{ "H_PilotHelmetHeli_O", "Pilot Helmet", 2500, { "", "", -1 } },	
-			{ "H_Booniehat_indp", "Boonie Hat", 1000, { "", "", -1 } },
+			{ "H_Booniehat_indp", "Boonie Hat", 1000, { "", "", -1 } }
 			
 		};
 
@@ -244,6 +245,7 @@ class Clothing {
 			{ "V_HarnessO_brn", "", 7500, { "", "", -1 } },
 			{ "V_I_G_resistanceLeader_F", "PlateCarrier",12500, { "", "", -1 } },
 			{ "V_Chestrig_oli", "Chest Rig",7500, { "", "", -1 } },		
+			{ "V_HarnessO_gry", "Harness",7500, { "", "", -1 } },	
 			{ "V_RebreatherIA", "Re-Breather",6500, { "", "", -1 } },				
 		};
 
