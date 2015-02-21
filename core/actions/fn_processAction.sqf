@@ -24,7 +24,7 @@ _itemInfo = switch (_type) do
 	case "salt": {["salt","salt_r",450,"Processing Salt"]};
 	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1500,"Making Cocaine"]};
 	case "marijuana": {["cannabis","marijuana",500,"Drying and Bagging Marijuana"]};
-	case "heroin": {["heroin_unproccessed","heroin_processed",1720,"Processing Heroin"]};
+	case "heroin": {["heroin_unprocessed","heroin_processed",1720,"Processing Heroin"]};
 	case "cement": {["rock","cement",350,"Mixing Cement"]};
 	case "mash": {["water","mash",100,"Mixing Grain Mash",true,"cornmeal"]};//new
 	case "whiskey": {["yeast","whiskey",300,"Fermenting Whiskey",true,"rye"]};//new
@@ -126,12 +126,12 @@ if(_hasLicense) then
 				
 				([false,_oldItem2,_oldVal2] call life_fnc_handleInv);
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 and %2 into %3.",_oldItem,_oldItem2,localize _itemName],"PLAIN"];
+				titleText[format["You have processed %1 and %2 into %3.",localize _oldItem,localize _oldItem2,localize _itemName],"PLAIN"];
 			} else
 			{
 				
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 into %2.",_oldItem,localize _itemName],"PLAIN"];
+				titleText[format["You have processed %1 into %2.",localize _oldItem,localize _itemName],"PLAIN"];
 			};
 	life_is_processing = false;
 	_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
@@ -168,12 +168,12 @@ if(_hasLicense) then
 				
 				([false,_oldItem2,_oldVal2] call life_fnc_handleInv);
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 and %2 into %3 for %4.",_oldItem,_oldItem2,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+				titleText[format["You have processed %1 and %2 into %3 for %4.",localize _oldItem,localize _oldItem2,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 			} else
 			{
 				
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 into %2 for %3.",_oldVal,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+				titleText[format["You have processed %1 into %2 for %3.",localize _oldVal,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 			};
 	SUB(CASH,_cost);
 	life_is_processing = false;

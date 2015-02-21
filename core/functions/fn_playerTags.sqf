@@ -78,14 +78,23 @@ SUB(_units,[player]);
 				case (!isNil {(_x GVAR "rank")}): {
 					format["<img image='%1' size='1'></img> %2",
 					switch ((_x GVAR "rank")) do {
-						case 2: {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa",format["Marshall %1", _x GVAR ["realname",name _x]]}; 
-						case 3: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa",format["Corporal %1", _x GVAR ["realname",name _x]]};
-						case 4: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa",format["Sergeant %1", _x GVAR ["realname",name _x]]};
-						case 5: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa",format["Lieutenant %1", _x GVAR ["realname",name _x]]};
-						case 6: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa",format["Captain %1", _x GVAR ["realname",name _x]]};
-						case 7: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa",format["Chief %1", _x GVAR ["realname",name _x]]};
-						case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa",format["Chief %1", _x GVAR ["realname",name _x]]};
-						default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa",format["Cadet %1", _x GVAR ["realname",name _x]]};
+						case 2: {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"}; 
+						case 3: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
+						case 4: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
+						case 5: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
+						case 6: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
+						case 7: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
+						default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+					},
+					switch ((_x GVAR "rank")) do {
+						case 2: {format["Marshall %1", _x GVAR ["realname",name _x]]}; 
+						case 3: {format["Corporal %1", _x GVAR ["realname",name _x]]};
+						case 4: {format["Sergeant %1", _x GVAR ["realname",name _x]]};
+						case 5: {format["Lieutenant %1", _x GVAR ["realname",name _x]]};
+						case 6: {format["Captain %1", _x GVAR ["realname",name _x]]};
+						case 7: {format["Chief %1", _x GVAR ["realname",name _x]]};
+						case 8: {format["Chief %1", _x GVAR ["realname",name _x]]};
+						default {format["Cadet %1", _x GVAR ["realname",name _x]]};
 					}]};
 				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]]};
 				default {
