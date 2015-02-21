@@ -199,7 +199,9 @@ class Clothing {
 			{ "U_O_SpecopsUniform_ocamo", "", 17500, { "", "", -1 } },
 			{ "U_O_PilotCoveralls", "", 15610, { "", "", -1 } },
 			{ "U_IG_leader", "Guerilla Leader", 15340, { "", "", -1 } },
-			{ "U_O_GhillieSuit", "", 50000, { "", "", -1 } }
+			{ "U_O_GhillieSuit", "", 50000, { "", "", -1 } },
+			{"U_O_OfficerUniform_ocamo","Officer",10000,{"","",-1}},
+			{"U_O_CombatUniform_oucamo","Combat",10000,{"","",-1}}
 		};
 
 		headgear[] = {
@@ -209,7 +211,14 @@ class Clothing {
 			{ "H_ShemagOpen_khk", "", 800, { "", "", -1 } },
 			{ "H_HelmetO_ocamo", "", 2500, { "", "", -1 } },
 			{ "H_MilCap_oucamo", "", 1200, { "", "", -1 } },
-			{ "H_Bandanna_camo", "", 650, { "", "", -1 } }
+			{ "H_Bandanna_camo", "", 650, { "", "", -1 } },
+			{ "H_BandMask_demon", "Bandanna Demon", 650, { "", "", -1 } },
+			{ "H_Beret_red", "Black beret", 650, { "", "", -1 } },
+			{ "H_CrewHelmetHeli_O", "Crew helmet", 2500, { "", "", -1 } },
+			{ "H_HelmetSpecO_blk", "Spec Op Black", 2500, { "", "", -1 } },
+			{ "H_PilotHelmetHeli_O", "Pilot Helmet", 2500, { "", "", -1 } },	
+			{ "H_Booniehat_indp", "Boonie Hat", 1000, { "", "", -1 } },
+			
 		};
 
 		goggles[] = {
@@ -222,14 +231,18 @@ class Clothing {
 			{ "G_Sport_BlackWhite", "", 20, { "", "", -1 } },
 			{ "G_Squares", "", 10, { "", "", -1 } },
 			{ "G_Lowprofile", "", 30, { "", "", -1 } },
-			{ "G_Combat", "", 55, { "", "", -1 } }
+			{ "G_Combat", "", 55, { "", "", -1 } },
+			{ "G_Aviator", "", 100, { "", "", -1 } }
 		};
 
 		vests[] = {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
 			{ "V_TacVest_khk", "", 12500, { "", "", -1 } },
 			{ "V_BandollierB_cbr", "", 4500, { "", "", -1 } },
-			{ "V_HarnessO_brn", "", 7500, { "", "", -1 } }
+			{ "V_HarnessO_brn", "", 7500, { "", "", -1 } },
+			{ "V_I_G_resistanceLeader_F", "PlateCarrier",12500, { "", "", -1 } },
+			{ "V_Chestrig_oli", "Chest Rig",7500, { "", "", -1 } },		
+			{ "V_RebreatherIA", "Re-Breather",6500, { "", "", -1 } },				
 		};
 
 		backpacks[] = {

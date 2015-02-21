@@ -22,14 +22,14 @@ if(EQUAL(_zone,"")) exitWith {life_action_gathering = false;};
 
 //Get the resource that will be gathered from the zone name...
 switch(true) do {
-	case (_zone in ["apple_1","apple_2","apple_3","apple_4"]): {_gather = "apple"; _val = 3;};
-	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {_gather = "peach"; _val = 3;};
-	case (_zone in ["heroin_1"]): {_gather = "heroin_unprocessed"; _val = 1;};
-	case (_zone in ["cocaine_1"]): {_gather = "cocaine_unprocessed"; _val = 1;};
-	case (_zone in ["weed_1"]): {_gather = "cannabis"; _val = 1;};
-	case (_zone in ["rye_1"]): {_gather = "rye"; _val = 2;};
-	case (_zone in ["yeast_1"]): {_gather = "yeast"; _val = 2;};
-	case (_zone in ["hops_1"]): {_gather = "hops"; _val = 2;}; 
+	case (_zone in ["apple_1","apple_2","apple_3","apple_4"]): {_gather = ["apple",3];};
+	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {_gather = ["peach",3];};
+	case (_zone in ["heroin_1"]): {_gather = ["heroin_unprocessed",1];};
+	case (_zone in ["cocaine_1"]): {_gather = ["cocaine_unprocessed",1];};
+	case (_zone in ["weed_1"]): {_gather = ["cannabis",1];};
+	case (_zone in ["rye_1"]): {_gather = ["rye",2];};
+	case (_zone in ["yeast_1"]): {_gather = ["yeast",2];};
+	case (_zone in ["hops_1"]): {_gather = ["hops",2];}; 
 	default {""};
 };
 //gather check??

@@ -316,6 +316,7 @@ switch(_shop) do
 				["Mohammed's Jihadi Shop",
 					[
 						["hgun_Rook40_F",nil,500],
+						["hgun_ACPC2_F",nil,750],
 						["hgun_PDW2000_Holo_F",nil,7000],
 						["SMG_01_F",nil,15000],
 						["16Rnd_9x21_Mag",nil,20],
