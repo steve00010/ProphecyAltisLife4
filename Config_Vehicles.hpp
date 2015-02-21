@@ -98,7 +98,7 @@ class CarShops {
 		side = "civ";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "" },
-			{ "C_Heli_Light_01_armed_F", 253000, "" },
+			{ "B_Heli_Light_01_armed_F", 253000, "" },
 			{ "O_Heli_Transport_04_bench_F", 750000, "" },
 			{ "O_Heli_Light_02_F",600000, "", { "life_donator", 2 } },
 			{ "B_Heli_Transport_01_camo_F", 2000000, "", { "life_donator", 5 } },
@@ -758,7 +758,14 @@ class CfgVehicles {
             } }
         };
     };
-
+	class B_Heli_Light_01_armed_F {
+        vItemSpace = 20;
+        storageFee[] = { 45000, 19500, 0, 0 };
+		garageSell[] = { 57000, 35000, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = {};
+    };
 	class O_Heli_Light_02_unarmed_F {
         vItemSpace = 210;
         storageFee[] = { 55000, 0, 22000, 0 };
