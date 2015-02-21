@@ -10,6 +10,7 @@ disableSerialization;
 _display = findDisplay 2400;
 _tab = _display displayCtrl 2402;
 _criminal = lbData[2401,(lbCurSel 2401)];
+diag_log format ["CRIM: %1",_criminal];
 if(!isNil _criminal) then {
 	_criminal = call compile format["%1", _criminal];
 	[[player,_criminal],"life_fnc_wantedCrimes",false,false] spawn life_fnc_MP; 

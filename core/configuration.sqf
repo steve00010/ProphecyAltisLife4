@@ -85,7 +85,7 @@ life_used_drug = [0,0,0];
 life_drug_withdrawl = false;
 life_addiction = [0,0,0];
 life_cocaine_effect = false;
-
+life_isdowned = false;
 buy_array=[];
 sell_array=[];
 
