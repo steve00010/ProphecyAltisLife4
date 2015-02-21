@@ -19,7 +19,7 @@ player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
 
-[[player,0,"textures\uniforms\medic_uniform.paa"],"life_fnc_setTexture",true,false] call life_fnc_MP;
+
 
 waitUntil {uniform player == "U_B_CombatUniform_mcam_worn"};
 [player, true] call life_fnc_customUniforms; 
