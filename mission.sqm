@@ -39265,7 +39265,7 @@ class Mission
 		};
 		class Item3748
 		{
-			position[]={7143.6543,4.8458638,11036.007};
+			position[]={16738.879,5.3307118,12270.778};
 			azimut=190;
 			id=3850;
 			side="EMPTY";
@@ -39307,13 +39307,13 @@ class Mission
 		};
 		class Item3752
 		{
-			position[]={7251.0547,129.04201,16493.922};
-			azimut=756.75098;
+			position[]={3370.6033,26.875517,14334.63};
+			azimut=240;
 			id=3854;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Process Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' life_inv_cannabis > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_marijuana""] call life_fnc_varToStr,[([""marijuana""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""marijuana"",0,false,false,"""",' !license_civ_marijuana && playerSide == civilian '];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Process Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",' life_inv_cannabis > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""marijuana"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""marijuana"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""marijuana"",0,false,false,"""",' !license_civ_marijuana && playerSide == civilian '];  ";
 		};
 		class Item3753
 		{
@@ -39669,8 +39669,7 @@ class Mission
 		};
 		class Item3786
 		{
-			position[]={9399.3486,117.25437,20234.014};
-			azimut=265;
+			position[]={7160.4351,134.85268,16563.965};
 			id=3888;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -40064,8 +40063,7 @@ class Mission
 		};
 		class Item3823
 		{
-			position[]={20243.934,46.477875,8917.1084};
-			azimut=-137.06799;
+			position[]={15312.671,4.1958447,15892.29};
 			id=3925;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -40305,7 +40303,7 @@ class Mission
 		};
 		class Item3845
 		{
-			position[]={14326.597,18.455608,17426.975};
+			position[]={16642.625,5.3165526,20508.881};
 			azimut=-46.325901;
 			offsetY=0.1;
 			id=3947;
@@ -40395,7 +40393,7 @@ class Mission
 		};
 		class Item3853
 		{
-			position[]={20822.088,51.197544,17113.219};
+			position[]={20588.457,37.162861,18823.826};
 			azimut=344.827;
 			offsetY=0.1;
 			id=3955;
@@ -43097,7 +43095,7 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={7143.3091,4.8546934,11036.195};
+			position[]={16738.531,5.3305774,12270.967};
 			name="cocaine processing";
 			text="Cocaine Processing";
 			type="mil_dot";
@@ -43382,7 +43380,7 @@ class Mission
 		};
 		class Item60
 		{
-			position[]={9399.5117,117.25495,20233.098};
+			position[]={7160.5981,134.75027,16563.049};
 			name="Dealer_1";
 			text="Drug Dealer";
 			type="mil_dot";
@@ -43601,7 +43599,7 @@ class Mission
 		};
 		class Item86
 		{
-			position[]={20819.434,51.190197,17111.281};
+			position[]={20587.371,37.179577,18824.256};
 			name="Dealer_1_3";
 			text="Drug Dealer";
 			type="mil_dot";
@@ -43610,7 +43608,7 @@ class Mission
 		};
 		class Item87
 		{
-			position[]={14326.767,18.461033,17426.299};
+			position[]={16642.797,5.3129663,20508.205};
 			name="Dealer_1_4";
 			text="Drug Dealer";
 			type="mil_dot";
@@ -43658,7 +43656,7 @@ class Mission
 		};
 		class Item93
 		{
-			position[]={10677.617,11.229243,11507.482};
+			position[]={4735.5439,70.305466,11620.974};
 			name="weed_1";
 			text="Weed Field";
 			type="mil_dot";
@@ -43666,7 +43664,7 @@ class Mission
 		};
 		class Item94
 		{
-			position[]={7252.2036,128.95023,16493.133};
+			position[]={3371.752,26.892365,14333.841};
 			name="Weed_p_1";
 			text="Weed Processing";
 			type="mil_dot";
@@ -43884,7 +43882,7 @@ class Mission
 		};
 		class Item122
 		{
-			position[]={10951.8,49.532127,16947.26};
+			position[]={12379.686,32.358154,14910.54};
 			name="cocaine_1";
 			text="Cocaine Field";
 			type="mil_dot";
@@ -43892,7 +43890,7 @@ class Mission
 		};
 		class Item123
 		{
-			position[]={10956.772,49.059017,16948.77};
+			position[]={12384.658,32.592194,14912.05};
 			name="coke_area";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -43988,7 +43986,7 @@ class Mission
 		};
 		class Item135
 		{
-			position[]={11714.176,27.375412,9111.0918};
+			position[]={15199.074,26.788809,11426.332};
 			name="heroin_1";
 			text="Heroin Field";
 			type="hd_dot";
@@ -43996,7 +43994,7 @@ class Mission
 		};
 		class Item136
 		{
-			position[]={11713.73,27.690056,9103.7891};
+			position[]={15201.765,27.605246,11416.339};
 			name="heroin_area";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -44006,7 +44004,7 @@ class Mission
 		};
 		class Item137
 		{
-			position[]={20243.877,46.519028,8917.9033};
+			position[]={15308.969,4.0428553,15886.688};
 			name="heroin_p";
 			text="Heroin Processing";
 			type="mil_dot";
