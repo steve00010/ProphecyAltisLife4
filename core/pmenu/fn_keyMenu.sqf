@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_keyMenu.sqf
 	Author: Bryan "Tonic" Boardwine

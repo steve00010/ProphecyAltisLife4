@@ -12,7 +12,7 @@ if((time - life_action_delay) < 2) exitWith {hint "You can't rapidly use action 
 _obj = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if((_obj getVariable["PickedUp",false])) exitWith {deleteVehicle _obj;}; //Object was already picked up.
 if(player distance _obj > 3) exitWith {};
-_itemInfo = _this GVAR ["item",[]]; 
+_itemInfo = _obj GVAR ["item",[]]; 
 if(EQUAL(count _itemInfo,0)) exitWith {deleteVehicle _this;};
 _itemName = ITEM_NAME(SEL(_itemInfo,0));
 _illegal = ITEM_ILLEGAL(SEL(_itemInfo,0));
@@ -20,7 +20,7 @@ _illegal = ITEM_ILLEGAL(SEL(_itemInfo,0));
 if(playerSide == west && (EQUAL(_illegal,1))) exitWith {
 	titleText[format[localize "STR_NOTF_PickedEvidence",_itemName,[round(ITEM_SELLPRICE(SEL(_itemInfo,0)) / 2)] call life_fnc_numberText],"PLAIN"];
 	ADD(BANK,round(ITEM_SELLPRICE(SEL(_itemInfo,0)) / 2));
-	deleteVehicle _this;
+	deleteVehicle _obj;
 	life_action_delay = time;
 };
 
@@ -32,11 +32,11 @@ if(!(EQUAL(_diff,SEL(_itemInfo,1)))) then {
 	if(([true,SEL(_itemInfo,0),_diff] call life_fnc_handleInv)) then {
 		player playMove "AinvPknlMstpSlayWrflDnon";
 		
-		_this SVAR ["item",[SEL(_itemInfo,0),(SEL(_itemInfo,1)) - _diff],true];
+		_obj SVAR ["item",[SEL(_itemInfo,0),(SEL(_itemInfo,1)) - _diff],true];
 		titleText[format[localize "STR_NOTF_Picked",_diff,localize _itemName],"PLAIN"];
-		INUSE(_this);
+		INUSE(_obj);
 	} else {
-		INUSE(_this);
+		INUSE(_obj);
 	};
 } else {
 	if(([true,SEL(_itemInfo,0),SEL(_itemInfo,1)] call life_fnc_handleInv)) then {
@@ -46,6 +46,6 @@ if(!(EQUAL(_diff,SEL(_itemInfo,1)))) then {
 		
 		titleText[format[localize "STR_NOTF_Picked",_diff,localize _itemName],"PLAIN"];
 	} else {
-		INUSE(_this);
+		INUSE(_obj);
 	};
 };
