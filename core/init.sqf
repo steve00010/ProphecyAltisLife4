@@ -104,6 +104,27 @@ life_fnc_moveIn = compileFinal
 ";
 player setVariable["missingOrgan",false,true];//sets variables to false on start
 player setVariable["hasOrgan",false,true];
+[] spawn {
+	while {true} do {
+		waitUntil {sleep 5; fog > 0};
+		0 setFog 0;
+	};
+};
+
+[] spawn {
+	while {true} do {
+		waitUntil {sleep 5; overcast != 0.2};
+		0 setOvercast 0.2;
+	};
+};
+
+[] spawn {
+	while {true} do {
+		sleep (600 + random 600); //10 MIN + UPTO 10 MIN EXTRA
+		[] spawn SOCK_fnc_updateRequest;
+		hint "Data saved to ProphecyServer, next save in 10 to 20 minutes.";
+	};	
+};
 
 [] spawn life_fnc_survival;
 [] execVM "core\welcome.sqf";
