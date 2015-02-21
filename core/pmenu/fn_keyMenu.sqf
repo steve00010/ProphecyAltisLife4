@@ -26,7 +26,7 @@ for "_i" from 0 to (count life_vehicles)-1 do
 	if(!isNull _veh && alive _veh) then
 	{
 		_skinI = _veh getVariable "Life_VEH_color";
-		_skin = SEL(SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"textures"),_skinI),0);
+		_skin = SEL(SEL(M_CONFIG(getArray,CONFIG_VEHICLES,(typeOf _veh),"textures"),_skinI),0);
 		_text = format["(%1)",_skin];
 		if(_text == "()") then
 		{

@@ -8,8 +8,9 @@
 	Master handling for picking up an item.
 */
 private ["_itemInfo","_itemName","_illegal","_diff"];
-if((time - life_action_delay) < 2) exitWith {hint "You can't rapidly use action keys!"; INUSE(_this);};
 _obj = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+if((time - life_action_delay) < 2) exitWith {hint "You can't rapidly use action keys!"; INUSE(_obj);};
+
 if((_obj getVariable["PickedUp",false])) exitWith {deleteVehicle _obj;}; //Object was already picked up.
 if(player distance _obj > 3) exitWith {};
 _itemInfo = _obj GVAR ["item",[]]; 
@@ -26,7 +27,7 @@ if(playerSide == west && (EQUAL(_illegal,1))) exitWith {
 
 life_action_delay = time;
 _diff = [SEL(_itemInfo,0),SEL(_itemInfo,1),life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff <= 0) exitWith {hint localize "STR_NOTF_InvFull"; INUSE(_this);};
+if(_diff <= 0) exitWith {hint localize "STR_NOTF_InvFull"; INUSE(_obj);};
 
 if(!(EQUAL(_diff,SEL(_itemInfo,1)))) then {
 	if(([true,SEL(_itemInfo,0),_diff] call life_fnc_handleInv)) then {
@@ -40,7 +41,7 @@ if(!(EQUAL(_diff,SEL(_itemInfo,1)))) then {
 	};
 } else {
 	if(([true,SEL(_itemInfo,0),SEL(_itemInfo,1)] call life_fnc_handleInv)) then {
-		deleteVehicle _this;
+		deleteVehicle _obj;
 		//waitUntil{isNull _this};
 		player playMove "AinvPknlMstpSlayWrflDnon";
 		
