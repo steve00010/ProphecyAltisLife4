@@ -18,7 +18,7 @@ if(life_blacklisted) exitWith
 
 
 
-if((FETCH_CONST(life_coplevel) < 1) && (FETCH_CONST(life_adminlevel) == 0)) then {
+if((FETCH_CONST(life_coplevel) < 1)) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 	sleep 60;
 };
