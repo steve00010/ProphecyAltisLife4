@@ -750,6 +750,14 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {};
+    };	
+	class B_Heli_Transport_01_camo_F {
+		vItemSpace = 200;
+		storageFee[] = { 0, 50000, 0, 0 };
+		garageSell[] = { 0, 85000, 0, 0 };
+		insurance = 16000;
+		chopShop = 45000;
+        textures[] = {};
     };
 	class O_Heli_Light_02_unarmed_F {
         vItemSpace = 210;
