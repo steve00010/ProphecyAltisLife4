@@ -51797,7 +51797,7 @@ class Mission
 			side="EMPTY";
 			vehicle="UserTexture10m_F";
 			skill=0.60000002;
-			init="this SetObjectTexture [0,""textures\kavalastation.paa""]; this allowDamage false;";
+			init="this SetObjectTexture [0,""textures\KAVHQ.paa""]; this allowDamage false;";
 		};
 		class Item5034
 		{
@@ -53392,7 +53392,7 @@ class Mission
 			side="EMPTY";
 			vehicle="UserTexture10m_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\misc\greenscreen.paa""]";
+			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\photo.paa""]";
 		};
 		class Item5184
 		{
