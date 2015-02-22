@@ -52228,7 +52228,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=415;
+		items=416;
 		class Item0
 		{
 			position[]={8316.7881,80.619583,25059.641};
@@ -52977,7 +52977,7 @@ class Mission
 		};
 		class Item93
 		{
-			position[]={4735.5439,70.305466,11620.974};
+			position[]={4229.7549,48.029175,11582.388};
 			name="weed_1";
 			text="Weed Field";
 			type="mil_dot";
@@ -53203,7 +53203,7 @@ class Mission
 		};
 		class Item122
 		{
-			position[]={12379.686,32.358154,14910.54};
+			position[]={12322.254,31.387526,14947.092};
 			name="cocaine_1";
 			text="Cocaine Field";
 			type="mil_dot";
@@ -53211,13 +53211,13 @@ class Mission
 		};
 		class Item123
 		{
-			position[]={12384.658,32.592194,14912.05};
+			position[]={12321.46,31.306915,14947.44};
 			name="coke_area";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorWhite";
-			a=100;
-			b=100;
+			a=35;
+			b=35;
 		};
 		class Item124
 		{
@@ -53307,7 +53307,7 @@ class Mission
 		};
 		class Item135
 		{
-			position[]={15199.074,26.788809,11426.332};
+			position[]={15859.659,18.478916,11111.316};
 			name="heroin_1";
 			text="Heroin Field";
 			type="hd_dot";
@@ -53315,13 +53315,13 @@ class Mission
 		};
 		class Item136
 		{
-			position[]={15201.765,27.605246,11416.339};
+			position[]={15859.859,18.587734,11110.108};
 			name="heroin_area";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorWhite";
-			a=100;
-			b=100;
+			a=35;
+			b=35;
 		};
 		class Item137
 		{
@@ -55619,6 +55619,16 @@ class Mission
 			name="adsasdasd_1";
 			text="SafeZone";
 			type="group_4";
+		};
+		class Item415
+		{
+			position[]={4230.5786,48.295784,11581.914};
+			name="weed_area";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorWhite";
+			a=35;
+			b=35;
 		};
 	};
 	class Sensors
