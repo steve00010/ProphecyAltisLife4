@@ -35256,8 +35256,8 @@ class Mission
 		};
 		class Item3354
 		{
-			position[]={3370.6033,26.875517,14334.63};
-			azimut=240;
+			position[]={3325.6663,29.397787,14280.366};
+			azimut=449.35251;
 			id=3455;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -52985,12 +52985,12 @@ class Mission
 		};
 		class Item94
 		{
-			position[]={3371.752,26.892365,14333.841};
+			position[]={3325.0391,29.411177,14281.619};
 			name="Weed_p_1";
 			text="Weed Processing";
 			type="mil_dot";
 			colorName="ColorEAST";
-			angle=196.76567;
+			angle=406.11816;
 		};
 		class Item95
 		{
