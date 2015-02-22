@@ -42342,7 +42342,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="  this enableSimulation false; this allowDamage false; this setVectorUp [0,0,0.1];  this SetObjectTexture [0,""textures\police\station\forum.paa""]; ";
+			init="  this enableSimulation false; this allowDamage false; this setVectorUp [0,0,0.1];  this SetObjectTexture [0,""textures\forum.paa""]; ";
 		};
 		class Item4035
 		{
@@ -42571,7 +42571,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="  this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\police\station\forum.paa""]; ";
+			init="  this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\forum.paa""]; ";
 		};
 		class Item4056
 		{
