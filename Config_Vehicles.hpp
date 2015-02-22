@@ -55,7 +55,7 @@ class CarShops {
 			{ "O_Truck_03_transport_F", 300000, "trucking",{ "life_donator", 1 } },
 			{ "O_Truck_03_covered_F", 450000, "trucking",{ "life_donator", 2 } },
 			{ "O_Truck_01_transport_F", 450000, "trucking",{ "life_donator", 3 } },
-			{ "O_Truck_03_device_F", 1200000, "trucking",{ "life_donator", 4 } },
+			{ "O_Truck_03_device_F", 600000, "trucking",{ "life_donator", 4 } },
 			{ "B_Truck_01_covered_F", 800000, "trucking",{ "life_donator", 5 } }			
 
 		};
@@ -808,15 +808,15 @@ class CfgVehicles {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_ion_co.paa"
             } },
             { "Dahoman", "civ", {
-                "textures\vehicles\MohawkDoors.paa",
-                "textures\vehicles\Mohawkmiddle.paa",
-                "textures\vehicles\Mohawksides.paa"
-            } },
-			{ "Proph", "civ", {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
-            } }
+            } },
+			{ "Proph", "civ", {
+                "textures\vehicles\MohawkDoors.paa",
+                "textures\vehicles\Mohawkmiddle.paa",
+                "textures\vehicles\Mohawksides.paa"				
+			} }
         };
     };
 };
