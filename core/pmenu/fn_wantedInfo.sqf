@@ -20,13 +20,13 @@ lbClear _list;
 
 _crimes = _this select 0;
 _bounty = _this select 1;
-	
+diag_log format["%1,%2",_crimes,_bounty];
 {
-	_crime = _x;
+	_crime = _x select 0;
 	if(!(_crime in _mylist)) then
 	{
 		_mylist pushBack _crime;
-		_list lbAdd format["%1 count(s) of %2",{_x == _crime} count _crimes,_crime];
+		_list lbAdd format["%1 count(s) of %2",{_x select 0 == _crime} count _crimes,_crime];
 	};
 } foreach _crimes;
 
