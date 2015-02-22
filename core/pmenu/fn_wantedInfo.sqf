@@ -18,15 +18,16 @@ if(typeName _data != "ARRAY") exitWith {_list lbAdd "Failed to fetch crimes";};
 if(count _data == 0) exitWith {_list lbAdd "Failed to fetch crimes";};
 lbClear _list;
 
-_crimes = _this select 0;
-_bounty = _this select 1;
+_crimes = (_this select 0) select 0;
+_bounty = (_this select 0) select 1;
+
 diag_log format["%1,%2",_crimes,_bounty];
 {
-	_crime = _x select 0;
+	_crime = _x;
 	if(!(_crime in _mylist)) then
 	{
 		_mylist pushBack _crime;
-		_list lbAdd format["%1 count(s) of %2",{_x select 0 == _crime} count _crimes,_crime];
+		_list lbAdd format["%1 count(s) of %2",{_x == _crime} count _crimes,_crime];
 	};
 } foreach _crimes;
 
