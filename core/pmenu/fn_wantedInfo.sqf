@@ -18,8 +18,8 @@ if(typeName _data != "ARRAY") exitWith {_list lbAdd "Failed to fetch crimes";};
 if(count _data == 0) exitWith {_list lbAdd "Failed to fetch crimes";};
 lbClear _list;
 
-_crimes = _data select 2;
-_bounty = _data select 3;
+_crimes = _this select 0;
+_bounty = _this select 1;
 	
 {
 	_crime = _x;
