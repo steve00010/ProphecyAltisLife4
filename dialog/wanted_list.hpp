@@ -10,8 +10,8 @@ class life_wanted_menu {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
 			x = 0.1;
-			y = 0.2;
-			w = 0.6;
+			y = 0.1;
+			w = 1;
 			h = (1 / 25);
 		};
 		
@@ -19,9 +19,9 @@ class life_wanted_menu {
 			colorBackground[] = {0, 0, 0, 0.7};
 			idc = -1;
 			x = 0.1;
-			y = 0.2 + (11 / 250);
-			w = 0.6;
-			h = 0.6 - (22 / 250);
+			y = 0.1 + (11 / 250);
+			w = 1;
+			h = 0.61;
 		};
 	};
 	
@@ -33,7 +33,7 @@ class life_wanted_menu {
 			idc = -1;
 			text = "$STR_Wanted_Title";
 			x = 0.1;
-			y = 0.2;
+			y = 0.1;
 			w = 0.6;
 			h = (1 / 25);
 		};
@@ -51,8 +51,10 @@ class life_wanted_menu {
 			sizeEx = 0.035;
 			onLBSelChanged = "[] spawn life_fnc_wantedGrab";
 			
-			x = 0.12; y = 0.28;
-			w = 0.2; h = 0.3;
+			x = 0.45;
+			y = 0.18;
+			w = 0.3;
+			h = 0.52;
 		};
 		
 		class PlayerList : Life_RscListBox 
@@ -63,8 +65,10 @@ class life_wanted_menu {
 			//colorBackground[] = {0,0,0,0};
 			onLBSelChanged = "";
 			
-			x = 0.34; y = 0.28;
-			w = 0.2; h = 0.3;
+			x = 0.12;
+			y = 0.18;
+			w = 0.3;
+			h = 0.52;
 		};
 		
 		class WantedDetails : Life_RscListBox
@@ -74,8 +78,8 @@ class life_wanted_menu {
 			sizeEx = 0.035;
 			colorBackground[] = {0, 0, 0, 0};
 			
-			x = 0.12;
-			y = 0.62;
+			x = 0.74;
+			y = 0.2;
 			w = 0.48;
 			h = 0.12;
 		};
@@ -83,18 +87,18 @@ class life_wanted_menu {
 		class BountyPrice : Life_RscText
 		{
 			idc = 2403;
-			text = "";
-			x = 0.12;
-			y = 0.30;
-			w = 0.6;
-			h = 0.6;
+			text = "PRICE";
+			x = 0.76;
+			y = 0.13;
+			w = 0.1;
+			h = 0.1;
 		};
 		
 		class WantedAddL : Life_RscCombo
 		{
 			idc = 2407;
-			x = 0.542; 
-			y = 0.28;
+			x = 0.6; 
+			y = 0.72;
 			w = (8 / 52); 
 			h = 0.03;
 		};
@@ -134,8 +138,8 @@ class life_wanted_menu {
 		{
 			idc = 1000;
 			text = "$STR_Wanted_People";
-			x = 0.12; 
-			y = 0.11;
+			x = 0.5; 
+			y = 0.01;
 			w = 0.2; 
 			h = 0.3;
 		};
@@ -143,8 +147,8 @@ class life_wanted_menu {
 		{
 			idc = 1001;
 			text = "$STR_Wanted_Citizens";
-			x = 0.34; 
-			y = 0.11;
+			x = 0.12; 
+			y = 0.01;
 			w = 0.2; 
 			h = 0.3;
 		};
@@ -152,8 +156,8 @@ class life_wanted_menu {
 		{
 			idc = 1002;
 			text = "$STR_Wanted_Crimes";
-			x = 0.542; 
-			y = 0.245;
+			x = 0.5; 
+			y = 0.72;
 			w = (8 / 52); 
 			h = 0.03;
 		};
