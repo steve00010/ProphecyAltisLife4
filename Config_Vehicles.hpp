@@ -325,7 +325,9 @@ class CfgVehicles {
 		garageSell[] = { 0, 4950, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = { };
+        textures[] = {
+            { "Police", "cop", {
+                "textures\vehicles\boat_police.paa"
     };
 
 	class C_Boat_Civil_01_rescue_F {
@@ -334,7 +336,6 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
-    };
 
 	class B_Truck_01_box_F {
         vItemSpace = 450;
