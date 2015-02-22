@@ -790,7 +790,18 @@ class CfgVehicles {
             } }
         };
     };
-
+	class I_Heli_Light_03_F {
+        vItemSpace = 115;
+        storageFee[] = { 15000, 0, 0, 0 };
+		garageSell[] = { 750000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 150000;
+        textures[] = {
+        	{ "Cop", "cop", {
+               "textures\vehicles\cop_hellcat.paa"
+            } }
+		};	
+	};
 	class I_Heli_Transport_02_F {
         vItemSpace = 375;
         storageFee[] = { 75000, 0, 0, 0 };
