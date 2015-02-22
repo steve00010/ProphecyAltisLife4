@@ -52629,7 +52629,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this setpos [13733.3, 18613.5, 0.015907301]; this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture [0,""textures\police\station\athira\athirapolicebillboard.paa""]";
+			init="this setpos [13733.3, 18613.5, 0.015907301]; this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1];";
 		};
 		class Item5114
 		{
@@ -53040,7 +53040,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_FlatTV_01_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\police\station\athira\athirapolicestation.paa""]";
+			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\athirapolicestation.paa""]";
 		};
 		class Item5152
 		{
@@ -53128,7 +53128,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_FlatTV_01_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\police\station\athira\athirapolicestation.paa""]";
+			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\athirapolicestation.paa""]";
 		};
 		class Item5160
 		{
@@ -53183,7 +53183,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\police\station\athira\athirawhite.paa""]";
+			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\athirawhite.paa""]";
 		};
 		class Item5165
 		{
@@ -53260,7 +53260,7 @@ class Mission
 			side="EMPTY";
 			vehicle="SignAd_Sponsor_F";
 			skill=0.60000002;
-			init=" this setpos [13699.7, 18581.6, -1.02413]; this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\police\station\athira\athiraparking.paa""]";
+			init=" this setpos [13699.7, 18581.6, -1.02413]; this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\athiraparking.paa""]";
 		};
 		class Item5172
 		{
@@ -53271,7 +53271,7 @@ class Mission
 			side="EMPTY";
 			vehicle="SignAd_Sponsor_F";
 			skill=0.60000002;
-			init=" this setpos [13693.9, 18582.801, -1.04951]; this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\police\station\athira\athiraparking.paa""]";
+			init=" this setpos [13693.9, 18582.801, -1.04951]; this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\athiraparking.paa""]";
 		};
 		class Item5173
 		{
@@ -53282,7 +53282,7 @@ class Mission
 			side="EMPTY";
 			vehicle="SignAd_Sponsor_F";
 			skill=0.60000002;
-			init=" this setpos [13706, 18580.301, -1.04863]; this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\police\station\athira\athiraparking.paa""]";
+			init=" this setpos [13706, 18580.301, -1.04863]; this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\athiraparking.paa""]";
 		};
 		class Item5174
 		{
@@ -53293,7 +53293,7 @@ class Mission
 			side="EMPTY";
 			vehicle="UserTexture10m_F";
 			skill=0.60000002;
-			init="this setObjectTexture[0,""textures\police\station\athira\athirasign.paa""]";
+			init="this setObjectTexture[0,""textures\athirasign.paa""]";
 		};
 		class Item5175
 		{
