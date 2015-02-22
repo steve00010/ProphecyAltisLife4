@@ -42353,7 +42353,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="  this enableSimulation false; this allowDamage false; this setVectorUp [0,0,0.1]; this SetObjectTexture [0,""textures\police\station\wallpaper.paa""]; ";
+			init="  this enableSimulation false; this allowDamage false; this setVectorUp [0,0,0.1]; this SetObjectTexture [0,""textures\wallpaper.paa""]; ";
 		};
 		class Item4036
 		{
@@ -42560,7 +42560,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="  this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\police\station\wallpaper.paa""]; ";
+			init="  this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\wallpaper.paa""]; ";
 		};
 		class Item4055
 		{
@@ -42582,7 +42582,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PCSet_01_screen_F";
 			skill=0.60000002;
-			init="  this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\police\station\wallpaper.paa""]; ";
+			init="  this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\wallpaper.paa""]; ";
 		};
 		class Item4057
 		{
@@ -42835,7 +42835,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_FlatTV_01_F";
 			skill=0.60000002;
-			init=" this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\police\station\wallpaper.paa""];";
+			init=" this enableSimulation false; this allowDamage false; this SetObjectTexture [0,""textures\wallpaper.paa""];";
 		};
 		class Item4080
 		{
