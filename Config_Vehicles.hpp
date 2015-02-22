@@ -422,10 +422,10 @@ class CfgVehicles {
 			{ "Drug", "civ", {
                 "textures\vehicles\offroad_drug.paa"
             } },
-			{ "Dea", "cop", {
+			{ "DEA", "cop", {
                 "textures\vehicles\offroad_dea.paa"
             },{"life_coplevel",5}},
-			{ "Swat", "cop", {
+			{ "SWAT", "cop", {
                 "textures\vehicles\offroad_swat.paa"
             },{"life_swatlevel",1} }
 	    };
@@ -469,7 +469,7 @@ class CfgVehicles {
 			{ "Green", "civ", {
 	           "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
-			{ "Highway", "cop", { 
+			{ "Police", "cop", { 
 				 "textures\vehicles\HighwaySportscar.paa"
 			} },
 			{ "WRC", "civ", {
@@ -584,7 +584,7 @@ class CfgVehicles {
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             } },
-			{ "Police", "cop", {
+			{ "Panda", "cop", {
                 "textures\vehicles\HighwaySportscar.paa"
             } }
         };
@@ -734,7 +734,7 @@ class CfgVehicles {
 			{ "Rebel Digital", "reb", {
 	                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             } },
-			{ "Cop", "cop", {
+			{ "Police", "cop", {
               "textures\vehicles\heli_police.paa"
             } },
 			{ "MSI", "civ", {
@@ -789,7 +789,7 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 150000;
         textures[] = {
-        	{ "Cop", "cop", {
+        	{ "Police", "cop", {
                "textures\vehicles\cop_hellcat.paa"
             } }
 		};	
