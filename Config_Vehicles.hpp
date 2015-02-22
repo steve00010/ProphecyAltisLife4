@@ -405,9 +405,6 @@ class CfgVehicles {
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa",
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             } },
-            { "Fed", "fed", {
-	                "#(ai,64,64,1)Fresnel(0.3,3)"
-            } },
             { "Police", "cop", {
                 "textures\vehicles\offroad_police.paa"
             } },
@@ -473,9 +470,6 @@ class CfgVehicles {
 			{ "Green", "civ", {
 	           "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
-            { "Police", "cop", {
-               "#(ai,64,64,1)Fresnel(1.3,7)"
-            } },
 			{ "Highway", "cop", { 
 				 "textures\vehicles\HighwaySportscar.paa"
 			} },
@@ -501,9 +495,6 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "Brown", "cop", {
-                "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa"
-            } },
 			{ "Digi Desert", "reb", {
 	                "\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa"
 	        } },
@@ -594,7 +585,7 @@ class CfgVehicles {
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             } },
-			{ "Cop", "cop", {
+			{ "Police", "cop", {
                 "textures\vehicles\HighwaySportscar.paa"
             } }
         };
@@ -610,9 +601,6 @@ class CfgVehicles {
         	{ "Dark Red", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
             } },
-			{ "Black", "cop", {
-	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
-            } },
 			{ "Silver", "civ", {
 	                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa"
             } },
@@ -622,7 +610,7 @@ class CfgVehicles {
             { "Poly", "civ", {
                 "textures\vehicles\poly_suv.paa"
             } },
-			{ "Cop", "cop", {
+			{ "Police", "cop", {
                 "textures\vehicles\suv_police.paa"
             } },
 			{ "Med", "med", {
@@ -711,12 +699,6 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "Sheriff", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
-            } },
-			{ "Black", "fed", {
-	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
-            } },
 			{ "Civ Blue", "civ", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa"
             } },
@@ -776,13 +758,10 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "Black", "fed", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
-            } },
 			{ "White / Blue", "civ", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"   
             } },
-			{ "Digi Green", "donate", {
+			{ "Digi Green", "civ", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa"
             } },
 			{ "Desert Digi", "reb", {
@@ -790,6 +769,9 @@ class CfgVehicles {
             } },
             { "EMS White", "med", {
                 "#(argb,8,8,3)color(1,1,1,0.8)"
+            } },
+			{ "Police", "cop", {
+                "textures\vehicles\police_orca.paa"
             } }
         };
     };
@@ -818,6 +800,11 @@ class CfgVehicles {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_ion_co.paa"
             } },
             { "Dahoman", "civ", {
+                "textures\vehicles\MohawkDoors.paa",
+                "textures\vehicles\Mohawkmiddle.paa",
+                "textures\vehicles\Mohawksides.paa"
+            } },
+			{ "Proph", "civ", {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
