@@ -6,7 +6,7 @@
 	Description:
 	Does something with vehicle purchasing.
 */
-private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_shopSide","_license"];
+private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_shopSide","_license","_DiscountMod"];
 _mode = SEL(_this,0);
 if((lbCurSel 2302) == -1) exitWith {hint localize "STR_Shop_Veh_DidntPick"};
 _className = lbData[2302,(lbCurSel 2302)];
@@ -15,8 +15,19 @@ _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = M_CONFIG(getArray,"CarShops",SEL(life_veh_shop,0),"vehicles");
 _shopSide = M_CONFIG(getText,"CarShops",SEL(life_veh_shop,0),"side");
 _basePrice = SEL(SEL(_vehicleList,_vIndex),1);
-
+switch(FETCH_CONST(life_donator)) do
+{
+	case 1: {_DiscountMod = 0.95;};
+	case 2: {_DiscountMod = 0.90;};
+	case 3: {_DiscountMod = 0.85;};
+	case 4: {_DiscountMod = 0.80;};
+	case 5: {_DiscountMod = 0.75;};
+};
  if(_mode) then {_basePrice = round(_basePrice * 1.5)};
+ if(FETCH_CONST(life_donator) > 0) then
+{
+	_basePrice = round(_basePrice * _DiscountMod);
+};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
