@@ -53693,7 +53693,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture [0,""textures\billboards\alukbill.paa""];";
+			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1];";
 		};
 	};
 	class Markers
