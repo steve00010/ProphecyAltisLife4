@@ -209,7 +209,7 @@ class CfgVehicles {
 		chopShop = 45000;
 		textures[] = {
 			{ "Police", "cop", {
-                "textures\vehicles\ghosthawk_01.paa","cop","textures\vehicles\ghosthawk_02.paa"
+                "textures\vehicles\ghosthawk_02.paa","cop","textures\vehicles\ghosthawk_01.paa"
 			} }
 		};
 	};
@@ -796,10 +796,10 @@ class CfgVehicles {
 	};
 	class I_Heli_Transport_02_F {
         vItemSpace = 375;
-        storageFee[] = { 15000, 0, 0, 0 };
-		garageSell[] = { 125000, 0, 0, 0 };
+        storageFee[] = { 15000, 0, 15000, 0 };
+		garageSell[] = { 125000, 0, 50000, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 150000;
         textures[] = {
         	{ "Ion", "civ", {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_ion_co.paa",
