@@ -53183,7 +53183,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_MapBoard_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this setObjectTexture[0,""textures\athirawhite.paa""]";
+			init=" this allowDamage false; this enableSimulation false;";
 		};
 		class Item5165
 		{
