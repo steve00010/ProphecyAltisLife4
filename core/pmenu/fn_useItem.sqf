@@ -6,18 +6,18 @@
 	Description:
 	Main function for item effects and functionality through the player menu.
 */
-private["_item"];
+private"_item";
 disableSerialization;
 if(EQUAL(lbCurSel 2005,-1)) exitWith {hint localize "STR_ISTR_SelectItemFirst";};
 _item = CONTROL_DATA(2005);
 
 switch (true) do
 {
-	case (_item in ["waterBottle","coffee","redgull"]): {
+	case (_item in ["waterBottle","coffee","redgull","monster"]): {
 		if(([false,_item,1] call life_fnc_handleInv)) then {
 			life_thirst = 100;
 			if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)) then {player setFatigue 0;};
-			if(EQUAL(_item,"redgull") && {EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)}) then {
+			if(EQUAL(_item,"redgull","monster") && {EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),1)}) then {
 				[] spawn {
 					life_redgull_effect = time;
 					titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];
