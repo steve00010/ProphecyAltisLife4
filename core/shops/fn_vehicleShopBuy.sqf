@@ -23,6 +23,7 @@ switch(FETCH_CONST(life_donator)) do
 	case 4: {_DiscountMod = 0.80;};
 	case 5: {_DiscountMod = 0.75;};
 };
+
  if(_mode) then {_basePrice = round(_basePrice * 1.5)};
  if(FETCH_CONST(life_donator) > 0) then
 {

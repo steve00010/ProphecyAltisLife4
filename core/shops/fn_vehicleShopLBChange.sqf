@@ -21,6 +21,16 @@ _basePrice = SEL(SEL(_vehicleList,_vIndex),1);
 
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
+_DiscountMod = 1;
+switch(FETCH_CONST(life_donator)) do
+{
+
+	case 1: {_DiscountMod = 0.95;};
+	case 2: {_DiscountMod = 0.90;};
+	case 3: {_DiscountMod = 0.85;};
+	case 4: {_DiscountMod = 0.80;};
+	case 5: {_DiscountMod = 0.75;};
+};
 
 ctrlShow [2330,true];
 (CONTROL(2300,2303)) ctrlSetStructuredText parseText format[
@@ -33,7 +43,7 @@ ctrlShow [2330,true];
 (localize "STR_Shop_Veh_UI_Fuel")+ " %7<br/>" +
 (localize "STR_Shop_Veh_UI_Armor")+ " %8",
 [_basePrice] call life_fnc_numberText,
-[round(_basePrice * 1.5)] call life_fnc_numberText,
+[round(_basePrice * 1.5 * _DiscountMod)] call life_fnc_numberText,
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,

@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_repairTruck.sqf
 	Author: Bryan "Tonic" Boardwine
