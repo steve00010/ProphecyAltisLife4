@@ -268,7 +268,13 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
-
+	class O_Truck_01_transport_F {
+        vItemSpace = 350;
+        storageFee[] = { 2500, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
 	class O_Truck_03_device_F {
         vItemSpace = 350;
         storageFee[] = { 15000, 0, 0, 0 };
@@ -349,6 +355,14 @@ class CfgVehicles {
 
 	class B_Truck_01_transport_F {
         vItemSpace = 325;
+        storageFee[] = { 12650, 0, 0, 0 };
+		garageSell[] = { 135000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	class O_Truck_03_ammo_F {
+        vItemSpace = 400;
         storageFee[] = { 12650, 0, 0, 0 };
 		garageSell[] = { 135000, 0, 0, 0 };
         insurance = 2500;
@@ -550,6 +564,14 @@ class CfgVehicles {
 		garageSell[] = { 65000, 0, 0, 0 };
 		insurance = 2500;
 		chopShop = 5000;
+		textures[] = {};
+	};
+	class B_Truck_01_covered_F {
+		vItemSpace = 350;
+		storageFee[] = { 25000, 0, 0, 0 };
+		garageSell[] = { 65000, 0, 0, 0 };
+		insurance = 2500;
+		chopShop = 25000;
 		textures[] = {};
 	};
 
@@ -782,6 +804,23 @@ class CfgVehicles {
             } }
         };
     };
+	class O_Heli_Light_02_F {
+		vItemSpace = 120;
+        storageFee[] = { 15000, 0, 0, 0 };
+		garageSell[] = { 750000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 150000;
+        textures[] = {};
+	};
+	class C_Heli_Light_01_civil_F {
+		vItemSpace = 150;
+        storageFee[] = { 15000, 0, 0, 0 };
+		garageSell[] = { 750000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 150000;
+        textures[] = {};
+	};
+	
 	class O_Heli_Transport_04_bench_F {
         vItemSpace = 140;
         storageFee[] = { 15000, 0, 0, 0 };
@@ -789,8 +828,8 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 150000;
         textures[] = {};
-		};	
-	};
+	};	
+	
 	class I_Heli_Light_03_F {
         vItemSpace = 115;
         storageFee[] = { 15000, 0, 0, 0 };
