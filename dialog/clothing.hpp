@@ -48,7 +48,7 @@ class Life_Clothing {
 			x = 0.0842977 * safezoneW + safezoneX;
 			y = 0.240498 * safezoneH + safezoneY;
 			w = 0.3;
-			h = 0.35;
+			h = 0.4;
 		};
 		
 		class PriceTag : Life_RscStructuredText
@@ -91,7 +91,7 @@ class Life_Clothing {
 			idc = -1;
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
-			x = 0.147 * safezoneW + safezoneX;
+			x = 0.148 * safezoneW + safezoneX;
 			y = 0.489992 * safezoneH + safezoneY;
 			w = (6.25 / 40);
 			h = (1 / 25);

@@ -54,7 +54,7 @@ class CarShops {
 			{ "O_Truck_03_ammo_F", 300000, "trucking" },
 			{ "O_Truck_03_transport_F", 300000, "trucking",{ "life_donator", 1 } },
 			{ "O_Truck_03_covered_F", 450000, "trucking",{ "life_donator", 2 } },
-			{ "O_Truck_01_transport_F", 450000, "trucking",{ "life_donator", 3 } },
+			{ "B_Truck_01_transport_F", 450000, "trucking",{ "life_donator", 3 } },
 			{ "O_Truck_03_device_F", 600000, "trucking",{ "life_donator", 4 } },
 			{ "B_Truck_01_covered_F", 800000, "trucking",{ "life_donator", 5 } }			
 
@@ -268,7 +268,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
-	class O_Truck_01_transport_F {
+	class B_Truck_01_transport_F {
         vItemSpace = 350;
         storageFee[] = { 2500, 0, 0, 0 };
         insurance = 2500;
