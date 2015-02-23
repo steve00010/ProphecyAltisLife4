@@ -171,28 +171,28 @@ class CfgVehicles {
 		textures[] = {};
 	};
 
-	class I_Truck_02_medical_F : Default {
+	class I_Truck_02_medical_F : Default {							//Zamak Medical
 		vItemSpace = 60;
 		storageFee[] = { 0, 0, 1500, 0 };
 		garageSell[] = { 0, 0, 5000, 0 };
 		chopShop = 3000;
 	};
 
-	class O_Truck_03_medical_F : Default {
+	class O_Truck_03_medical_F : Default {							//Zamak Medical
 		vItemSpace = 70;
 		storageFee[] = { 0, 0, 3000, 0 };
 		garageSell[] = { 0, 0, 10000, 0 };
 		chopShop = 7500;
 	};
 
-	class B_Truck_01_medical_F : Default {
+	class B_Truck_01_medical_F : Default {							//HEMTT Medical
 		vItemSpace = 80;
 		storageFee[] = { 0, 0, 6500, 0 };
 		garageSell[] = { 0, 0, 25000, 0 };
 		chopShop = 12500;
 	};
 
-	class C_Rubberboat {
+	class C_Rubberboat {											//Civ Rubberboat
         vItemSpace = 45;
         storageFee[] = { 400, 300, 0, 0 };
 		garageSell[] = { 950, 350, 0, 0 };
@@ -201,7 +201,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class B_Heli_Transport_01_F {
+	class B_Heli_Transport_01_F {									//UH80- Ghosthawk
 		vItemSpace = 200;
 		storageFee[] = { 0, 50000, 0, 0 };
 		garageSell[] = { 0, 85000, 0, 0 };
@@ -214,11 +214,11 @@ class CfgVehicles {
 		};
 	};
 
-	class B_MRAP_01_hmg_F : Default {
+	class B_MRAP_01_hmg_F : Default {								//Hunter HMG
 		vItemSpace = 100;
 	};
 
-	class O_Boat_Armed_01_hmg_F {
+	class O_Boat_Armed_01_hmg_F {									//Speedboat HMG
         vItemSpace = 175;
         storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 21000, 21000, 0, 0 };
@@ -227,7 +227,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class B_Boat_Armed_01_minigun_F {
+	class B_Boat_Armed_01_minigun_F {								//Speedboat Minigun
         vItemSpace = 175;
         storageFee[] = { 0, 16500, 0, 0 };
 		garageSell[] = { 0, 21000, 0, 0 };
@@ -236,7 +236,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class I_Boat_Armed_01_minigun_F {
+	class I_Boat_Armed_01_minigun_F {								//Speedboat Minigun
         vItemSpace = 175;
         storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
@@ -244,7 +244,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class B_G_Boat_Transport_01_F {
+	class B_G_Boat_Transport_01_F {									//Assault Boat						
         vItemSpace = 45;
         storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
@@ -252,7 +252,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class B_Boat_Transport_01_F {
+	class B_Boat_Transport_01_F {									//Assault Boat
         vItemSpace = 45;
         storageFee[] = { 0, 450, 0, 0 };
 		garageSell[] = { 0, 850, 0, 0 };
@@ -261,21 +261,21 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class O_Truck_03_transport_F {
+	class O_Truck_03_transport_F {									//Tempest Transport
         vItemSpace = 285;
         storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
     };
-	class B_Truck_01_transport_F {
+	class B_Truck_01_transport_F {									//HEMTT Transport
         vItemSpace = 350;
         storageFee[] = { 2500, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
     };
-	class O_Truck_03_device_F {
+	class O_Truck_03_device_F {										//Tempest (Device)
         vItemSpace = 350;
         storageFee[] = { 15000, 0, 0, 0 };
 		garageSell[] = { 185000, 0, 0, 0 };
@@ -296,7 +296,7 @@ class CfgVehicles {
         vItemSpace = 700;
     };
 
-	class B_G_Offroad_01_F {
+	class B_G_Offroad_01_F {										//Off-Road
         vItemSpace = 65;
         storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 3500, 0, 0, 0 };
@@ -305,9 +305,9 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class B_G_Offroad_01_armed_F : B_G_Offroad_01_F {};
+	class B_G_Offroad_01_armed_F : B_G_Offroad_01_F {};							
 
-	class I_G_Van_01_transport_F {
+	class I_G_Van_01_transport_F {									//Van
         vItemSpace = 100;
         storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
@@ -315,7 +315,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class C_Boat_Civil_01_F {
+	class C_Boat_Civil_01_F {										//Powerboat
         vItemSpace = 85;
         storageFee[] = { 4500, 2500, 0, 0 };
 		garageSell[] = { 6800, 3500, 0, 0 };
@@ -324,7 +324,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class C_Boat_Civil_01_police_F {
+	class C_Boat_Civil_01_police_F {								//Powerboat Police
         vItemSpace = 85;
         storageFee[] = { 0, 3500, 0, 0 };
 		garageSell[] = { 0, 4950, 0, 0 };
@@ -337,14 +337,14 @@ class CfgVehicles {
 		};
     };
 
-	class C_Boat_Civil_01_rescue_F {
+	class C_Boat_Civil_01_rescue_F {								//Powerboat
         vItemSpace = 85;
         storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
 	};
-	class B_Truck_01_box_F {
+	class B_Truck_01_box_F {										//HEMTT Box
         vItemSpace = 450;
         storageFee[] = { 35000, 0, 0, 0 };
 		garageSell[] = { 150000, 0, 0, 0 };
@@ -352,7 +352,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
-	class O_Truck_03_ammo_F {
+	class O_Truck_03_ammo_F {										//Tempest Ammo
         vItemSpace = 400;
         storageFee[] = { 12650, 0, 0, 0 };
 		garageSell[] = { 135000, 0, 0, 0 };
@@ -361,7 +361,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class O_MRAP_02_F {
+	class O_MRAP_02_F {												//Iffrit
         vItemSpace = 60;
         storageFee[] = { 45000, 0, 0, 0 };
 		garageSell[] = { 65000, 0, 0, 0 };
@@ -370,7 +370,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class I_MRAP_03_F {
+	class I_MRAP_03_F {												//Strider
         vItemSpace = 58;
         storageFee[] = { 1000, 0, 0, 0 };
         insurance = 2500;
@@ -378,7 +378,7 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class C_Offroad_01_F {
+	class C_Offroad_01_F {											//Civ Off-Road
         vItemSpace = 65;
         storageFee[] = { 1000, 500, 650, 1000 };
 		garageSell[] = { 6500, 2500, 0, 0 };
@@ -449,7 +449,7 @@ class CfgVehicles {
 	class C_Kart_01_Red_F : C_Kart_01_Blu_F {}; //Inherits everything from the above class
 	class C_Kart_01_Vrana_F : C_Kart_01_Blu_F {}; //Inherits everything from the above class
 
-	class C_Hatchback_01_sport_F {
+	class C_Hatchback_01_sport_F {										//Hatchback Sport
         vItemSpace = 45;
         storageFee[] = { 2500, 1000, 0, 0 };
 		garageSell[] = { 15000, 7500, 0, 0 };
@@ -492,7 +492,7 @@ class CfgVehicles {
 		};
     };
 
-	class B_Quadbike_01_F {
+	class B_Quadbike_01_F {												//Quadbike
         vItemSpace = 25;
         storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 950, 0, 0, 0 };
@@ -526,7 +526,7 @@ class CfgVehicles {
         };
     };
 
-	class I_Truck_02_covered_F {
+	class I_Truck_02_covered_F {										//Zamak Covered
         vItemSpace = 250;
         storageFee[] = { 14500, 0, 0, 0 };
 		garageSell[] = { 62000, 0, 0, 0 };
@@ -543,13 +543,13 @@ class CfgVehicles {
         };
     };
 
-	class I_Truck_02_transport_F : I_Truck_02_covered_F {
+	class I_Truck_02_transport_F : I_Truck_02_covered_F {				//Zamak Transport
         vItemSpace = 200;
         storageFee[] = { 12000, 0, 0, 0 };
 		garageSell[] = { 49800, 3500, 0, 0 };
     };
 
-	class O_Truck_03_covered_F {
+	class O_Truck_03_covered_F {										//Tempest Covered
 		vItemSpace = 300;
 		storageFee[] = { 25000, 0, 0, 0 };
 		garageSell[] = { 65000, 0, 0, 0 };
@@ -557,7 +557,7 @@ class CfgVehicles {
 		chopShop = 5000;
 		textures[] = {};
 	};
-	class B_Truck_01_covered_F {
+	class B_Truck_01_covered_F {										//HEMTT Covered
 		vItemSpace = 350;
 		storageFee[] = { 25000, 0, 0, 0 };
 		garageSell[] = { 65000, 0, 0, 0 };
@@ -566,7 +566,7 @@ class CfgVehicles {
 		textures[] = {};
 	};
 
-	class C_Hatchback_01_F {
+	class C_Hatchback_01_F {											//Civ Hatchback
         vItemSpace = 40;
         storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 4500, 3500, 0, 0 };
@@ -603,7 +603,7 @@ class CfgVehicles {
         };
     };
 
-	class C_SUV_01_F {
+	class C_SUV_01_F {														//SUV
         vItemSpace = 50;
         storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 15000, 7500, 0, 0 };
@@ -643,7 +643,7 @@ class CfgVehicles {
 	    };
     };
 
-	class C_Van_01_transport_F {
+	class C_Van_01_transport_F {											//Van
         vItemSpace = 100;
         storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 25000, 0, 0, 0 };
@@ -659,7 +659,7 @@ class CfgVehicles {
         };
     };
 
-	class C_Van_01_box_F {
+	class C_Van_01_box_F {													//Van Box
         vItemSpace = 150;
         storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 35000, 0, 0, 0 };
@@ -678,7 +678,7 @@ class CfgVehicles {
             } }
         };
     };
-	class B_MRAP_01_F {
+	class B_MRAP_01_F {														//Hunter
         vItemSpace = 65;
         storageFee[] = { 0, 7500, 0, 0 };
 		garageSell[] = { 0, 10000, 0, 0 };
@@ -704,7 +704,7 @@ class CfgVehicles {
         };
     };
 
-	class B_Heli_Light_01_F {
+	class B_Heli_Light_01_F {												//MH-9 Hummingbird
         vItemSpace = 90;
         storageFee[] = { 10000, 19500, 0, 0 };
 		garageSell[] = { 57000, 35000, 0, 0 };
@@ -755,7 +755,7 @@ class CfgVehicles {
             } }
         };
     };
-	class B_Heli_Light_01_armed_F {
+	class B_Heli_Light_01_armed_F {											//AH-9 Pawnee
         vItemSpace = 20;
         storageFee[] = { 10000, 0, 0, 0 };
 		garageSell[] = { 57000, 0, 0, 0 };
@@ -763,7 +763,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {};
     };	
-	class B_Heli_Transport_01_camo_F {
+	class B_Heli_Transport_01_camo_F {										//Uh-80 Camo Ghosthawk
 		vItemSpace = 200;
 		storageFee[] = { 0, 50000, 0, 0 };
 		garageSell[] = { 0, 85000, 0, 0 };
@@ -771,7 +771,7 @@ class CfgVehicles {
 		chopShop = 45000;
         textures[] = {};
     };
-	class O_Heli_Light_02_unarmed_F {
+	class O_Heli_Light_02_unarmed_F {										//PO-30 Orca Black
         vItemSpace = 210;
         storageFee[] = { 15000, 0, 22000, 0 };
 		garageSell[] = { 72500, 0, 35000, 0 };
@@ -795,24 +795,24 @@ class CfgVehicles {
             } }
         };
     };
-	class O_Heli_Light_02_F {
+	class O_Heli_Light_02_F {												//PO-30 Orca
 		vItemSpace = 120;
         storageFee[] = { 15000, 0, 0, 0 };
-		garageSell[] = { 750000, 0, 0, 0 };
+		garageSell[] = { 25000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 150000;
         textures[] = {};
 	};
-	class C_Heli_Light_01_civil_F {
+	class C_Heli_Light_01_civil_F {											//M-900 Hummingbird
 		vItemSpace = 150;
         storageFee[] = { 15000, 0, 0, 0 };
-		garageSell[] = { 750000, 0, 0, 0 };
+		garageSell[] = { 25000, 0, 0, 0 };
         insurance = 2500;
-        chopShop = 150000;
+        chopShop = 15000;
         textures[] = {};
 	};
 	
-	class O_Heli_Transport_04_bench_F {
+	class O_Heli_Transport_04_bench_F {										//Taru Bench
         vItemSpace = 140;
         storageFee[] = { 15000, 0, 0, 0 };
 		garageSell[] = { 750000, 0, 0, 0 };
@@ -821,10 +821,10 @@ class CfgVehicles {
         textures[] = {};
 	};	
 	
-	class I_Heli_Light_03_F {
+	class I_Heli_Light_03_F {												//WY-55 Hellcat
         vItemSpace = 115;
         storageFee[] = { 15000, 0, 0, 0 };
-		garageSell[] = { 750000, 0, 0, 0 };
+		garageSell[] = { 150000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 150000;
         textures[] = {
@@ -833,7 +833,7 @@ class CfgVehicles {
             } }
 		};	
 	};
-	class I_Heli_Transport_02_F {
+	class I_Heli_Transport_02_F {											//CH-49 Mohawk
         vItemSpace = 375;
         storageFee[] = { 15000, 0, 15000, 0 };
 		garageSell[] = { 125000, 0, 50000, 0 };

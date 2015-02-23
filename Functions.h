@@ -228,6 +228,7 @@ class Life_Client_Core
 		class updateCash {};
 		class prisonbreak {};
 		class progressBar {};
+		class fatigueReset {};
 	};
 	
 	class Network
