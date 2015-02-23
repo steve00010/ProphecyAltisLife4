@@ -200,7 +200,25 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
-
+	
+	class B_SDV_01_F {												//Cop SDV
+        vItemSpace = 20;
+        storageFee[] = { 400, 300, 0, 0 };
+		garageSell[] = { 2500,2500, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
+	class I_SDV_01_F {												//Reb SDV
+        vItemSpace = 20;
+        storageFee[] = { 400, 300, 0, 0 };
+		garageSell[] = { 2500,2500, 0, 0 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };
+    };
+	
 	class B_Heli_Transport_01_F {									//UH80- Ghosthawk
 		vItemSpace = 200;
 		storageFee[] = { 0, 50000, 0, 0 };
@@ -603,7 +621,7 @@ class CfgVehicles {
         };
     };
 
-	class C_SUV_01_F {														//SUV
+	class C_SUV_01_F {															//SUV
         vItemSpace = 50;
         storageFee[] = { 1000, 0, 0, 0 };
 		garageSell[] = { 15000, 7500, 0, 0 };
