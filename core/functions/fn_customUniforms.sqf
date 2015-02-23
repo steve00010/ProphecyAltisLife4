@@ -4,7 +4,7 @@ if (playerSide == west) then
 {
 	if(uniform player == "U_Rangemaster") then 
 	{
-		player setObjectTextureGlobal [0,"textures\uniforms\Marshall_uniform.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\Marshall_uniform.jpg"];
 	};
 
 	if(uniform player == "U_B_CombatUniform_mcam_worn") then 
