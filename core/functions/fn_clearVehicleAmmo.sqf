@@ -31,7 +31,27 @@ if(EQUAL(_veh,"B_Heli_Transport_01_F")) then
 	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[1]];
 	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[2]];
 };
+if(_veh == "B_Heli_Light_01_armed_F") then 
+{
+	_vehicle removeMagazinesTurret ["5000Rnd_762x51_Belt",[-1]];
+	_vehicle removeMagazinesTurret ["24Rnd_missiles",[-1]];
+};
 
+if(_veh == "O_Heli_Light_02_F") then 
+{
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Green_Splash",[-1]];
+	_vehicle removeMagazinesTurret ["12Rnd_PG_missiles",[-1]];
+};
+
+if(_veh == "B_Heli_Transport_01_camo_F") then 
+{
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[1]];
+	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[2]];
+};
+if(_veh == "I_Heli_light_03_F") then 
+{
+	_vehicle removeMagazinesTurret ["24Rnd_missiles",[-1]];
+};
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;
