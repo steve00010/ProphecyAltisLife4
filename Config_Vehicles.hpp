@@ -352,15 +352,6 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
-
-	class B_Truck_01_transport_F {
-        vItemSpace = 325;
-        storageFee[] = { 12650, 0, 0, 0 };
-		garageSell[] = { 135000, 0, 0, 0 };
-        insurance = 2500;
-        chopShop = 5000;
-        textures[] = { };
-    };
 	class O_Truck_03_ammo_F {
         vItemSpace = 400;
         storageFee[] = { 12650, 0, 0, 0 };
