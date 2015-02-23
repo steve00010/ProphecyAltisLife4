@@ -104,12 +104,7 @@ life_fnc_moveIn = compileFinal
 ";
 player setVariable["missingOrgan",false,true];//sets variables to false on start
 player setVariable["hasOrgan",false,true];
-[] spawn {
-	while {true} do {
-		waitUntil {sleep 5; fog > 0};
-		0 setFog 0;
-	};
-};
+
 
 [] spawn {
 	while {true} do {
