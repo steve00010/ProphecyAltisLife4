@@ -60,11 +60,11 @@ class Life_Settings {
 
 	crimes[] = { 
 		{"STR_Crime_1","350","1"}, 			//Driving Without Lights
-		{"STR_Crime_2","1000","2"}, 			//Driving Without License
-		{"STR_Crime_3","1000","3"}, 			//Driving Over The Speed Limit
+		{"STR_Crime_2","1000","2"}, 		//Driving Without License
+		{"STR_Crime_3","1000","3"}, 		//Driving Over The Speed Limit
 		{"STR_Crime_4","500","4"}, 			//Reckless Driving
-		{"STR_Crime_5","20000","5"},			//Driving Stolen Vehicle
-		{"STR_Crime_6","5000","6"}, 			//Hit and Run
+		{"STR_Crime_5","20000","5"},		//Driving Stolen Vehicle
+		{"STR_Crime_6","5000","6"}, 		//Hit and Run
 		{"STR_Crime_7","10000","7"}, 		//Attempted Murder
 		{"STR_Crime_187V","7500","8"},		//Vehicular Manslaughter
 		{"STR_Crime_187","25000","9"},		//Manslaughter
@@ -348,17 +348,17 @@ class Licenses {
 class VirtualShops {
 	class market {
 		name = "STR_Shops_Market";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig", "scratchcard", "monster","zipties" };
+		items[] = { "waterBottle", "rabbit_grilled", "apple", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "storagesmall", "storagebig", "scratchcard", "monster","zipties", "bottles","cornmeal" };
 	};
 
 	class rebel {
 		name = "STR_Shops_Rebel";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "scratchcard","zipties","underwatercharge" };
+		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "scratchcard","zipties","underwatercharge", "bottles", "cornmeal" };
 	};
 
 	class gang {
 		name = "STR_Shops_Gang";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "scratchcard","zipties" };
+		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge", "scratchcard","zipties", "monster" };
 	};
 
 	class wongs {
@@ -377,7 +377,7 @@ class VirtualShops {
 	};
 	class bar {
 		name="STR_Shops_Bar";
-		items[] = {"bottledbeer","bottledwhiskey","bottledshine","moonshine"};
+		items[] = {"bottledbeer","bottledwhiskey","bottledshine","moonshine","redgull"};
 	};
 	class oil {
 		name = "STR_Shops_Oil";
