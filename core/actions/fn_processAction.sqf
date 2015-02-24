@@ -15,12 +15,12 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {
-	case "oil": {["oilu","oilp",1200,"Processing Oil"];};
-	case "diamond": {["diamond","diamondc",1350,"Processing Diamond"]};
-	case "copper": {["copperore","copper_r",750,"Processing Copper"]};
-	case "iron": {["ironore","iron_r",1120,"Processing Iron"]};
+	case "oil": {["oil_unprocessed","oil_processed",1200,"Processing Oil"];};
+	case "diamond": {["diamond_uncut","diamond_cut",1350,"Processing Diamond"]};
+	case "copper": {["copper_unrefined","copper_refined",750,"Processing Copper"]};
+	case "iron": {["iron_unrefined","iron_refined",1120,"Processing Iron"]};
 	case "sand": {["sand","glass",650,"Processing Sand"]};
-	case "salt": {["salt","salt_r",450,"Processing Salt"]};
+	case "salt": {["salt_unrefined","salt_refined",450,"Processing Salt"]};
 	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1500,"Making Cocaine"]};
 	case "marijuana": {["cannabis","marijuana",500,"Drying and Bagging Marijuana"]};
 	case "heroin": {["heroin_unprocessed","heroin_processed",1720,"Processing Heroin"]};
