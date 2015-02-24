@@ -217,9 +217,9 @@ class Clothing {
 			{ "H_Bandanna_camo", "", 650, { "", "", -1 } },
 			{ "H_BandMask_demon", "Bandanna Demon", 650, { "", "", -1 } },
 			{ "H_Beret_red", "Black beret", 650, { "", "", -1 } },
-			{ "H_CrewHelmetHeli_O", "Crew helmet", 2500, { "", "", -1 } },
-			{ "H_HelmetSpecO_blk", "Spec Op Black", 2500, { "", "", -1 } },
-			{ "H_PilotHelmetHeli_O", "Pilot Helmet", 2500, { "", "", -1 } },	
+			{ "H_CrewHelmetHeli_O", "Crew helmet", 1500, { "", "", -1 } },
+			{ "H_HelmetSpecO_blk", "Spec Op Black", 1500, { "", "", -1 } },
+			{ "H_PilotHelmetHeli_O", "Pilot Helmet", 1500, { "", "", -1 } },	
 			{ "H_Booniehat_indp", "Boonie Hat", 1000, { "", "", -1 } }
 			
 		};
