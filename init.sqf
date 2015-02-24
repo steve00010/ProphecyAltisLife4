@@ -10,7 +10,8 @@ life_versionInfo = "Altis Life RPG v4.1";
 [] execVM "scripts\zlt_fastrope.sqf";
 
 
+
 StartProgress = true;
 {_x setMarkerAlphaLocal 0} forEach ["mrkRed","mrkRed_1","mrkRed_1_1","mrkRed_1_3","mrkGreen"];
 
-[] spawn life_fnc_fatigueReset;
+
