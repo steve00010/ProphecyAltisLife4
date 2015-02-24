@@ -6,7 +6,7 @@
 	Description:
 	Main function for item effects and functionality through the player menu.
 */
-private"_item";
+private["_item"];
 disableSerialization;
 if(EQUAL(lbCurSel 2005,-1)) exitWith {hint localize "STR_ISTR_SelectItemFirst";};
 _item = CONTROL_DATA(2005);
