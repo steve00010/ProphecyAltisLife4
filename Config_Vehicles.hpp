@@ -112,7 +112,8 @@ class CarShops {
 			{ "B_Heli_Transport_03_unarmed_F", 2500000, "cAir", { "life_coplevel", 2 } },
 			{ "O_Heli_Light_02_unarmed_F", 600000, "cAir", { "life_donator", 2 } },
 			{ "B_Heli_Transport_01_F", 2000000, "cAir", { "life_donator", 5 } },
-			{ "I_Heli_light_03_F", 1000000, "cAir", { "life_coplevel", 5 } }
+			{ "I_Heli_light_03_F", 1000000, "cAir", { "life_coplevel", 5 } },
+			{ "B_Heli_Transport_03_unarmed_F", 1500000, "cAir", { "life_coplevel", 2 } }
 		};
 	};
 
@@ -123,7 +124,8 @@ class CarShops {
 			{ "B_Heli_Transport_03_unarmed_F", 2500000, "cAir", { "life_coplevel", 2 } },
 			{ "O_Heli_Light_02_unarmed_F", 600000, "cAir", { "life_donator", 2 } },
 			{ "B_Heli_Transport_01_F", 2000000, "cAir", { "life_donator", 5 } },
-			{ "I_Heli_light_03_F", 1000000, "cAir", { "life_coplevel", 5 } }
+			{ "I_Heli_light_03_F", 1000000, "cAir", { "life_coplevel", 5 } },
+			{ "B_Heli_Transport_03_unarmed_F", 1500000, "cAir", { "life_coplevel", 2 } }
 		};
 	};
 
@@ -362,6 +364,15 @@ class CfgVehicles {
 		garageSell[] = { 0, 85000, 0, 0 };
 		insurance = 16000;
 		chopShop = 45000;
+        textures[] = {};
+    };
+	
+	class B_Heli_Transport_03_unarmed_F {								//HURRON
+		vItemSpace = 150;
+		storageFee[] = { 50000, 0, 0, 0 };
+		garageSell[] = { 150000, 0, 0, 0 };
+		insurance = 16000;
+		chopShop = 450000;
         textures[] = {};
     };
 
@@ -858,7 +869,7 @@ class CfgVehicles {
         storageFee[] = { 15000, 0, 0, 0 };
 		garageSell[] = { 150000, 0, 0, 0 };
         insurance = 2500;
-        chopShop = 150000;
+        chopShop = 100000;
         textures[] = {
         	{ "Police", "cop", {
                "textures\vehicles\cop_hellcat.paa"
