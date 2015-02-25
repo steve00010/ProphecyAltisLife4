@@ -16,6 +16,21 @@ class CarShops {
 			{ "C_Van_01_transport_F", 25000, "driver" }
 		};
 	};
+	
+	class arc_car {
+		side = "arc";
+		vehicles[] = { 
+			{ "C_Offroad_01_F", 7500, "driver" },
+			{ "C_SUV_01_F", 10000, "driver" }
+		};
+	};
+	
+	class arc_air {
+		side = "arc";
+		vehicles[] = {
+			{ "O_Heli_Light_02_unarmed_F", 50000, "", }
+		};
+	};
 
 	class kart_shop {
 		side = "civ";
