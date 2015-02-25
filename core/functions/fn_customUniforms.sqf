@@ -57,7 +57,7 @@ if (playerSide == civilian) then {
 	{
 	if(uniform player == "U_Rangemaster") then 
 	{
-		player setObjectTextureGlobal [0,"textures\uniforms\adac_junior.paa"];
-		player setObjectTextureGlobal [0,"textures\uniforms\adac_senior.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\arc_junior.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\arc_senior.paa"];
 	};
 };
