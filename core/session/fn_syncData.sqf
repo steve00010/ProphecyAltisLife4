@@ -30,7 +30,7 @@ if(playerside == west) then {  //THIS IS WHAT I ADDED
 };
 	
 [] call SOCK_fnc_updateRequest;
-
+[] spawn life_fnc_customUniforms;
 
 
 hint localize "STR_Session_SyncData";
@@ -38,4 +38,3 @@ life_session_time = true;
 sleep (5 * 60);
 life_session_time = false;
 
-[] spawn life_fnc_customUniforms;
