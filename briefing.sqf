@@ -63,8 +63,8 @@ player createDiarySubject ["controls","Controls"];
 					Any vehicle spawn (shop or garage)<br/>
 					Any weapon shop<br/>
 					All Police HQs<br/>
-					Rebel Outposts<br/>
-					Donator Shops<br/><br/>
+					Kavala Market, Police Can arrest you in a Safe Zone if you are wanted.<br/>
+					Rebel Base<br/>
 				"
 		]
 	];
@@ -79,7 +79,7 @@ player createDiarySubject ["controls","Controls"];
 				1. Hacking<br/>
 				2. Cheating<br/>
 				3. Exploiting (See 'Exploits')<br/>
-				4. Being kicked 3 or more times.<br/><br/>
+				4. Being kicked 5 or more times.<br/><br/>
 				"
 		]
 	];
@@ -194,10 +194,10 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Don't Be A Dick!", 
 				"
-				If an admin has to tell you that you are being a dick, you are doing dickish things.<br/>
+				If an Admin has to tell you that you are being a dick, you are doing dickish things.<br/>
 				Causing others grief, disrupting roleplay, the list goes on.<br/>
 				Just don't be a dick okay?<br/>
-				This rule may be invoked at an admin's discretion.<br/><br/>
+				This rule may be invoked at an Admin's discretion.<br/><br/>
 				"
 		]
 	];
@@ -207,7 +207,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Crisis Negotiation",
 				"
-				Crisis Negotiation must be handled by a Sergeant. If one is not available, the person with the next highest rank must handle the situation.<br/><br/>
+				Crisis Negotiation must be handled by a Qualified Officer. If one is not available, the person with the next highest rank must handle the situation.<br/><br/>
 				"
 		]
 	];
@@ -254,7 +254,7 @@ player createDiarySubject ["controls","Controls"];
 				1. Gang areas are not considered illegal. Thus a cop may enter without a raid, but may not restrain or stop anyone inside without probable cause/illegal activity. (Talking to the gang NPC is NOT probable cause/illegal activity.)<br/>
 				2. Do not enter an illegal area unless it is part of a raid. see Raiding/Camping.<br/>
 				3. If you chase someone into an illegal area, call for backup.<br/>
-				4. Under no circumstances is an officer allowed to camp any illegal area.<br/><br/>
+				4. Under no circumstances is an officer allowed to camp any illegal area for extended periods of time, you can briefly stake it out, but that is it.<br/><br/>
 				"
 		]
 	];
@@ -264,8 +264,8 @@ player createDiarySubject ["controls","Controls"];
 			"Patrolling", 
 				"
 				1. Police may patrol the island's roads and towns searching for abandoned vehicles and criminal activity.<br/>
-				2. Patrols can be done on foot inside of a town, or in a vehicle when outside.<br/>
-				3. Patrols do not include illegal areas. See Raiding/Camping.<br/><br/>
+				2. Patrols can be done on foot or vehicle inside of a town.<br/>
+				3. Patrols do include illegal areas, but only as an observation or drive by.<br/><br/>
 				"
 		]
 	];
