@@ -90,7 +90,7 @@ class life_wanted_menu {
 			text = "PRICE";
 			x = 0.76;
 			y = 0.13;
-			w = 0.1;
+			w = 0.5;
 			h = 0.1;
 		};
 		
