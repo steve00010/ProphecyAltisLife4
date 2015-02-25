@@ -458,6 +458,13 @@
 			<Italian>Hai despoitato €%1 nel conto bancario della tua gang</Italian>
 			<Portuguese>Você depositou R$%1 na conta de sua gangue.</Portuguese>
  		</Key>
+		 <Key ID="STR_ATM_WithdrawFromGang">
+ 			<Original>You have withdrawn $%1 from your gangs bank account</Original>
+			<German>You have withdrawn $%1 from your gangs bank account</German>
+ 			<French>You have withdrawn $%1 from your gangs bank account.</French>
+			<Italian>You have withdrawn $%1 from your gangs bank account</Italian>
+			<Portuguese>You have withdrawn $%1 from your gangs bank account.</Portuguese>
+ 		</Key>
 	</Package>
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
