@@ -80,8 +80,8 @@ class life_wanted_menu {
 			
 			x = 0.74;
 			y = 0.2;
-			w = 0.48;
-			h = 0.12;
+			w = 0.38;
+			h = 0.5;
 		};
 		
 		class BountyPrice : Life_RscText
