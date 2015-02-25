@@ -37,8 +37,8 @@ _news ctrlSetStructuredText parseText format["
 <t size='0.8px'>- Enter your player id (not name) on our members section to get info about your character.</t><br/>
 <t size='0.8px'>- Press Y to access your player interaction menu.</t><br/>
 <t size='0.8px'>- We have a top 10 bounty list on our webpage.</t><br/>
-<t size='0.8px'>- Gangs are permanent, that's why they cost so much.</t><br/>
-<t size='0.8px'>- We have drug addiction and you can be breathalysed.</t><br/>
+<t size='0.8px'>- Gangs are permanent, that's why they cost so much, and we will build you a base, full details on the forum.</t><br/>
+<t size='0.8px'>- We have drug addiction and you can be breathalysed, plus pass out from being drunk.</t><br/>
 <t size='0.8px'>- Join our community, we are always looking for new players.</t><br/>
 <t size='0.8px'>- Please report any bugs on our forums.</t><br/>
 <br/><br/><t size='0.7px'>   Have fun playing!</t>
