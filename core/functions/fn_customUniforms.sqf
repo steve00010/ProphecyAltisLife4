@@ -50,8 +50,14 @@ if (playerSide == west) then
 		(unitBackpack player) setObjectTextureGlobal [0,""];
 	};
 };
+
 if (playerSide == civilian) then {
 	if (uniform player == "U_C_WorkerCoveralls") then {
 		player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.jpg"];
+	{
+	if(uniform player == "U_Rangemaster") then 
+	{
+		player setObjectTextureGlobal [0,"textures\uniforms\adac_junior.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\adac_senior.paa"];
 	};
 };
