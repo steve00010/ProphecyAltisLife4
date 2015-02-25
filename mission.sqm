@@ -53752,7 +53752,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={3159.8142,-0.031219026,12871.248};
+			position[]={3161.769,-0.046198554,12869.432};
 			name="coastguard";
 			text="Coast Guard ";
 			type="Empty";
@@ -54505,7 +54505,7 @@ class Mission
 		};
 		class Item110
 		{
-			position[]={3160.7185,-0.027223127,12870.523};
+			position[]={3162.6733,-0.03048935,12868.707};
 			name="cop_ship_1";
 			type="Empty";
 			angle=221.91431;
