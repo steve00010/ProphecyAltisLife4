@@ -98,7 +98,7 @@ class CarShops {
 			{ "C_SUV_01_F", 10000, "" },
 			{ "C_Hatchback_01_F", 6500, "" }, 
 			{ "C_Hatchback_01_sport_F", 40000, "", { "life_donator", 3 } },
-			{ "B_MRAP_01_F", 150000, "", { "life_coplevel", 4 } }
+			{ "B_MRAP_01_F", 175000, "", { "life_coplevel", 4 } }
 		};
 	};
 
@@ -291,7 +291,7 @@ class CfgVehicles {
         storageFee[] = { 0, 7500, 0, 0 };
 		garageSell[] = { 0, 10000, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 150000;
         textures[] = {
         	{ "Police", "cop", {
                 "textures\vehicles\cop_hunter_body.paa",
@@ -315,7 +315,7 @@ class CfgVehicles {
 	class B_Heli_Light_01_F {										//MH-9 Hummingbird
         vItemSpace = 90;
         storageFee[] = { 10000, 19500, 0, 0 };
-		garageSell[] = { 57000, 35000, 0, 0 };
+		garageSell[] = { 157000, 35000, 0, 0 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
@@ -477,8 +477,8 @@ class CfgVehicles {
 
 	class O_Heli_Light_02_unarmed_F {								//PO-30 Orca Black
         vItemSpace = 210;
-        storageFee[] = { 500000, 0, 22000, 0 };
-		garageSell[] = { 22500, 0, 35000, 0 };
+        storageFee[] = { 25000, 0, 22000, 0 };
+		garageSell[] = { 500000, 0, 35000, 0 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
