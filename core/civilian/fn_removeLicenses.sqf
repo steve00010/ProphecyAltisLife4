@@ -23,7 +23,7 @@ switch (_state) do {
 	case 1: {
 		SVAR_MNS [LICENSE_VARNAME("gun","civ"),false];
 		SVAR_MNS [LICENSE_VARNAME("driver","civ"),false];
-		SVAR_MNS [LICENSE_VARNAME("arc","civ")false];
+		SVAR_MNS [LICENSE_VARNAME("arc","civ"),false];
 	};
 	
 	//Remove motor vehicle licenses
