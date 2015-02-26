@@ -85,4 +85,3 @@ switch (_state) do {
 player setVariable["IsRebel", license_civ_rebel,true];
 
 [2] call SOCK_fnc_updatePartial;
-};
