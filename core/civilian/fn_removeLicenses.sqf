@@ -16,7 +16,7 @@ switch (_state) do {
 		SVAR_MNS [LICENSE_VARNAME("heroin","civ"),false];
 		SVAR_MNS [LICENSE_VARNAME("marijuana","civ"),false];
 		SVAR_MNS [LICENSE_VARNAME("coke","civ"),false];
-		SVAR_MNS [LICENSE_VARNAME("arc","civ")false];
+		SVAR_MNS [LICENSE_VARNAME("arc","civ"),false];
 	};
 	
 	//Jail licenses
