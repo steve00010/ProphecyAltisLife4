@@ -35,7 +35,7 @@ switch(FETCH_CONST(life_donator)) do
 ctrlShow [2330,true];
 (CONTROL(2300,2303)) ctrlSetStructuredText parseText format[
 (localize "STR_Shop_Veh_UI_Rental")+ " <t color='#8cff9b'>$%1</t><br/>" +
-(localize "STR_Shop_Veh_UI_Ownership")+ " <t color='#8cff9b'>$%2 (%9 donator discount applied!</t><br/>" +
+(localize "STR_Shop_Veh_UI_Ownership")+ " <t color='#8cff9b'>$%2 (%9%10 discount)</t><br/>" +
 (localize "STR_Shop_Veh_UI_MaxSpeed")+ " %3 km/h<br/>" +
 (localize "STR_Shop_Veh_UI_HPower")+ " %4<br/>" +
 (localize "STR_Shop_Veh_UI_PSeats")+ " %5<br/>" +
@@ -50,7 +50,8 @@ _vehicleInfo select 10,
 if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 _vehicleInfo select 12,
 _vehicleInfo select 9,
-((1-_DiscountMod)*100)
+((1-_DiscountMod)*100),
+"%"
 ];
 
 _ctrl = CONTROL(2300,2304);
