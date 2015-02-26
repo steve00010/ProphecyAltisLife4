@@ -28,7 +28,7 @@ class CarShops {
 	class arc_air {
 		side = "arc";
 		vehicles[] = {
-			{ "O_Heli_Light_02_unarmed_F", 50000, "", }
+			{ "O_Heli_Light_02_unarmed_F", 500000, "", }
 		};
 	};
 
