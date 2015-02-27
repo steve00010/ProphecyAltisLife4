@@ -97,6 +97,7 @@ LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObje
 
 player SVAR ["steam64ID",getPlayerUID player];
 player SVAR ["realname",profileName,true];
+[[getPlayerUID player,1],"life_fnc_setOnline",false,false] spawn life_fnc_MP;
 
 life_fnc_moveIn = compileFinal
 "
