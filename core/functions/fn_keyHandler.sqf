@@ -83,6 +83,7 @@ switch (_code) do
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}};
+			case east:{if(!visibleMap) then {[] spawn life_fnc_arcMarkers;}};			
 		};
 	};
 	
@@ -122,22 +123,6 @@ switch (_code) do
 		};
 	};
 	
-	/*
-	case _pushToTalkKey;
-	case _pushToTalkKey2:
-	{
-		_chan = "";
-		disableSerialization;
-		//waitUntil { !isNull (findDisplay 24) };
-		_chan = ctrlText ((findDisplay 63) displayCtrl 101);
-		if (_chan == "Side Channel") then 
-		{
-			[] spawn life_fnc_PunishSideChat;
-			hint "You cannot use voice in Side Chat"; 
-			_handled = true; 
-		};
-	};*/
-	
 	//Restraining (Shift + R)
 	case 19:
 	{
@@ -159,7 +144,7 @@ switch (_code) do
 		};
 		
 		
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "surrender") && !(cursorTarget getVariable "restrained") && !(player getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && (playerSide == civilian OR playerside == east) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "surrender") && !(cursorTarget getVariable "restrained") && !(player getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
 		};
@@ -309,24 +294,16 @@ switch (_code) do
         };
     };
 	
-	// Q Key options for Pickaxe
-	case 184: 
-	{
-		if((!life_action_inUse) && (vehicle player == player) ) then
-		{
-			{
-				_str = [_x] call life_fnc_varToStr;
-				_val = missionNameSpace getVariable _x;
-				if(_val > 0 ) then
-				{
-					if( _str == "Pickaxe" || _str == "pickaxe" ) then
-					{
-						[] spawn life_fnc_pickAxeUse;
-					};
-				};
-			} foreach life_inv_items;
-		}
-	};
+	//Q Key
+    case 16:
+    {
+        if((!life_action_gathering) && (vehicle player == player) ) then
+        {
+			if(life_inv_pickaxe > 0) then {
+				[] spawn life_fnc_pickAxeUse;
+			};
+		};
+    };
 	
 	// O, police gate opener
     case 24:
@@ -399,6 +376,38 @@ switch (_code) do
 			};
 		};
 	};
+	//Takwondo(Traditional Martial arts in korea)(Shift + Num 1)
+	case 79:
+	{
+		if(_shift) then {_handled = true;};
+			if ((_shift) && (vehicle player == player)) then
+			{
+				cutText [format["Pushup!!!!!!"], "PLAIN DOWN"];
+				player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+			};
+	};
+
+	//Kneebend Slow(Shift + Num 2)
+	case 80:
+	{
+		if(_shift) then {_handled = true;};
+			if ((_shift) && (vehicle player == player)) then
+			{
+				cutText [format["KneeBend Slow baby~"], "PLAIN DOWN"];
+				player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
+			};
+	};
+
+	//Kneebend Fast(Shift + Num 3)
+	case 81:
+	{
+		if(_shift) then {_handled = true;};
+			if ((_shift) && (vehicle player == player)) then
+			{
+				cutText [format["KneeBend more Hard!!!Move!!Move!!"], "PLAIN DOWN"];
+				player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
+			};
+	};	
 
 	default
 	{
