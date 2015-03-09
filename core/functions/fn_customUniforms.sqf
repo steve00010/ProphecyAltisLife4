@@ -42,6 +42,18 @@ if (playerSide == independent) then
 	
 };
 
+if (playerSide == east) then
+{
+	if(uniform player == "U_B_CombatUniform_mcam_worn") then {
+		player setObjectTextureGlobal [0,"textures\uniforms\arcsenior.paa"];
+	};	
+		
+	if((backpack player) == "B_Carryall_mcamo") then {
+		
+		(unitBackpack player) setObjectTextureGlobal [0,"textures\uniforms\arccarryall.paa"];
+	};
+};	
+
 // Make Backpack invisible
 if (playerSide == west) then
 {
@@ -54,10 +66,5 @@ if (playerSide == west) then
 if (playerSide == civilian) then {
 	if (uniform player == "U_C_WorkerCoveralls") then {
 		player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.jpg"];
-	};
-	
-	if(uniform player == "U_Rangemaster") then {
-		player setObjectTextureGlobal [0,"textures\uniforms\arc_junior.paa"];
-		player setObjectTextureGlobal [0,"textures\uniforms\arc_senior.paa"];
 	};
 };

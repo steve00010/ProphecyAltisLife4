@@ -191,12 +191,12 @@ class Clothing {
 	
 	class arc {
 		title = "STR_Shops_C_ARC";
-		license = "arc";
-		side = "civ";
+		license = "";
+		side = "arc";
 
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
-    		{ "U_Rangemaster", "Arc Uniform", 25, { "", "", -1 } }
+    		{ "U_B_CombatUniform_mcam_worn", "Arc Uniform", 25, { "", "", -1 } }
 		};
 
 		headgear[] = {
@@ -230,7 +230,7 @@ class Clothing {
 
 		backpacks[] = {
 			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
-			{ "B_Carryall_cbr", "", 3500, { "", "", -1 } }
+			{ "B_Carryall_mcamo", "", 3500, { "", "", -1 } }
 		};
 	};
 

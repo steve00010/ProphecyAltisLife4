@@ -5,7 +5,7 @@
 			<Original>Bruce's Outback Outfits</Original>
 		</Key>
 		<Key ID="STR_Shops_C_ARC">
-			<Original>A.R.C Clothing</Original>
+			<Original>ARC Clothing</Original>
 		</Key>
 		<Key ID="STR_Shops_C_Police">
 			<Original>Altis Police Department Shop</Original>
@@ -526,6 +526,9 @@
 			<Italian>Msg medici</Italian>
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>
+         <Key ID="STR_CELL_ArcRequest">
+			<Original>Request Arc</Original>
+		</Key>		
 	</Package>
 	<Package name="Chop_Shop">
 		<Key ID="STR_ChopShop_Title">
@@ -3206,6 +3209,34 @@
 			<Italian>Minerale di Rame</Italian>
 			<Portuguese>Pepita de Cobre</Portuguese>
 		</Key>
+			<Key ID="STR_Item_CrystalOre">
+			<Original>Crystal Ore</Original>
+			<German>Kupfererz</German>
+			<French>Minerai de Cuivre</French>
+			<Italian>Minerale di Rame</Italian>
+			<Portuguese>Pepita de Cobre</Portuguese>
+		</Key>
+		<Key ID="STR_Item_CrystalShard">
+			<Original>Crystal Shard</Original>
+			<German>Kupfererz</German>
+			<French>Minerai de Cuivre</French>
+			<Italian>Minerale di Rame</Italian>
+			<Portuguese>Pepita de Cobre</Portuguese>
+		</Key>
+			<Key ID="STR_Item_SilverOre">
+			<Original>Silver Ore</Original>
+			<German>Kupfererz</German>
+			<French>Minerai de Cuivre</French>
+			<Italian>Minerale di Rame</Italian>
+			<Portuguese>Pepita de Cobre</Portuguese>
+		</Key>
+		<Key ID="STR_Item_SilverIngot">
+			<Original>Silver Ingot</Original>
+			<German>Kupfererz</German>
+			<French>Minerai de Cuivre</French>
+			<Italian>Minerale di Rame</Italian>
+			<Portuguese>Pepita de Cobre</Portuguese>
+		</Key>			
 		<Key ID="STR_Item_IronOre">
 			<Original>Iron Ore</Original>
 			<German>Eisenerz</German>
@@ -3537,7 +3568,7 @@
 			<Italian>Porto d'Armi</Italian>
 			<Portuguese>Licença de Porte de Armas</Portuguese>
 		</Key>
-		<Key ID="STR_License_Swat">
+		<Key ID="STR_License_SWAT">
 			<Original>SWAT License</Original>
 			<German>SWAT-Lizenz</German>
 			<French>License du SWAT</French>
@@ -3565,6 +3596,20 @@
 			<Italian>Arc Training</Italian>
 			<Portuguese>Arc Training</Portuguese>
 		</Key>
+		<Key ID="STR_License_Silver">
+			<Original>Silver License</Original>
+			<German>Silver License</German>
+			<French>Silver License</French>
+			<Italian>Silver License</Italian>
+			<Portuguese>Silver License</Portuguese>
+		</Key>
+		<Key ID="STR_License_Crystal">
+			<Original>Crystal License</Original>
+			<German>Crystal License</German>
+			<French>Crystal License</French>
+			<Italian>Crystal License</Italian>
+			<Portuguese>Crystal License</Portuguese>
+		</Key>		
 		<Key ID="STR_License_Truck">
 			<Original>Truck License</Original>
 			<German>LKW-Führerschein</German>
@@ -3635,7 +3680,7 @@
 			<Italian>Licenza possesso Casa</Italian>
 			<Portuguese>Licença de Casas</Portuguese>
 		</Key>
-		<Key ID="STR_License_Dea">
+		<Key ID="STR_License_DEA">
 			<Original>DEA License</Original>
 			<German>DEA License</German>
 			<French>DEA License</French>
@@ -3961,6 +4006,20 @@
 			<Italian>Processando Rame</Italian>
 			<Portuguese>Processando Bronze</Portuguese>
 		</Key>
+		<Key ID="STR_Process_Silver">
+			<Original>Processing Copper</Original>
+			<German>Kupfer wird verarbeitet</German>
+			<French>Fonte de Cuivre</French>
+			<Italian>Processando Rame</Italian>
+			<Portuguese>Processando Bronze</Portuguese>
+		</Key>		
+		<Key ID="STR_Process_Crystal">
+			<Original>Processing Copper</Original>
+			<German>Kupfer wird verarbeitet</German>
+			<French>Fonte de Cuivre</French>
+			<Italian>Processando Rame</Italian>
+			<Portuguese>Processando Bronze</Portuguese>
+		</Key>		
 		<Key ID="STR_Process_Iron">
 			<Original>Processing Iron</Original>
 			<German>Eisen wird verarbeitet</German>
@@ -4232,7 +4291,6 @@
 		</Key>
 		<Key ID="STR_pInAct_Breathalyzer">
 			<Original>Breathalyser</Original>
-			<English>Breathalyser</English>
 			<German>Alkoholtest</German>
 			<French>Alkoholtest</French>
 			<Italian>Alkoholtest</Italian>
@@ -4600,6 +4658,13 @@
 			<French>Vous devez être un flic pour utiliser ce magasin!</French>
 			<Italian>Devi essere un poliziotto per utilizzare questo negozio!</Italian>
 			<Portuguese>Você tem que ser Policial para usar essa loja!</Portuguese>
+		</Key>
+		<Key ID="STR_Shop_NotaARC">
+			<Original>You need to be ARC to use this store!</Original>
+			<German>Du musst ein Zivilist sein, um diesen Shop nutzen zu können!</German>
+			<French>Vous devez être un civil pour utiliser ce magasin!</French>
+			<Italian>Devi essere un civile per utilizzare questo negozio!</Italian>
+			<Portuguese>Você tem que ser um cívil para user essa loja!</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_NotaReb">
 			<Original>You don't have rebel training yet!</Original>

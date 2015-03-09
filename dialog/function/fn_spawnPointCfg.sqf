@@ -21,26 +21,24 @@ switch (_side) do
 			["cop_spawn_2","Pyrgos HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_3","Athira HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_5","Sofia HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_1_1","Training Center","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["cop_spawn_5","Sofia HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+		];
+	};
+	
+	case east: 
+	{
+		_return = [
+			["arc_headquarters","ARC Headquarters","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_5","Zaros","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]			
 		];
 	};
 	
 	case civilian:
 	{
-		
-		//if have Arc license, only spawn here
-		if(license_civ_arc && playerSide == civilian) then {
-		_return = [
-					["adac_headquarters","Arc H.Q","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-					["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-					["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-					["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-					["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-					["civ_spawn_5","Zaros","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
-
-				];
-		};
 		
 		//if have reb license, only spawn here
 		if(license_civ_rebel && playerSide == civilian) then {

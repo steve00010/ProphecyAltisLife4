@@ -26,6 +26,7 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
+		class initArc {};
 		class welcomeNotification {};
 		class survival {};
 	};
@@ -72,6 +73,7 @@ class Life_Client_Core
 		class medicSirenLights {};
 		class medicLights {};
 		class medicSiren {};
+		class newLifeRule {}; 		
 	};
 	
 	class Actions
@@ -229,6 +231,7 @@ class Life_Client_Core
 		class prisonbreak {};
 		class progressBar {};
 		class fatigueReset {};
+		class handleFlashbang {};		
 	};
 	
 	class Network
@@ -266,6 +269,14 @@ class Life_Client_Core
 		
 	};
 	
+	class Arc
+	{
+		file = "core\arc";
+		class arcLoadout {};
+		class arcMarkers {};
+		class arcInteractionMenu {};		
+	};
+	
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -281,6 +292,7 @@ class Life_Client_Core
 		class deviceMine {};
 		class addVehicle2Chain {};
 		class vehicleAfterSpawn {};
+		class arcVInteractionMenu {};
 	};
 	
 	class Cop

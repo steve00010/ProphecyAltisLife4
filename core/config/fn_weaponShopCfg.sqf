@@ -177,7 +177,6 @@ switch(_shop) do
 						["arifle_MXC_Black_F",nil,3000],
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["30Rnd_65x39_caseless_mag_Tracer",nil,0],
-						["30Rnd_65x39_caseless_green",nil,0],
 						["16Rnd_9x21_Mag",nil,0],
 						["optic_ACO_grn","Aco Green",1000],
 						["optic_Aco","Aco Red",1000],
@@ -207,10 +206,9 @@ switch(_shop) do
 				
 				["Altis Swat Shop",
 					[
-						["SMG_02_F",nil,5000],
-						["30Rnd_9x21_Mag",nil,0],
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["srifle_LRR_SOS_F",nil,10000],
+						["arifle_Katiba_GL_F","Riot Control",40000],
 						["7Rnd_408_Mag",nil,0],
 						["srifle_EBR_ARCO_pointer_F",nil,10000],
 						["20Rnd_762x51_Mag",nil,0],
@@ -229,6 +227,7 @@ switch(_shop) do
 						["muzzle_snds_H","6.5 Suppressor",1000],
 						["muzzle_snds_B","7.62 Suppressor",1000],
 						["SmokeShellBlue","Tear Gas Grenade",10000],
+						["1Rnd_SmokeBlue_Grenade_shell","Riot Control Grenade",10000],
 						["HandGrenade_Stone","Flashbang",10000]
 					]
 				];
@@ -238,8 +237,6 @@ switch(_shop) do
 				
 				["Altis Swat Shop",
 					[
-						["SMG_02_F",nil,5000],
-						["30Rnd_9x21_Mag",nil,0],
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["7Rnd_408_Mag",nil,0],
 						["srifle_EBR_ARCO_pointer_F",nil,10000],
@@ -328,7 +325,6 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_mag",nil,300],
 						["arifle_TRG20_F",nil,10000],
 						["arifle_Mk20_F",nil,10000],
-						["arifle_TRG21_ACO_pointer_F",nil,10000],
 						["arifle_Katiba_F",nil,20000],
 						["srifle_DMR_01_ACO_F",nil,35000],
 						["10Rnd_762x51_Mag",nil,400],
@@ -467,12 +463,11 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_arc): {"HAHA, get a license if you want to be in A.R.C!"};
+			case (playerSide != east): {"You are not ARC!"};
 			default
 			{
 				
-				["A.R.C Weapons",
+				["ARC Weapons",
 					[
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
@@ -482,7 +477,23 @@ switch(_shop) do
 						["ItemRadio","SmartPhone",500],
 						["ItemCompass",nil,500],
 						["ItemWatch",nil,500],
-						["ItemMap",nil,250]
+						["ItemMap",nil,250],
+						["arifle_TRG21_ACO_pointer_F",nil,10000],
+						["hgun_Pistol_Signal_F",nil,2500],						
+						["hgun_Pistol_heavy_02_F",nil,1000],
+						["6Rnd_45ACP_Cylinder",nil,100],
+						["6Rnd_GreenSignal_F",nil,50],
+						["6Rnd_RedSignal_F",nil,50],						
+						["SMG_02_ACO_F",nil,5000],
+						["30Rnd_9x21_Mag",nil,300],					
+						["30Rnd_556x45_Stanag",nil,300],
+						["optic_MRCO",nil,3500],
+						["optic_DMS",nil,3500],
+						["optic_Hamr",nil,3500],
+						["optic_Yorris",nil,3500],
+						["optic_ACO_grn",nil,3500],
+						["optic_Aco_smg",nil,3500],
+						["optic_NVS",nil,3500]						
 					]
 				];
 			};

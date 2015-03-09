@@ -48,7 +48,7 @@ class Life_cell_phone {
 		class TextMsgButton : life_RscButtonMenu 
 		{
 			idc = 3015;
-			text = "Message";
+			text = "Player";
 			colorBackground[] = {0,0.6,0.2,0.7};
 			onButtonClick = "[] call TON_fnc_cell_textmsg";
 			colorActive[] = {0,0,0,0};
@@ -70,7 +70,7 @@ class Life_cell_phone {
 		class TextCopButton : life_RscButtonMenu 
 		{
 			idc = 3016;
-			text = "999 - Police";
+			text = "Police";
 			colorBackground[] = {0.812,0.047,0.047,0.48};
 			
 			onButtonClick = "[] call TON_fnc_cell_textcop";
@@ -84,7 +84,7 @@ class Life_cell_phone {
 		class TextAdminButton : life_RscButtonMenu 
 		{
 			idc = 3017;
-			text = "999 - Admin";
+			text = "Admin";
 			colorBackground[] = {0.812,0.047,0.047,0.48};
 			onButtonClick = "[] call TON_fnc_cell_textadmin";
 			
@@ -96,15 +96,27 @@ class Life_cell_phone {
 		class EMSRequest : life_RscButtonMenu
 		{
 			idc = 3022;
-			text = "999 - EMS";
+			text = "EMS";
 			colorBackground[] = {0.812,0.047,0.047,0.48};
 			onButtonClick = "[] call TON_fnc_cell_emsrequest";
 			
-			x = 0.6125;
-			y = 0.72;
+			x = 0.775;
+			y = 0.8;
 			w = 0.15;
 			h = 0.05;
 		};
+		class ArcRequest : life_RscButtonMenu
+		{
+			idc = 3023;
+			text = "ARC";
+			colorBackground[] = {0,0.6,0.2,0.7};
+			onButtonClick = "[] call TON_fnc_cell_arcrequest";
+			
+			x = 0.605607;
+			y = 0.15;
+			w = 0.15;
+			h = 0.05;
+		};		
 		class AdminMsgButton : life_RscButtonMenu 
 		{
 			idc = 3020;
@@ -113,7 +125,7 @@ class Life_cell_phone {
 			onButtonClick = "[] call TON_fnc_cell_adminmsg";
 			
 			x = 0.6125;
-			y = 0.8;
+			y = 0.72;
 			w = 0.15;
 			h = 0.05;
 		};
@@ -125,7 +137,7 @@ class Life_cell_phone {
 			colorBackground[] = {0,0.23,1,0.48};
 			onButtonClick = "[] call TON_fnc_cell_adminmsgall";
 			
-			x = 0.775;
+			x = 0.6125;
 			y = 0.8;
 			w = 0.15;
 			h = 0.05;

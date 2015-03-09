@@ -208,7 +208,7 @@ class Life_Settings {
 	"scratchcard","bottledshine","bottledwhiskey","bottledbeer","moonshine","whiskey","beerp","cornmeal",
 	"mash","bottles","monster","hen_raw","rabbit_raw","salema_raw","ornate_raw","mackerel_raw",
 	"tuna_raw","mullet_raw","catshark_raw","turtle_raw","rooster_raw","sheep_raw","goat_raw","scratchcard",
-	"oil_processed","copper_refined","iron_refined","salt_refined","diamond_cut","cement","monster"};
+	"oil_processed","copper_refined","iron_refined","salt_refined","diamond_cut","cement","monster","silver_refined","crystal_refined"};
 };
 
 //Virtual Items
@@ -261,6 +261,10 @@ class VirtualItems {
 	VITEMMACRO(diamond_cut, "STR_Item_DiamondC", "diamondCut", 2, -1, 2000, false, -1, "icons\diamond.paa")
 	VITEMMACRO(rock, "STR_Item_Rock", "rock", 6, -1, -1, false, -1, "icons\rock.paa")
 	VITEMMACRO(cement, "STR_Item_CementBag", "cement", 5, -1, 1950, false, -1, "icons\cement.paa")
+	VITEMMACRO(silver_unrefined, "STR_Item_SilverOre", "silverUnrefined", 4, -1, -1, true, -1, "icons\silver_ore.paa")
+	VITEMMACRO(silver_refined, "STR_Item_SilverIngot", "silverRefined", 3, -1, 2500, true, -1, "icons\silver.paa")	
+	VITEMMACRO(crystal_unrefined, "STR_Item_CrystalOre", "crystalUnrefined", 4, -1, -1, true, -1, "icons\crystal_ore.paa")
+	VITEMMACRO(crystal_refined, "STR_Item_CrystalShard", "crystalRefined", 3, -1, 1500, true, -1, "icons\crystal.paa")	
 
 	//Drugs
 	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, -1, true, -1, "icons\heroin_unprocessed.paa")
@@ -284,17 +288,17 @@ class VirtualItems {
 	VITEMMACRO(donut, "STR_Item_Donuts", "donut", 1, 120, 60, false, 30, "icons\donut.paa")
 	VITEMMACRO(rabbit_raw, "STR_Item_Rabbit", "rabbitRaw", 2, -1, 65, false, -1, "icons\meat.paa")
 	VITEMMACRO(rabbit_grilled, "STR_Item_RabbitGrilled", "rabbitGrilled", 1, 150, 115, false, 20, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(salema_raw, "STR_Item_Salema", "salemaRaw", 2, -1, 45, false, -1, "icons\fish.paa")
+	VITEMMACRO(salema_raw, "STR_Item_SalemaMeat", "salemaRaw", 2, -1, 45, false, -1, "icons\salema.paa")
 	VITEMMACRO(salema_grilled, "STR_Item_SalemaGrilled", "salemaGrilled", 1, 75, 55, false, 30, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(ornate_raw, "STR_Item_OrnateMeat", "ornateRaw", 2, -1, 40, false, -1, "icons\fish.paa")
+	VITEMMACRO(ornate_raw, "STR_Item_OrnateMeat", "ornateRaw", 2, -1, 40, false, -1, "icons\ornate.paa")
 	VITEMMACRO(ornate_grilled, "STR_Item_OrnateGrilled", "ornateGrilled", 1, 175, 150, false, 25, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(mackerel_raw, "STR_Item_MackerelMeat", "mackerelRaw", 4, -1, 175, false, -1, "icons\fish.paa")
+	VITEMMACRO(mackerel_raw, "STR_Item_MackerelMeat", "mackerelRaw", 4, -1, 175, false, -1, "icons\mackeral.paa")
 	VITEMMACRO(mackerel_grilled, "STR_Item_MackerelGrilled", "mackerelGrilled", 2, 250, 200, false, 30, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(tuna_raw, "STR_Item_TunaMeat", "tunaRaw", 6, -1, 700, false, -1, "icons\fish.paa")
+	VITEMMACRO(tuna_raw, "STR_Item_TunaMeat", "tunaRaw", 6, -1, 700, false, -1, "icons\tuna.paa")
 	VITEMMACRO(tuna_grilled, "STR_Item_TunaGrilled", "tunaGrilled", 3, 1250, 1000, false, 100, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(mullet_raw, "STR_Item_MulletMeat", "mulletRaw", 4, -1, 250, false, -1, "icons\fish.paa")
+	VITEMMACRO(mullet_raw, "STR_Item_MulletMeat", "mulletRaw", 4, -1, 250, false, -1, "icons\mullet.paa")
 	VITEMMACRO(mullet_fried, "STR_Item_MulletFried", "mulletFried", 2, 600, 400, false, 80, "icons\ico_cookedMeat.paa")
-	VITEMMACRO(catshark_raw, "STR_Item_CatSharkMeat", "catsharkRaw", 6, -1, 300, false, -1, "icons\fish.paa")
+	VITEMMACRO(catshark_raw, "STR_Item_CatSharkMeat", "catsharkRaw", 6, -1, 300, false, -1, "icons\catshark.paa")
 	VITEMMACRO(catshark_fried, "STR_Item_CatSharkFried", "catsharkFried", 3, 750, 500, false, 100, "icons\ico_cookedMeat.paa")
 	VITEMMACRO(turtle_raw, "STR_Item_TurtleMeat", "turtleRaw", 6, 4000, 3000, true, -1, "icons\turtle.paa")
 	VITEMMACRO(turtle_soup, "STR_Item_TurtleSoup", "turtleSoup", 2, 2500, 1000, false, 100, "icons\ico_cookedMeat.paa")
@@ -342,7 +346,11 @@ class Licenses {
 	LICENSEMACRO(liquor,"STR_License_Liquor","liquor",75000,false,"civ")
 	LICENSEMACRO(bottler,"STR_License_Bottler","bottler",75000,false,"civ")
 	LICENSEMACRO(channelseven,"STR_License_ChannelSeven","channelseven7",0,false,"civ")
-	LICENSEMACRO(arc,"STR_License_Arc","arc",100000,false,"civ")
+	LICENSEMACRO(dea,"STR_License_DEA","dea",0,false,"cop")
+	LICENSEMACRO(swat,"STR_License_SWAT","swat",0,false,"cop")	
+	LICENSEMACRO(arc,"STR_License_ARC","arc",100000,false,"arc")
+	LICENSEMACRO(silver,"STR_License_Silver","silver",10000,false,"arc")
+	LICENSEMACRO(crystal,"STR_License_Crystal","crystal",10000,false,"arc")	
 	
 };
 
@@ -374,7 +382,7 @@ class VirtualShops {
 	
 	class drugdealer {
 		name = "STR_Shops_DrugDealer";
-		items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+		items[] = { "cocaine_processed", "heroin_processed", "marijuana","cocaine_unprocessed", "heroin_unprocessed", "cannabis" };
 	};
 	class bar {
 		name="STR_Shops_Bar";
@@ -392,12 +400,17 @@ class VirtualShops {
 
 	class glass {
 		name = "STR_Shops_Glass";
-		items[] = { "glass" };
+		items[] = { "glass", "sand" };
 	};
 
 	class iron  {
 		name = "STR_Shops_Minerals";
-		items[] = { "iron_refined", "copper_refined" };
+		items[] = { "iron_refined", "copper_refined", "copper_unrefined", "iron_unrefined" };
+	};
+	
+	class crystal  {
+		name = "STR_Shops_Minerals";
+		items[] = { "crystal_refined", "silver_refined", "crystal_unrefined", "silver_unrefined" };
 	};
 
 	class diamond {
@@ -407,7 +420,7 @@ class VirtualShops {
 
 	class salt {
 		name = "STR_Shops_Salt";
-		items[] = { "salt_refined" };
+		items[] = { "salt_refined", "salt_unrefined" };
 	};
 
 	class cop {
@@ -417,7 +430,7 @@ class VirtualShops {
 
 	class cement {
 		name = "STR_Shops_Cement";
-		items[] = { "cement" };
+		items[] = { "cement", "rock" };
 	};
 
 	class gold {

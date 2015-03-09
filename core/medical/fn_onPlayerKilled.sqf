@@ -51,6 +51,13 @@ _unit spawn
 
 [] spawn life_fnc_deathScreen;
 
+if(life_nlrtimer_running) then
+{
+life_nlrtimer_stop = true;
+waitUntil {!life_nlrtimer_running};
+};
+[] spawn life_fnc_newLifeRule;
+
 //Create a thread to follow with some what precision view of the corpse.
 [_unit] spawn
 {
@@ -86,9 +93,6 @@ if(side _killer == west && playerSide != west) then {
 	};
 };
 
-if(!isNull _killer && {_killer != _unit}) then {
-	life_removeWanted = true;
-};
 
 _handle = [_unit] spawn life_fnc_dropItems;
 waitUntil {scriptDone _handle};
@@ -103,6 +107,6 @@ _unit setVariable["hasOrgan",FALSE,TRUE];
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] call life_fnc_MP;
-
+[[_unit,_killer],"TON_fnc_whoDunnit",false,false] spawn life_fnc_MP;
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;
