@@ -96,6 +96,8 @@ SUB(_units,[player]);
 						default {format["Cadet %1", _x GVAR ["realname",name _x]]};
 					}]};
 				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]]};
+				case ((!isNil {_x GVAR "name"} && playerSide == east)): {format["<t color='#f1c40f'></t> ARC - %1",_x GVAR ["realname",name _x]]};
+				
 				default {
 					if(!isNil {(group _x) GVAR "gang_name"}) then {
 						if(((headgear _x) in _hiddenheadgear) or ((goggles _x) in _hiddengoggles)) then {
