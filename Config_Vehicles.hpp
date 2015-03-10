@@ -327,7 +327,7 @@ class CfgVehicles {
         textures[] = {
         	{ "Police", "cop", {
                 "textures\vehicles\cop_hunter_body.paa",
-				"textures\vehicles\cop_hunter_back.jpg"
+				"textures\vehicles\cop_hunter_back.paa"
             } },
             { "Rebel", "civ", {
                 "\a3\soft_f\MRAP_01\data\mrap_01_base_co.paa",
@@ -335,11 +335,11 @@ class CfgVehicles {
             } },
 			{ "DEA", "cop", {
                 "textures\vehicles\deahunterbody.paa",
-				"textures\vehicles\cop_hunter_back.jpg"				
+				"textures\vehicles\cop_hunter_back.paa"				
             },{"life_coplevel",4} },
 			{ "SWAT", "cop", {
                 "textures\vehicles\swathunterbody.paa",
-				"textures\vehicles\cop_hunter_back.jpg"
+				"textures\vehicles\cop_hunter_back.paa"
             },{"life_swatlevel",1} }
         };
     };
