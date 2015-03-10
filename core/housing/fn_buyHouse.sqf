@@ -19,10 +19,10 @@ if(life_donator < 3) then {
 };
 if(life_donator >= 3 && life_donator < 5) then {
 	if(count life_houses >= (LIFE_SETTINGS(getNumber,"house_limit"))+1) exitWith {hint format[localize "STR_House_Max_House",LIFE_SETTINGS(getNumber,"house_limit")]};
-}
+};
 if(life_donator == 5) then {
 	if(count life_houses >= (LIFE_SETTINGS(getNumber,"house_limit"))+2) exitWith {hint format[localize "STR_House_Max_House",LIFE_SETTINGS(getNumber,"house_limit")]};
-}
+};
 closeDialog 0;
 
 _houseCfg = [M_CONFIG(getNumber,"Houses",typeOf(_house),"price"),M_CONFIG(getNumber,"Houses",typeOf(_house),"maxStorage")];
