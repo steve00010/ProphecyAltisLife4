@@ -246,7 +246,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Altis Life RPG";
-		overviewText="Altis Life RPG 3.1.4.8";
+		overviewText="Prophecy Gaming RPG 4.1";
 		startWind=0;
 		forecastWind=0;
 		forecastWaves=0;
