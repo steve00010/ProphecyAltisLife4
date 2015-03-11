@@ -667,7 +667,7 @@ class CfgVehicles {
             },{"life_donator",2} },
 			{ "Taxi", "civ", {
                 "textures\vehicles\suv_taxi.paa"
-            },{"life_donator",2} },
+            },{"life_donator",4} },
 			{ "ARC", "arc", {
                 "textures\vehicles\arc\suv_arc.paa"
             } },
@@ -768,7 +768,7 @@ class CfgVehicles {
             },{"life_donator",4} },			
 			{ "Dragon", "civ", {
 				 "textures\vehicles\dragon_sport.paa" 
-            },{"life_donator",3} },
+            },{"life_donator",5} },
 			{ "ARC", "arc", {
                 "textures\vehicles\arc\archatchback.paa"
             } }				
@@ -823,10 +823,10 @@ class CfgVehicles {
             },{"life_donator",1} },
 			{ "Drug", "civ", {
                 "textures\vehicles\offroad_drug.paa"
-            },{"life_donator",2} },
+            },{"life_donator",5} },
 			{ "Monster2", "civ", {
                 "textures\vehicles\monsteroffroad2.paa"
-            },{"life_donator",2} },				
+            },{"life_donator",5} },				
 			{ "DEA", "cop", {
                 "textures\vehicles\cop\offroad_dea.paa"
             },{"life_coplevel",5}},
