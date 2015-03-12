@@ -7,8 +7,11 @@
 	Monitors when the ESC menu is pulled up and blocks off
 	certain controls when conditions meet.
 */
-private["_abortButton","_respawnButton","_fieldManual","_escSync","_canUseControls"];
+private["_abortButton","_respawnButton","_fieldManual","_escSync","_canUseControls","_display"];
 disableSerialization;
+
+_display = _this select 0;
+uiNamespace setVariable [ "interruptDisplay", _display ];
 
 _escSync = {
 	private["_abortButton","_thread","_syncManager"];
@@ -33,7 +36,7 @@ _escSync = {
 	};
 	
 	_abortButton = CONTROL(49,104);
-	[] call SOCK_fnc_updateRequest; //call our silent sync.
+	 //call our silent sync.
 	
 	if(_this) then {
 		_thread = [] spawn _syncManager;
@@ -51,7 +54,7 @@ while {true} do
 {
 	waitUntil{!isNull (findDisplay 49)};
 	_abortButton = CONTROL(49,104);
-	_abortButton buttonSetAction "[[player],""TON_fnc_cleanupRequest"",false,false] call life_fnc_MP";
+	_abortButton buttonSetAction "[] spawn life_fnc_abort; ( uiNamespace getVariable ""GTA_interruptDisplay"" ) closeDisplay 2; true";
 	_respawnButton = CONTROL(49,1010);
 	_fieldManual = CONTROL(49,122);
 	
