@@ -100,7 +100,7 @@ class CarShops {
 	};
 
 	class reb_car {
-		side = "reb";
+		side = "civ";
 		vehicles[] = {
 			{ "B_Quadbike_01_F", 2500, "" },
 			{ "B_G_Offroad_01_F", 7500, "" },
@@ -108,7 +108,7 @@ class CarShops {
 		};
 	};
 	class reb_boat {
-		side = "reb";
+		side = "civ";
 		vehicles[] = {
 			{ "I_SDV_01_F", 25000, "" },
 			{ "O_G_Boat_Transport_01_F", 17500, "" }
@@ -116,7 +116,7 @@ class CarShops {
 	};
 	
 	class reb_air {
-		side = "reb";
+		side = "civ";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "" },
 			{ "B_Heli_Light_01_armed_F", 253000, "" },
@@ -300,7 +300,7 @@ class CfgVehicles {
 			{ "White", "civ", {
 	                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_white_co.paa"
 	        } },
-			{ "Digi Green", "reb", {
+			{ "Digi Green", "civ", {
 	                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_indp_co.paa"
 	        } },
 			{ "Hunter Camo", "civ", {
@@ -332,7 +332,7 @@ class CfgVehicles {
                 "textures\vehicles\cop\cop_hunter_body.paa",
 				"textures\vehicles\cop\cop_hunter_back.paa"
             } },
-            { "Rebel", "reb", {
+            { "Rebel", "civ", {
                 "\a3\soft_f\MRAP_01\data\mrap_01_base_co.paa",
 				"\a3\soft_f\MRAP_01\data\mrap_01_adds_co.paa"
             } },
@@ -360,7 +360,7 @@ class CfgVehicles {
 			{ "Civ Red", "civ", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa"
             } },
-			{ "Digi Green", "reb", {
+			{ "Digi Green", "donate", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             } },
 			{ "Blueline", "civ", {
