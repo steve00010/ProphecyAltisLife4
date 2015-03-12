@@ -129,7 +129,7 @@ class CarShops {
 	class cop_car {
 		side = "cop";
 		vehicles[] = {
-			{ "C_Offroad_01_F", 5000, ""},
+			{ "C_Offroad_01_F", 6000, ""},
 			{ "C_SUV_01_F", 10000, "" },
 			{ "C_Hatchback_01_F", 6500, "" }, 
 			{ "C_Hatchback_01_sport_F", 60000, "", },
@@ -140,7 +140,7 @@ class CarShops {
 	class cop_air {
 		side = "cop";
 		vehicles[] = {
-			{ "B_Heli_Light_01_F", 75000, "cAir",{ "life_coplevel", 2 } },
+			{ "B_Heli_Light_01_F", 120000, "cAir",{ "life_coplevel", 2 } },
 			{ "O_Heli_Light_02_unarmed_F", 700000, "cAir", },
 			{ "B_Heli_Transport_01_F", 1800000, "cAir", },
 			{ "I_Heli_light_03_F", 1000000, "cAir", }
@@ -150,7 +150,7 @@ class CarShops {
 	class cop_airhq {
 		side = "civ";
 		vehicles[] = {
-			{ "B_Heli_Light_01_F", 75000, "cAir",{ "life_coplevel", 2 } },
+			{ "B_Heli_Light_01_F", 120000, "cAir",{ "life_coplevel", 2 } },
 			{ "O_Heli_Light_02_unarmed_F", 700000, "cAir", },
 			{ "B_Heli_Transport_01_F", 1800000, "cAir", },
 			{ "I_Heli_light_03_F", 1000000, "cAir", }
@@ -350,9 +350,9 @@ class CfgVehicles {
 	class B_Heli_Light_01_F {										//MH-9 Hummingbird
         vItemSpace = 90;
         storageFee[] = { 2000, 2000, 2000, 2000 };
-		garageSell[] = { 157000, 157000, 15700, 157000 };
+		garageSell[] = { 57000, 57000, 5700, 57000 };
         insurance = 2500;
-        chopShop = 100000;
+        chopShop = 40000;
         textures[] = {
 			{ "Civ Blue", "civ", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa"
