@@ -34,7 +34,7 @@ class Life_Settings {
 	revive_fee = 3000; //Revive fee that players have to pay and medics / EMS are rewarded
 	
 	/* House related settings */
-	house_limit = 3; //Maximum amount of houses a player can own.
+	house_limit = 4; //Maximum amount of houses a player can own.
 
 	/* Gang related settings */
 	gang_price = 1000000; //Price for creating a gang, remember they are persistent so keep it reasonable to avoid millions of gangs.
@@ -261,10 +261,10 @@ class VirtualItems {
 	VITEMMACRO(diamond_cut, "STR_Item_DiamondC", "diamondCut", 2, -1, 2000, false, -1, "icons\diamond.paa")
 	VITEMMACRO(rock, "STR_Item_Rock", "rock", 6, -1, -1, false, -1, "icons\rock.paa")
 	VITEMMACRO(cement, "STR_Item_CementBag", "cement", 5, -1, 1950, false, -1, "icons\cement.paa")
-	VITEMMACRO(silver_unrefined, "STR_Item_SilverOre", "silverUnrefined", 6, -1, -1, true, -1, "icons\silver_ore.paa")
-	VITEMMACRO(silver_refined, "STR_Item_SilverIngot", "silverRefined", 4, -1, 1500, true, -1, "icons\silver.paa")	
-	VITEMMACRO(crystal_unrefined, "STR_Item_CrystalOre", "crystalUnrefined", 6, -1, -1, true, -1, "icons\crystal_ore.paa")
-	VITEMMACRO(crystal_refined, "STR_Item_CrystalShard", "crystalRefined", 4, -1, 2000, true, -1, "icons\crystal.paa")	
+	VITEMMACRO(silver_unrefined, "STR_Item_SilverOre", "silverUnrefined", 4, -1, -1, true, -1, "icons\silver_ore.paa")
+	VITEMMACRO(silver_refined, "STR_Item_SilverIngot", "silverRefined", 3, -1, 2500, true, -1, "icons\silver.paa")	
+	VITEMMACRO(crystal_unrefined, "STR_Item_CrystalOre", "crystalUnrefined", 4, -1, -1, true, -1, "icons\crystal_ore.paa")
+	VITEMMACRO(crystal_refined, "STR_Item_CrystalShard", "crystalRefined", 3, -1, 1500, true, -1, "icons\crystal.paa")	
 
 	//Drugs
 	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, -1, true, -1, "icons\heroin_unprocessed.paa")
