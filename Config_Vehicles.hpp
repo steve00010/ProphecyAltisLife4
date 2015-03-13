@@ -987,7 +987,7 @@ class CfgVehicles {
             } },
 			{ "Proph Camo", "reb", {
                 "textures\vehicles\mohawkdoor.paa",
-                "textures\vehicles\mowhawkfuselage.paa",
+                "textures\vehicles\mohawkfuselage.paa",
                 "textures\vehicles\mohawkhull.paa"				
             },{"life_donator",5} },
         };
