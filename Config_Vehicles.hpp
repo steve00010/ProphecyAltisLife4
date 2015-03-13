@@ -984,10 +984,10 @@ class CfgVehicles {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
             } },
-			{ "Proph", "civ", {
-                "textures\vehicles\MohawkDoors.paa",
-                "textures\vehicles\Mohawkmiddle.paa",
-                "textures\vehicles\Mohawksides.paa"				
+			{ "Proph Camo", "reb", {
+                "textures\vehicles\mohawkdoor.paa",
+                "textures\vehicles\mowhawkfuselage.paa",
+                "textures\vehicles\mohawkhull.paa"				
             },{"life_donator",5} },
         };
     };
