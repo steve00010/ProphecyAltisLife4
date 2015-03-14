@@ -520,11 +520,11 @@ class CfgVehicles {
 	};
 
 	class O_Heli_Light_02_unarmed_F {								//PO-30 Orca Black
-        vItemSpace = 200;
+        vItemSpace = 80;
         storageFee[] = { 8000, 8000, 8000, 8000 };
-		garageSell[] = { 300000, 0, 300000, 300000 };
+		garageSell[] = { 300000, 300000, 300000, 300000 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 50000;
         textures[] = {
 			{ "White / Blue", "civ", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"   
