@@ -55,7 +55,7 @@ class CarShops {
 	class arc_car {
 		side = "arc";
 		vehicles[] = { 
-			{ "B_G_Offroad_01_F", 7500, "" },
+			{ "B_G_Offroad_01_repair_F", 7500, "" },
 			{ "B_Truck_01_mover_F", 200000, "" },
 			{ "I_Truck_02_covered_F", 150000, "" },
 			{ "C_SUV_01_F", 10000, "" },
@@ -269,6 +269,19 @@ class CfgVehicles {
 			} }	
         };
     };
+	
+	class B_G_Offroad_01_repair_F {
+        vItemSpace = 65;
+        storageFee[] = { 1000, 1000, 1000, 1000 };                 //Repair Offroad
+		garageSell[] = { 3500, 3500, 3500, 3500 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { 			
+			{ "ARC", "arc", {
+				"textures\vehicles\arc\arc_offroad.paa"
+			} }	
+        };
+    };		
 
 	class B_Truck_01_box_F {										//HEMTT Box
         vItemSpace = 350;
