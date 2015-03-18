@@ -96,7 +96,7 @@ class CarShops {
 	class med_air_hs {
 		side = "med";
 		vehicles[] = {
-			{ "O_Heli_Light_02_unarmed_F", 50000, "mAir",{ "life_mediclevel", 1 } }
+			{ "O_Heli_Light_02_unarmed_F", 500000, "mAir",{ "life_mediclevel", 1 } }
 		};
 	};
 
