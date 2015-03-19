@@ -263,12 +263,7 @@ class CfgVehicles {
 		garageSell[] = { 3500, 3500, 3500, 3500 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = { 			
-			{ "ARC", "arc", {
-				"textures\vehicles\arc\arc_offroad.paa"
-			} }	
-        };
-    };
+        textures[] = { };
 	
 	class B_G_Offroad_01_repair_F {
         vItemSpace = 65;
