@@ -377,17 +377,17 @@ switch (_code) do
 		};
 	};
 	//Takwondo(Traditional Martial arts in korea)(Shift + Num 1)
-	case 79:
-	{
-		if(_shift) then {_handled = true;};
-			if ((_shift) && (vehicle player == player)) then
-			{
-				cutText [format["Pushup!!!!!!"], "PLAIN DOWN"];
-				player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
-			};
-	};
+case 79:
+{
+	if(_shift) then {_handled = true;};
+		if ((_shift) && (vehicle player == player)) then
+		{
+			cutText [format["Takwondo!!!"], "PLAIN DOWN"];
+			player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
+		};
+};
 
-	//Kneebend Slow(Shift + Num 2)
+//Kneebend Slow(Shift + Num 2)
 	case 80:
 	{
 		if(_shift) then {_handled = true;};
@@ -398,7 +398,7 @@ switch (_code) do
 			};
 	};
 
-	//Kneebend Fast(Shift + Num 3)
+//Kneebend Fast(Shift + Num 3)
 	case 81:
 	{
 		if(_shift) then {_handled = true;};
@@ -407,7 +407,18 @@ switch (_code) do
 				cutText [format["KneeBend more Hard!!!Move!!Move!!"], "PLAIN DOWN"];
 				player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
 			};
-	};	
+	};
+
+//Pushup(Shift + Num 4)
+	case 75:
+	{
+		if(_shift) then {_handled = true;};
+			if ((_shift) && (vehicle player == player)) then
+			{
+				cutText [format["Pushup!!!!!!"], "PLAIN DOWN"];
+				player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+			};
+	};
 
 	default
 	{
