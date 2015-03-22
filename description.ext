@@ -1,5 +1,5 @@
 author = "Tonic, Prophecy";
-onLoadName = "Altis Life RPG v4.1";
+onLoadName = "Altis Life RPG v4.2";
 onLoadMission = "An RPG game mode developed by Tonic and expanded by Prophecy Gaming";
 joinUnassigned = 1;
 respawn = BASE;
