@@ -41330,7 +41330,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			text="Thief";
-			init="this enableSimulation false; this allowDamage false; this addAction[""Get Car Job"",life_fnc_getThiefJob,[],0,false,false,"""",'!life_carjob_taken && license_civ_reb'];this addAction[""Finish Car Job"",life_fnc_finishThiefJob,[],0,false,false,"""",'life_carjob_taken && license_civ_reb'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Get Car Job"",life_fnc_getThiefJob,[],0,false,false,"""",'!life_carjob_taken && license_civ_rebel'];this addAction[""Finish Car Job"",life_fnc_finishThiefJob,[],0,false,false,"""",'life_carjob_taken && license_civ_rebel'];";
 			description="Garage";
 		};
 	};

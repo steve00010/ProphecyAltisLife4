@@ -94,7 +94,7 @@ life_carjob_taken = false;
 life_carjob_type = "";
 life_carjob_name = "";
 life_carjob_pay = 0;
-
+life_carjob_finished = 0;
 
 switch (playerSide) do {
 	case west: {
