@@ -41314,7 +41314,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			text="Skydiving";
-			init="this enableSimulation false; this allowDamage false; this addAction[""Sky Diving ($1000)"",life_fnc_goSkyDiving];";
+			init="this allowDamage false;";
 		};
 	};
 	class Markers
@@ -44417,7 +44417,7 @@ class Mission
 			name="Correctional Facility";
 			text="Kavala Prison";
 			type="selector_selectable";
-			colorName="ColorWhite";
+			colorName="ColorWEST";
 			angle=42.814201;
 		};
 		class Item380
