@@ -264,7 +264,7 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
-	
+	};
 	class B_G_Offroad_01_repair_F {
         vItemSpace = 65;
         storageFee[] = { 1000, 1000, 1000, 1000 };                 //Repair Offroad
