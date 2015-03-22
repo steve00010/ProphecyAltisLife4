@@ -115,6 +115,7 @@ class Life_Client_Core
 		class robShops {};
 		class relinquishLicense {};
 		class processCasinoSlots {};
+		class goSkyDiving {};
 	};
 	
 	class Housing
