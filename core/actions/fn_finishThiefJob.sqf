@@ -42,6 +42,7 @@ if(count _nearVehicles1 == 0) exitWith {titleText[format["There's nothing I want
 			ADD(CASH,life_carjob_pay);
 			life_carjob_pay = 0;
 			titleText["Ahh man, sweeeet, heres your cash!","PLAIN"];
+			deleteVehicle _x;
 		}
 	};
 } foreach _nearVehicles1;
