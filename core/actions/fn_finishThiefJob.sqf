@@ -6,7 +6,7 @@
 */
 
 if(!license_civ_reb) exitWith { hint "You need to be a rebel!";};
-if(!carjob_taken) exitWith { hint format["You don't have a job!",carjob_name];};
+if(!life_carjob_taken) exitWith { hint format["You don't have a job!",life_carjob_name];};
 
 if(vehicle player != player) then
 {
@@ -31,16 +31,16 @@ else {
 		} foreach _nearVehicles;
 	};
 };
-if(count _nearVehicles1 == 0) exitWith {titleText[format["There's nothing I want here! Bring me a %1!",carjob_name],"PLAIN"];};
+if(count _nearVehicles1 == 0) exitWith {titleText[format["There's nothing I want here! Bring me a %1!",life_carjob_name],"PLAIN"];};
 {
 	if(alive _x) then {
 		_className = typeOf _x;		
 		if(_className == carjob_type) exitWith {
-			carjob_taken = false;
-			carjob_type = "";
-			carjob_name = "";
-			ADD(CASH,carjob_pay);
-			carjob_pay = 0;
+			life_carjob_taken = false;
+			life_carjob_type = "";
+			life_carjob_name = "";
+			ADD(CASH,life_carjob_pay);
+			life_carjob_pay = 0;
 			titleText["Ahh man, sweeeet, heres your cash!","PLAIN"];
 		}
 	};

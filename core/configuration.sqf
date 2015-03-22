@@ -90,6 +90,11 @@ life_cocaine_effect = false;
 life_isdowned = false;
 buy_array=[];
 sell_array=[];
+life_carjob_taken = false;
+life_carjob_type = "";
+life_carjob_name = "";
+life_carjob_pay = 0;
+
 
 switch (playerSide) do {
 	case west: {
