@@ -8,8 +8,8 @@
 if(CASH < 1000) exitWith {
 	titleText "You do not have $1000 to go sky-diving!";
 };
-if(FETCH_CONST(life_donatorlevel) < 5) exitWith { 
-	titleText "Sorry but you need donator level 5 to skydive :(";
+if(FETCH_CONST(life_donatorlevel) < 3) exitWith { 
+	titleText "Sorry but you need donator level 3 to skydive :(";
 };
 if(backpack player != "") exitWith { 
 	titleText "You cannot go skydiving with a backpack on!";
