@@ -12,7 +12,8 @@ disableSerialization;
 _title = "Breaking out prisoner";
 
 life_action_inUse = true;
-
+_msg = format["%1 is attempting to break someone out from Kavala prison!",profileName];
+[[_msg,"Altis Prison",1],"TON_fnc_clientMessage",_unit,false] spawn life_fnc_MP;
 //Setup the progress bar
 disableSerialization;
 _title = "Breaking out prisoner";
