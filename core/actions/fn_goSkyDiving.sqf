@@ -6,27 +6,28 @@
 */
 
 if(CASH < 1000) exitWith {
-	titleText "You do not have $1000 to go sky-diving!";
+	hint "You do not have $1000 to go sky-diving!";
 };
 if(FETCH_CONST(life_donator) < 3) exitWith { 
-	titleText "Sorry but you need donator level 3 to skydive :(";
+	hint "Sorry but you need donator level 3 to skydive :(";
 };
 if(backpack player != "") exitWith { 
-	titleText "You cannot go skydiving with a backpack on!";
+	hint "You cannot go skydiving with a backpack on!";
 };
 if(currentWeapon player != "") exitWith { 
-	titleText "You cannot go skydiving with a weapon!";
+	hint "You cannot go skydiving with a weapon!";
 };
+hint "You've paid!";
 SUB(CASH,1000);
-cutText ["", "BLACK OUT", 5];
+cutText ["", "BLACK OUT", 2];
+cutText ["Preparing to jump...!", "BLACK FADED"];
+sleep 2;
 player addBackpack "B_Parachute";
-sleep 3;
-titleText "Preparing to jump...";
 sleep 1;
-titleText "GO!! Don't forget to pull your parachute!";
+cutText ["GO!! Don't forget to pull your parachute!", "BLACK FADED"];
 player setPos [getPos player select 0, getPos player select 1, 800];
 cutText["","PLAIN"]; 
 sleep 2;
-titleText "";
+
 waitUntil {isTouchingGround player};
-titleText "Hope you had fun!";
+hint "Hope you had fun!";
