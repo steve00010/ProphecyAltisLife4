@@ -10,14 +10,7 @@ private["_veh","_classname"];
 
 _veh = _this select 0;
 _classname = typeOf _veh;
-{
-    if (isPlayer _x) then
-    {
-        if(name _x == profileName) then {
-			[[_veh],"life_fnc_vehicleSkins",_x,false] call life_fnc_MP;
-		};
-    };
-} forEach playableUnits;
+
 switch (_classname) do
 {
     case "I_Plane_Fighter_03_AA_F":

@@ -10,7 +10,14 @@ private["_vehicle","_veh"];
 _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {}; //DAFUQ
 _veh = typeOf _vehicle;
-
+{
+    if (isPlayer _x) then
+    {
+        if(name _x == profileName) then {
+			[[_vehicle],"life_fnc_vehicleSkins",_x,false] call life_fnc_MP;
+		};
+    };
+} forEach playableUnits;
 if(EQUAL(_veh,"B_Boat_Armed_01_minigun_F")) then {
 	_vehicle removeMagazinesTurret ["200Rnd_40mm_G_belt",[0]];
 };
