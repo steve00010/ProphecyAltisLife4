@@ -423,7 +423,6 @@ switch(_shop) do
 						["optic_Hamr",nil,3500],
 						["optic_Yorris",nil,3500],
 						["optic_ACO_grn",nil,3500],
-						["optic_LRPS",nil,3500],
 						["optic_Aco_smg",nil,3500],
 						["optic_NVS",nil,3500],
 						["Rangefinder",nil,5000],
