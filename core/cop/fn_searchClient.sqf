@@ -26,5 +26,5 @@ if(!life_use_atm) then  {
 	CASH = 0;
 	_robber = true;
 };
-
+playsound "bagopen";
 [[player,_inv,_robber],"life_fnc_copSearch",_cop,false] call life_fnc_MP;
