@@ -15379,8 +15379,8 @@ class Mission
 		};
 		class Item1240
 		{
-			position[]={12358.506,8.1117516,14368.21};
-			azimut=175;
+			position[]={12359.236,7.9281664,14362.574};
+			azimut=157.2677;
 			id=1341;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -15389,8 +15389,8 @@ class Mission
 		};
 		class Item1241
 		{
-			position[]={12352.782,7.9220877,14366.149};
-			azimut=170;
+			position[]={12356.614,7.8540163,14361.645};
+			azimut=152.73788;
 			id=1342;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -41275,9 +41275,8 @@ class Mission
 		};
 		class Item3796
 		{
-			position[]={12363.4,8.250741,14369.181};
-			azimut=529.70502;
-			offsetY=0.60000002;
+			position[]={12361.898,8.0202169,14363.532};
+			azimut=515.47388;
 			id=3897;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -43569,43 +43568,43 @@ class Mission
 		};
 		class Item279
 		{
-			position[]={12356.129,8.1483154,14370.673};
+			position[]={12357.943,8.1248293,14368.928};
 			name="car_g_1_1";
 			type="Empty";
 			angle=72.992744;
 		};
 		class Item280
 		{
-			position[]={12350.284,7.8509231,14365.845};
+			position[]={12353.391,7.7783351,14358.883};
 			name="civ_gar_1_4";
 			text="Garage";
 			type="o_service";
 			colorName="ColorGUER";
-			angle=-41.791859;
+			angle=-43.745007;
 		};
 		class Item281
 		{
-			position[]={12358.526,8.0212088,14365.683};
+			position[]={12359.89,7.8587255,14359.528};
 			name="car1_3";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=231.04305;
+			angle=0.35776806;
 		};
 		class Item282
 		{
-			position[]={12353.433,8.3704844,14378.002};
+			position[]={12354.863,8.3495626,14376.57};
 			name="civ_car_1_3";
 			type="Empty";
 			angle=797.81787;
 		};
 		class Item283
 		{
-			position[]={12358.556,8.0219717,14365.686};
+			position[]={12359.849,7.8598852,14359.601};
 			name="car1_1_1";
 			text="Car Shop";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=362.97879;
+			angle=361.02563;
 		};
 		class Item284
 		{
@@ -44979,12 +44978,12 @@ class Mission
 		};
 		class Item447
 		{
-			position[]={12365.511,8.297555,14369.319};
+			position[]={12367.583,8.0560131,14361.023};
 			name="license_shop_2";
 			text="DMV";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=362.23862;
+			angle=360.28546;
 		};
 		class Item448
 		{
