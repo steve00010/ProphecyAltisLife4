@@ -150,7 +150,8 @@ class Mission
 		"A3_Structures_F_EPA_Walls",
 		"A3_Structures_F_Households_House_Small02",
 		"A3_Structures_F_Households_House_Small03",
-		"A3_Structures_F_Items_Stationery"
+		"A3_Structures_F_Items_Stationery",
+		"A3_Animals_F_Rabbit"
 	};
 	addOnsAuto[]=
 	{
@@ -2221,7 +2222,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3800;
+		items=3803;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -41315,10 +41316,46 @@ class Mission
 			text="Skydiving";
 			init="this enableSimulation false; this allowDamage false; this addAction[""Sky Diving ($1000)"",life_fnc_goSkyDiving];";
 		};
+		class Item3800
+		{
+			position[]={26766.506,20.788639,24636.324};
+			azimut=-46.5737;
+			offsetY=0.1;
+			id=3901;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			text="Skydiving_1";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Sky Diving ($1000)"",life_fnc_goSkyDiving];";
+		};
+		class Item3801
+		{
+			position[]={4548.5752,262.94696,15420.355};
+			azimut=118.24378;
+			offsetY=0.1;
+			id=3902;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			text="Skydiving_2";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Sky Diving ($1000)"",life_fnc_goSkyDiving];";
+		};
+		class Item3802
+		{
+			position[]={20161.635,41.652748,11726.942};
+			azimut=6.3340697;
+			offsetY=0.1;
+			id=3903;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			text="Skydiving_3";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Sky Diving ($1000)"",life_fnc_goSkyDiving];";
+		};
 	};
 	class Markers
 	{
-		items=454;
+		items=457;
 		class Item0
 		{
 			position[]={8316.7881,80.619583,25059.641};
@@ -42149,10 +42186,10 @@ class Mission
 		};
 		class Item104
 		{
-			position[]={26766.895,20.624268,24642.904};
+			position[]={26774.568,20.738375,24646.273};
 			name="airshop_1";
 			text="Air Shop";
-			type="mil_dot";
+			type="b_air";
 			colorName="ColorGUER";
 			angle=-30.828199;
 		};
@@ -42784,12 +42821,12 @@ class Mission
 		};
 		class Item183
 		{
-			position[]={14595.951,17.91,16644.539};
+			position[]={14596.043,17.91,16644.631};
 			name="hospital_2";
 			text="Hospital";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			angle=-360.5235;
+			angle=-226.452;
 		};
 		class Item184
 		{
@@ -45038,6 +45075,33 @@ class Mission
 			type="c_air";
 			colorName="ColorGreen";
 			angle=-360.771;
+		};
+		class Item454
+		{
+			position[]={26765.701,20.684219,24638.891};
+			name="Skydiving_1";
+			text="Skydiving";
+			type="c_air";
+			colorName="ColorGreen";
+			angle=-360.771;
+		};
+		class Item455
+		{
+			position[]={4550.1738,262.90747,15418.521};
+			name="Skydiving_2";
+			text="Skydiving";
+			type="c_air";
+			colorName="ColorGreen";
+			angle=-358.63162;
+		};
+		class Item456
+		{
+			position[]={20163.186,41.506931,11729.122};
+			name="Skydiving_3";
+			text="Skydiving";
+			type="c_air";
+			colorName="ColorGreen";
+			angle=-307.86304;
 		};
 	};
 	class Sensors
