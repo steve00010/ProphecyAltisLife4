@@ -105,7 +105,7 @@ class CarShops {
 		vehicles[] = {
 			{ "B_Quadbike_01_F", 2500, "" },
 			{ "B_G_Offroad_01_F", 7500, "" },
-			{ "B_G_Offroad_01_armed_F", 600000, "rebel" }
+			{ "B_G_Offroad_01_armed_F", 600000, "" }
 		};
 	};
 	class reb_boat {

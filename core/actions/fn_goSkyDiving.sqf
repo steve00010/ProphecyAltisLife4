@@ -1,10 +1,12 @@
 #include <macro.h>
 /*
 	File: fn_goSkyDiving.sqf
-	Author: Steve
+	Author: Steve - ProphecyGaming.co.uk
 	Description: Sends the player sky diving 
 */
-
+if(playerSide != civilian) exitWith { 
+	hint "Get back to work, this isn't for you!";
+};
 if(CASH < 1000) exitWith {
 	hint "You do not have $1000 to go sky-diving!";
 };

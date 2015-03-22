@@ -116,6 +116,8 @@ class Life_Client_Core
 		class relinquishLicense {};
 		class processCasinoSlots {};
 		class goSkyDiving {};
+		class getThiefJob {};
+		class finishThiefJob {};
 	};
 	
 	class Housing

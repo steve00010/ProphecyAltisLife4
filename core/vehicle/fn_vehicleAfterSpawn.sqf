@@ -13,7 +13,7 @@ _classname = typeOf _veh;
 {
     if (isPlayer _x) then
     {
-        if(name _x == profileName) {
+        if(name _x == profileName) then {
 			[[_veh],"life_fnc_vehicleSkins",_x,false] call life_fnc_MP;
 		};
     };
