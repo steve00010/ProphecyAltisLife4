@@ -31,7 +31,7 @@ while {true} do
 	if(animationState player == _previous) then {
 		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
 	};
-	sleep 0.26;
+	sleep 2.3;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";

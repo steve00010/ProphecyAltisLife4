@@ -294,6 +294,7 @@ class Life_Client_Core
 		class addVehicle2Chain {};
 		class vehicleAfterSpawn {};
 		class arcVInteractionMenu {};
+		class vehicleSkins{};
 	};
 	
 	class Cop

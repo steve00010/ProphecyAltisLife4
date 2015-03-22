@@ -838,7 +838,7 @@ class CfgVehicles {
             },{"life_donator",5} },				
 			{ "DEA", "cop", {
                 "textures\vehicles\cop\offroad_dea.paa"
-            },{"life_coplevel",5}},
+            },{"life_coplevel",2}},
 			{ "SWAT", "cop", {
                 "textures\vehicles\cop\offroad_swat.paa"
             },{"life_swatlevel",1} }
