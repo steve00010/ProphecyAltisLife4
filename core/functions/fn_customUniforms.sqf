@@ -67,11 +67,19 @@ if (playerSide == civilian) then {
 	if (uniform player == "U_C_WorkerCoveralls") then {
 		player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.jpg"];
 	};
-	if(uniform player == "U_C_Poloshirt_blue" OR uniform player == "U_C_Poloshirt_burgundy") then {
-		if(call life_donator > 1) then {
+	if(uniform player == "U_C_Poloshirt_blue") then {
+		if(call life_donator > 0) then {
 			player setObjectTextureGlobal [0,"textures\uniforms\PG1.paa"];
-		} else {
+	if(uniform player == "U_C_Poloshirt_burgundy") then {
+		if(call life_donator > 0) then {	
 			player setObjectTextureGlobal [0,"textures\uniforms\PG.paa"];
+	if(uniform player == "U_C_Poloshirt_salmon") then {
+		if(call life_donator > 0) then {
+			player setObjectTextureGlobal [0,"textures\uniforms\msi.paa"];
+	if(uniform player == "U_C_Poloshirt_redwhite") then {
+		if(call life_donator > 0) then {	
+			player setObjectTextureGlobal [0,"textures\uniforms\jedi.paa"];		
+			
 		};
 	};
 };
