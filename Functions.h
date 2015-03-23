@@ -295,7 +295,7 @@ class Life_Client_Core
 		class deviceMine {};
 		class addVehicle2Chain {};
 		class arcVInteractionMenu {};
-		class vehicleSkins{};
+		class vehicleSkins {};
 	};
 	
 	class Cop

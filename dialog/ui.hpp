@@ -55,7 +55,7 @@ class playerHUD {
 	class LIFE_BAR_FOOD: Life_RscProgress
 	{
 		idc = IDC_LIFE_BAR_FOOD;
-		colorBackground[] = {0.153,0.682,0.376,1};
+		colorBar[] = {0.153,0.682,0.376,1};
 		x = 0.947 * safezoneW + safezoneX;
 		y = 0.785 * safezoneH + safezoneY;
 		w = 0.0515 * safezoneW;
@@ -64,7 +64,7 @@ class playerHUD {
 	class LIFE_BAR_WATER: Life_RscProgress
 	{
 		idc = IDC_LIFE_BAR_WATER;
-		colorBackground[] = {0.153,0.682,0.376,1};
+		colorBar[] = {0.161,0.502,0.725,1};
 		x = 0.947 * safezoneW + safezoneX;
 		y = 0.82 * safezoneH + safezoneY;
 		w = 0.0515 * safezoneW;
@@ -73,7 +73,7 @@ class playerHUD {
 	class LIFE_BAR_HEALTH: Life_RscProgress
 	{
 		idc = 2202;
-		colorBackground[] = {0.753,0.224,0.169,1};
+		colorBar[] = {0.753,0.224,0.169,1};
 		x = 0.947 * safezoneW + safezoneX;
 		y = 0.855 * safezoneH + safezoneY;
 		w = 0.0515 * safezoneW;
