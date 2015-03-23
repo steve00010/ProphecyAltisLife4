@@ -135,3 +135,5 @@ CONSTVAR(life_paycheck); //Make the paycheck static.
 if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
 [[getPlayerUID player,player getVariable["realname",name player]],"life_fnc_wantedProfUpdate",false,false] spawn life_fnc_MP;
 [] spawn life_fnc_fatigueReset;
+DYNAMICMARKET_boughtItems = [];
+[[getPlayerUID player],"TON_fnc_playerLogged",false,false] spawn life_fnc_MP;

@@ -30,14 +30,7 @@ class Life_Client_Core
 		class welcomeNotification {};
 		class survival {};
 	};
-		class economy
-	{
-		file = "core\economy";
-		class virt_updatePrice {};
-		class addsubstract {};
-		class openEconomy {};
-		class virt_updateEconomy {};
-	};
+
 	class Admin
 	{
 		file = "core\admin";
