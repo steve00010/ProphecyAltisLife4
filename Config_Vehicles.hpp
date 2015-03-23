@@ -347,11 +347,11 @@ class CfgVehicles {
             } },
 			{ "DEA", "cop", {
                 "textures\vehicles\cop\deahunterbody.paa",
-				"textures\vehicles\cop\cop_hunter_back.paa"				
+				"textures\vehicles\cop\swat_hunter_back.paa"				
             },{"life_coplevel",4} },
 			{ "SWAT", "cop", {
                 "textures\vehicles\cop\swathunterbody.paa",
-				"textures\vehicles\cop\cop_hunter_back.paa"
+				"textures\vehicles\cop\swat_hunter_back.paa"
             },{"life_swatlevel",1} }
         };
     };
