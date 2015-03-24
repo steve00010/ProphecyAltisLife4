@@ -385,6 +385,7 @@
 			<Italian>Hai despositato €%1 nel tuo conto bancario</Italian>
 			<Portuguese>Você depositou R$%1 na sua conta bancária</Portuguese>
  		</Key>
+
  		<Key ID="STR_ATM_NoneSelected">
  			<Original>You need to select someone to transfer to</Original>
 			<German>Du hast niemanden für den Transfer ausgewählt</German>
@@ -461,7 +462,7 @@
 			<Italian>Hai despoitato €%1 nel conto bancario della tua gang</Italian>
 			<Portuguese>Você depositou R$%1 na conta de sua gangue.</Portuguese>
  		</Key>
-		 <Key ID="STR_ATM_WithdrawFromGang">
+		 <Key ID="STR_ATM_GangWithdrawSuccess">
  			<Original>You have withdrawn $%1 from your gangs bank account</Original>
 			<German>You have withdrawn $%1 from your gangs bank account</German>
  			<French>You have withdrawn $%1 from your gangs bank account.</French>
