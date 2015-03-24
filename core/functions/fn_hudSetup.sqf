@@ -21,7 +21,10 @@ _version ctrlSetText format["BETA: 0.%1.%2",(productVersion select 2),(productVe
 	while {true} do
 	{
 		_dam = damage player;
-		waitUntil {(damage player) != _dam};
+		_ca = CASH;
+		_xp = life_xp;
+
+		waitUntil {((damage player) != _dam) OR ((CASH) != _ca) OR ((life_xp) != _xp)};
 		[] call life_fnc_hudUpdate;
 	};
 };

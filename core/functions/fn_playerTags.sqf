@@ -22,7 +22,7 @@ if(isNull _ui) then {
 
 _units = nearestObjects[(visiblePosition player),["Man","Land_Pallet_MilBoxes_F","Land_Sink_F"],50];
 
-SUB(_units,[player]);
+//SUB(_units,[player]);
 
 {
 	private "_text";
@@ -70,10 +70,12 @@ SUB(_units,[player]);
 					"H_RacingHelmet_1_white_F"
 			];
 			_text = switch (true) do {
-				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x GVAR ["realname",name _x])];};
+				case (_x in (units grpPlayer) && playerSide == civilian): {
+					format["<t color='#27ae60'>%1</t><br /><t size='0.8' color='#c0392b'> Level: %2</t>",_x GVAR ["realname",name _x],_x GVAR ["level",""]] ;		
+				};
 								//Dead Players
 				case (!alive _x): {
-					_text = format["<t color='#000000'>Unconscious - %1</t>", (_x GVAR ["realname",name _x])];
+					_text = format["<t color='#000000'>Unconscious - %1</t>", name _x];
 				};
 				case (!isNil {(_x GVAR "rank")}): {
 					format["<img image='%1' size='1'></img> <t color='#2980b9'>%2</t>",
@@ -93,6 +95,7 @@ SUB(_units,[player]);
 						case 5: {format["Lieutenant %1", _x GVAR ["realname",name _x]]};
 						case 6: {format["Captain %1", _x GVAR ["realname",name _x]]};
 						case 7: {format["Chief %1", _x GVAR ["realname",name _x]]};
+						case 8: {format["Chief %1", _x GVAR ["realname",name _x]]};
 						default {format["Cadet %1", _x GVAR ["realname",name _x]]};
 					}]};
 				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]]};
@@ -100,15 +103,15 @@ SUB(_units,[player]);
 				default {
 					if(!isNil {(group _x) GVAR "gang_name"}) then {
 						if(((headgear _x) in _hiddenheadgear) or ((goggles _x) in _hiddengoggles)) then {
-							format["<t color='#669900'>Identity Hidden</t><br/><t size='0.8' color='#B6B6B6'>%2</t>",(group _x) GVAR ["gang_name",""]];
+							format["<t color='#669900'>Identity Hidden</t><br/><t size='0.8' color='#c0392b'> Level: %3</t><br/><t size='0.8' color='#B6B6B6'>%2</t>",(group _x) GVAR ["gang_name",""],_x GVAR ["level",""]];
 						} else {
-							format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x GVAR ["realname",name _x],(group _x) GVAR ["gang_name",""]];
+							format["%1<br/><t size='0.8' color='#c0392b'> Level: %3</t><br/><t size='0.8' color='#B6B6B6'>%2</t>",_x GVAR ["realname",name _x],(group _x) GVAR ["gang_name",""],_x GVAR ["level",""]];
 						};
 					} else {						
 						if(((headgear _x) in _hiddenheadgear) or ((goggles _x) in _hiddenheadgear)) then {
 							"<t color='#669900'>Identity Hidden</t>";
 						}else {
-							_x GVAR ["realname",name _x];
+							format["%1 <br /><t size='0.8' color='#c0392b'>Level: %2</t>",_x GVAR ["realname",name _x],_x GVAR ["level",""]] ;
 						};
 					};
 				};

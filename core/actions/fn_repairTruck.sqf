@@ -30,7 +30,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		while{true} do
 		{
 			_previous = animationState player;
-			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+			if(animationState player == _previous) then {
 				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 
 			};
@@ -54,6 +54,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		};
 		
 		_veh setDamage 0;
+		[5] spawn life_fnc_xpHandler;
 		titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
 	};
 };

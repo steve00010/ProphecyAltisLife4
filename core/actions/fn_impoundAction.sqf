@@ -59,6 +59,7 @@ if(EQUAL(count crew _vehicle,0)) then {
 	hint format[localize "STR_NOTF_Impounded",_type,_price];
 	[[0,"STR_NOTF_HasImpounded",true,[profileName,SEL(SEL(_vehicleData,0),1),_vehicleName]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 	ADD(BANK,_price);
+	[2] spawn life_fnc_xpHandler;
 } else {
 	hint localize "STR_NOTF_ImpoundingCancelled";
 };

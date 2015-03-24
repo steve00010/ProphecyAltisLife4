@@ -73,7 +73,7 @@ if(!alive player OR life_istazed OR (player getVariable["restrained",false]) OR 
 	_unit setVariable["missingOrgan",true,true];//sets the missing organ variable so effects can take place
 	life_action_inUse = false;//once variables are set, and actions stop, then you can use scrolly wheely
 	[[player], "life_fnc_hasOrgan", _unit, false] spawn life_fnc_MP;//this then calls the fn_hasOrgan.sqf on the thief
-	
+	[7] spawn life_fnc_xpHandler;
 	_msg = format["%1 took %2's organ",profileName,_unit getVariable["realname", _unit]];
 	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 };

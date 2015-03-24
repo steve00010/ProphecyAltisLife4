@@ -15,5 +15,5 @@ if(_val == _total) then {
 } else {
 	titleText[format[localize "STR_Cop_BountyKill",[_val] call life_fnc_numberText,[_total] call life_fnc_numberText],"PLAIN"];
 };
-
+[2] spawn life_fnc_xpHandler;
 ADD(BANK,_val);

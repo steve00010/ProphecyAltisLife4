@@ -68,6 +68,6 @@ life_action_inUse = false;
 _target SVAR ["Revive",TRUE,TRUE];
 [[profileName],"life_fnc_revived",_target,FALSE] call life_fnc_MP;
 titleText[format[localize "STR_Medic_RevivePayReceive",_targetName,[LIFE_SETTINGS(getNumber,"revive_fee")] call life_fnc_numberText],"PLAIN"];
-
+[3] spawn life_fnc_xpHandler;
 sleep .6;
 player reveal _target;

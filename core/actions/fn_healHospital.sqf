@@ -15,3 +15,4 @@ if(player distance (_this select 0) > 5) exitWith {titleText[localize "STR_NOTF_
 titleText[localize "STR_NOTF_HS_Healed","PLAIN"];
 player setDamage 0;
 SUB(CASH,100);
+[1] spawn life_fnc_xpHandler;

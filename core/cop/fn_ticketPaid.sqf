@@ -12,4 +12,5 @@ _cop = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit OR {_unit != life_ticket_unit}) exitWith {}; //NO
 if(isNull _cop OR {_cop != player}) exitWith {}; //Double NO
 
-ADD(BANK,_value);
+ADD(BANK,_value);	
+[1] spawn life_fnc_xpHandler;

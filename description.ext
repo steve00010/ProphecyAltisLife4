@@ -9,7 +9,7 @@ disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 LoadScreen = "images\prologo.jpg";
 respawnDialog = 0;
-
+allowFunctionsRecompile = 1;
 
 
 class Header
@@ -40,6 +40,7 @@ class RscTitles
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
 	#include "dialog\statusBar.hpp"  
+	#include "dialog\xpBar.hpp"  
 };
 
 class CfgFunctions
@@ -197,6 +198,12 @@ class CfgSounds
 	{
 		name = "bagopen";
 		sound[] = {"\sounds\bagopen.ogg", 1.0, 1};
+		titles[] = {};		
+	};
+	 class lvlup
+	{
+		name = "lvlup";
+		sound[] = {"\sounds\lvlup.ogg", 1.0, 1};
 		titles[] = {};		
 	};
 };

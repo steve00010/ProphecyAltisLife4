@@ -23,3 +23,4 @@ _names = "";
 hint parseText format[(localize "STR_Cop_DealerMSG")+ "<br/><br/>%1",_names];
 SEL(_this,0) SVAR ["sellers",[],true];
 life_action_inUse = false;
+[1] spawn life_fnc_xpHandler;

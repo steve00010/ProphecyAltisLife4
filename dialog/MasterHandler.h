@@ -35,3 +35,4 @@
 #include "slot.hpp"
 #include "slotmachine.hpp"
 #include "vidintro.hpp"
+#include "xpBar.hpp"

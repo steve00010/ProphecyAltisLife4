@@ -78,6 +78,9 @@ life_nlrtimer_stop = false;
 life_nlrtimer_running = false;
 
 //CUSTOM
+life_xp = 0;
+life_level = 1;
+life_xpneeded = 1;
 
 life_god = false;
 life_frozen = false; 

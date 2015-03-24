@@ -54,6 +54,8 @@ switch(playerSide) do {
 		life_blacklisted = SEL(_this,9);
 		life_drug_level = SEL(_this,12);
 		life_addiction = (call compile format["%1",SEL(_this,13)]);
+		life_level = SEL(_this,14);
+		life_xp = SEL(_this,15);
 	};
 	
 	case civilian: {
@@ -63,13 +65,14 @@ switch(playerSide) do {
 		CONST(life_arclevel,0);		
 		life_drug_level = SEL(_this,10);
 		life_addiction = (call compile format["%1",SEL(_this,11)]);
-		life_houses = SEL(_this,12);
+		life_level = SEL(_this,12);
+		life_xp = SEL(_this,13);
+		life_houses = SEL(_this,14);
 		{
 			_house = nearestBuilding (call compile format["%1", SEL(_x,0)]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
-		
-		life_gangData = SEL(_this,13);
+		life_gangData = SEL(_this,15);
 		if(!(EQUAL(count life_gangData,0))) then {
 			[] spawn life_fnc_initGang;
 		};
@@ -79,18 +82,22 @@ switch(playerSide) do {
 	case independent: {
 		CONST(life_medicLevel, parseNumber(SEL(_this,7)));
 		CONST(life_coplevel,0);
-		CONST(life_arclevel,0);		
+		CONST(life_arclevel,0);	
+		life_level = SEL(_this,12);
+		life_xp = SEL(_this,13);		
 	};
 		case east: {
 		CONST(life_arclevel,parseNumber(SEL(_this,7)));	
 		CONST(life_medicLevel,0);
 		CONST(life_coplevel,0);
+		life_level = SEL(_this,10);
+		life_xp = SEL(_this,11);
 
 	};
 };
 
 if(count (SEL(_this,14)) > 0) then {
-	{life_vehicles pushBack _x;} foreach (SEL(_this,14));
+	{life_vehicles pushBack _x;} foreach (SEL(_this,16));
 };
 
 life_session_completed = true;

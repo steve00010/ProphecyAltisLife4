@@ -224,7 +224,6 @@ class Life_Client_Core
 		class nearATM {};
 		class EarPlugsOn {};
 		class EarPlugsOff {};
-		class cashUI {};
 		class customUniforms {};
 		class isDonarVehicle {};
 		class emptyFuel {};
@@ -235,6 +234,7 @@ class Life_Client_Core
 		class progressBar {};
 		class fatigueReset {};
 		class handleFlashbang {};		
+		class xpHandler {};
 	};
 	
 	class Network

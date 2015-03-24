@@ -49,6 +49,8 @@ waitUntil {life_session_completed};
 0 cutText["Finishing client setup procedure","BLACK FADED"];
 0 cutFadeOut 9999999;
 
+
+
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
 
@@ -95,7 +97,6 @@ life_sidechat = true;
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false,true] call life_fnc_MP;
 0 cutText ["","BLACK IN"];
 [] call life_fnc_hudSetup;
-[] call life_fnc_cashUI;
 /* Set up frame-by-frame handlers */
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
 LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObjects"] call BIS_fnc_addStackedEventHandler;
@@ -128,9 +129,11 @@ player setVariable["hasOrgan",false,true];
 };
 
 [] spawn life_fnc_survival;
+[0] spawn life_fnc_xpHandler;
 [] execVM "core\welcome.sqf";
 [] execVM "scripts\earplug\earplugInit.sqf";
 [[0,player,"economy"],"TON_fnc_getprices",false,false] spawn life_fnc_MP;
+life_paycheck = life_paycheck + (5*life_level);
 CONSTVAR(life_paycheck); //Make the paycheck static.
 if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};
 [[getPlayerUID player,player getVariable["realname",name player]],"life_fnc_wantedProfUpdate",false,false] spawn life_fnc_MP;

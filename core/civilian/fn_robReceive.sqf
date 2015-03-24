@@ -12,3 +12,4 @@ if(EQUAL(_cash,0)) exitWith {titleText[localize "STR_Civ_RobFail","PLAIN"]};
 
 ADD(CASH,_cash);
 titleText[format[localize "STR_Civ_Robbed",[_cash] call life_fnc_numberText],"PLAIN"];
+[1] spawn life_fnc_xpHandler;

@@ -5010,7 +5010,7 @@
 			<Portuguese>Você não recebeu seu pagamento pois estava morto.</Portuguese>
 		</Key>
 		<Key ID="STR_FSM_ReceivedPay">
-			<Original>You have received a paycheck of $%1</Original>
+			<Original>You have received a paycheck of $%1 including your bonus of $%2 for your level</Original>
 			<German>Du hast deinen Gehaltscheck in Höhe von $%1 erhalten</German>
 			<French>Vous avez reçu un salaire de $%1</French>
 			<Italian>Hai ricevuto uno stipendio di €%1</Italian>
