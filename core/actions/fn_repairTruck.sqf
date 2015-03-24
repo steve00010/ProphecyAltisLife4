@@ -27,11 +27,12 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		_progress progressSetPosition 0.01;
 		_cP = 0.01;
 		
-		while{true} do
+	while{true} do
 		{
-			_previous = animationState player;
-			if(animationState player == _previous) then {
-				player playMoveNow "AinvPknlMstpSnonWnonDr_medic_1";
+			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+				[[player,"AinvPknlMstpSnonWnonDnon_medic_1",true],"life_fnc_animSync",true,false] call life_fnc_MP;
+				player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
+				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 			};
 			sleep 0.27;
 			_cP = _cP + 0.01;
