@@ -38,7 +38,7 @@ _cP = 0.01;
 while{true} do {
 	_previous = animationState player;
 	if(animationState player == _previous) then {
-		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
+		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
 	uiSleep 0.15;
 	_cP = _cP + 0.01;
@@ -61,6 +61,7 @@ if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInV
 if(([true,_item,1] call life_fnc_handleInv)) then {
 	deleteVehicle _animalCorpse;
 	titleText [format["You have collected some raw %1 meat",_displayName],"PLAIN"];
+	[4] spawn life_fnc_xpHandler;
 } else {
 	titleText ["Your inventory is full","PLAIN"];
 };

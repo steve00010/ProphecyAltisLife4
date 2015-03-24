@@ -36,7 +36,7 @@ while {true} do
 {
 	_previous = animationState player;
 	if(animationState player == _previous) then {
-		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
+		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
 	sleep 0.26;
 	if(isNull _ui) then {

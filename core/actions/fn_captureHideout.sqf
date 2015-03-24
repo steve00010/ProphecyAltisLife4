@@ -44,7 +44,7 @@ while {true} do
 {
 	_previous = animationState player;
 	if(animationState player == _previous) then {
-		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
+		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
 	sleep 0.26;
 	if(isNull _ui) then {
@@ -69,7 +69,7 @@ if(!alive player OR life_istazed) exitWith {life_action_inUse = false;_hideout s
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
 life_action_inUse = false;
-
+[15] spawn life_fnc_xpHandler;
 titleText["Hideout has been captured.","PLAIN"];
 _flagTexture = [
 		"\A3\Data_F\Flags\Flag_red_CO.paa",
