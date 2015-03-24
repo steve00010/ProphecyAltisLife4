@@ -40,7 +40,7 @@ class RscTitles
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
 	#include "dialog\statusBar.hpp"  
-	#include "dialog\xpBar.hpp"  
+
 };
 
 class CfgFunctions
