@@ -9,17 +9,8 @@
 private["_type","_index","_price","_amount","_name"];
 if(EQUAL(lbCurSel 2402,-1)) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
-
-_price = 0.0;
-_itemNameToSearchFor = _type;
-{
-	_curItemName = _x select 0;
-	_curItemPrice = _x select 1;
-	if (_curItemName==_itemNameToSearchFor) then {_price=_curItemPrice};
-} forEach DYNMARKET_prices;
-
-//_price = [_type] call life_fnc_DYNMARKET_getPrice;
-//_price = M_CONFIG(getNumber,"VirtualItems",_type,"sellPrice");
+_index = [_type,FETCH_CONST(sell_array)] call TON_fnc_index;
+_price = SEL(SEL(FETCH_CONST(sell_array),_index),1);
 if(EQUAL(_price,-1)) exitWith {};
 
 _amount = ctrlText 2405;
@@ -33,7 +24,6 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then {
 	hint format[localize "STR_Shop_Virt_SellItem",_amount,(localize _name),[_price] call life_fnc_numberText];
 	ADD(CASH,_price);
 	[] call life_fnc_virt_update;	
-	DYNAMICMARKET_boughtItems pushBack [_type,_amount];
 };
 
 if(EQUAL(life_shop_type,"drugdealer")) then {

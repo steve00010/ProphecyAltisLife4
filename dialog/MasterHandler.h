@@ -26,6 +26,7 @@
 #include "settings.h"
 #include "federalReserve.h"
 #include "compensate.hpp"
+#include "market.hpp"
 #include "spray_shop.h"
 #include "goldSafe.h"
 #include "prisonlist.hpp"
@@ -34,5 +35,3 @@
 #include "slot.hpp"
 #include "slotmachine.hpp"
 #include "vidintro.hpp"
-#include "dynmarket_changeprice.hpp"
-#include "dynmarket_prices.hpp"
