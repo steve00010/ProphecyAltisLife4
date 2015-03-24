@@ -7,8 +7,8 @@
 
 private["_display","_rules"];
 
-//["images\introvid.ogv"] spawn BIS_fnc_titlecard;
-//waitUntil {!(isNil "BIS_fnc_titlecard_finished")};
+["images\introvid.ogv"] spawn BIS_fnc_titlecard;
+waitUntil {!(isNil "BIS_fnc_titlecard_finished")};
 
 
 createDialog "life_server_rules";
