@@ -18,7 +18,7 @@ class Clothing {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_C_Poloshirt_blue", "Prophecy", 250, { "life_donator", "SCALAR", 1 } },
 			{ "U_C_Poloshirt_burgundy", "Prophecy Donator", 275, { "life_donator", "SCALAR", 1 } },
-			{ "U_C_Poloshirt_redwhite", "Jedi", 150, { "", "", -1 } },
+			{ "U_C_Poloshirt_redwhite", "Ironman", 150, { "", "", -1 } },
 			{ "U_C_Poloshirt_salmon", "MSI", 175, { "", "", -1 } },
 			{ "U_C_Poloshirt_stripped", "Poloshirt stripped", 125, { "", "", -1 } },
 			{ "U_C_Poloshirt_tricolour", "Poloshirt Tricolor", 350, { "", "", -1 } },
