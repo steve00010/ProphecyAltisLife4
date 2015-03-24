@@ -4457,6 +4457,10 @@
 			<Italian>Deposita alla Gang</Italian>
 			<Portuguese>Depositar para a Gangue</Portuguese>
 		</Key>
+		<Key ID="STR_pInAct_WithdrawFromGang">
+			<Original>Withdraw From Gang</Original>
+
+		</Key>
 	</Package>
 		<Package name="Vehicle_Interaction">
 		<Key ID="STR_vInAct_Title">
