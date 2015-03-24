@@ -86,4 +86,9 @@ if (playerSide == civilian) then {
 			
 		};
 	};
+	if(uniform player == "U_C_Poloshirt_stripped") then {
+		if(call life_donator > 0) then {
+			player setObjectTextureGlobal [0,"textures\uniforms\hfh.paa"];
+		};
+	};	
 };

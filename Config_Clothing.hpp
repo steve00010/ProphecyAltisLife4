@@ -20,7 +20,7 @@ class Clothing {
 			{ "U_C_Poloshirt_burgundy", "Prophecy Donator", 275, { "life_donator", "SCALAR", 1 } },
 			{ "U_C_Poloshirt_redwhite", "Ironman", 150, { "", "", -1 } },
 			{ "U_C_Poloshirt_salmon", "MSI", 175, { "", "", -1 } },
-			{ "U_C_Poloshirt_stripped", "Poloshirt stripped", 125, { "", "", -1 } },
+			{ "U_C_Poloshirt_stripped", "Help for Heroes", 125, { "", "", -1 } },
 			{ "U_C_Poloshirt_tricolour", "Poloshirt Tricolor", 350, { "", "", -1 } },
 			{ "U_C_Poor_2", "Rag tagged clothes", 250, { "", "", -1 } },
 			{ "U_IG_Guerilla2_2", "Green stripped shirt & Pants", 650, { "", "", -1 } },
