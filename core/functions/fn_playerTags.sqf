@@ -93,7 +93,6 @@ SUB(_units,[player]);
 						case 5: {format["Lieutenant %1", _x GVAR ["realname",name _x]]};
 						case 6: {format["Captain %1", _x GVAR ["realname",name _x]]};
 						case 7: {format["Chief %1", _x GVAR ["realname",name _x]]};
-						case 8: {format["Chief %1", _x GVAR ["realname",name _x]]};
 						default {format["Cadet %1", _x GVAR ["realname",name _x]]};
 					}]};
 				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]]};
