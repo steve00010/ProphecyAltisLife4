@@ -442,7 +442,7 @@ class CfgVehicles {
 		};
 	};			
 
-	class B_G_Offroad_01_armed_F : B_G_Offroad_01_F {};	
+	class B_G_Offroad_01_armed_F : B_MRAP_01_F {};	
 
 	class B_Boat_Armed_01_minigun_F {								//Speedboat Minigun
         vItemSpace = 105;
@@ -689,8 +689,8 @@ class CfgVehicles {
 			{ "2-Pac", "civ", {
                 "textures\vehicles\suv_2pac.paa"
             },{"life_donator",3} },
-			{ "Graffiti", "civ", {
-                "textures\vehicles\suv_graf.paa"
+			{ "Metal", "civ", {
+                "textures\vehicles\suv_metal.paa"
             },{"life_donator",3} }			
 		};
     };
