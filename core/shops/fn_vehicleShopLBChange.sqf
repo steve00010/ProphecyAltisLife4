@@ -22,12 +22,14 @@ _basePrice = SEL(SEL(_vehicleList,_vIndex),1);
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 _DiscountMod = 1;
-
+if(life_level > 5) then {
+	_DiscountMod = 1-((floor(life_level / 5))/100);
+}
 
 ctrlShow [2330,true];
 (CONTROL(2300,2303)) ctrlSetStructuredText parseText format[
 (localize "STR_Shop_Veh_UI_Rental")+ " <t color='#8cff9b'>$%1</t><br/>" +
-(localize "STR_Shop_Veh_UI_Ownership")+ " <t color='#8cff9b'>$%2 (%9%10 discount)</t><br/>" +
+(localize "STR_Shop_Veh_UI_Ownership")+ " <t color='#8cff9b'>$%2 (%9%10 level discount)</t><br/>" +
 (localize "STR_Shop_Veh_UI_MaxSpeed")+ " %3 km/h<br/>" +
 (localize "STR_Shop_Veh_UI_HPower")+ " %4<br/>" +
 (localize "STR_Shop_Veh_UI_PSeats")+ " %5<br/>" +

@@ -18,7 +18,9 @@ _basePrice = SEL(SEL(_vehicleList,_vIndex),1);
 
 
  if(_mode) then {_basePrice = round(_basePrice * 1.5)};
-
+if(life_level > 5) then {
+	_DiscountMod = 1-((floor(life_level / 5))/100);
+}
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
