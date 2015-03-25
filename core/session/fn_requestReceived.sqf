@@ -96,7 +96,7 @@ switch(playerSide) do {
 	};
 };
 
-if(count (SEL(_this,14)) > 0) then {
+if(count (SEL(_this,16)) > 0) then {
 	{life_vehicles pushBack _x;} foreach (SEL(_this,16));
 };
 
