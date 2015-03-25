@@ -15,12 +15,14 @@ _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = M_CONFIG(getArray,"CarShops",SEL(life_veh_shop,0),"vehicles");
 _shopSide = M_CONFIG(getText,"CarShops",SEL(life_veh_shop,0),"side");
 _basePrice = SEL(SEL(_vehicleList,_vIndex),1);
-
-
- if(_mode) then {_basePrice = round(_basePrice * 1.5)};
-if(life_level > 5) then {
-	_DiscountMod = 1-((floor(life_level / 5))/100);
+_DiscountMod = 100;
+if(life_level >= 5) then {
+	_DiscountMod = ceil(100-(life_level / 5));
 };
+if(_mode) then {
+	_basePrice = round(_basePrice * 1.5 * ((_DiscountMod)*0.01))
+};
+
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
