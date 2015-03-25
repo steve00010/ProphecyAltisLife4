@@ -109,7 +109,7 @@ SUB(_units,[player]);
 						};
 					} else {						
 						if(((headgear _x) in _hiddenheadgear) or ((goggles _x) in _hiddenheadgear)) then {
-							"<t color='#669900'>Identity Hidden</t>";
+							format["<t color='#669900'>Identity Hidden</t><br /><t size='0.8' color='#c0392b'>Level: %1</t>",_x GVAR ["level",""]] ;
 						}else {
 							format["%1 <br /><t size='0.8' color='#c0392b'>Level: %2</t>",_x GVAR ["realname",name _x],_x GVAR ["level",""]] ;
 						};
