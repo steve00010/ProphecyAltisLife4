@@ -24,7 +24,7 @@ _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 _DiscountMod = 1;
 if(life_level > 5) then {
 	_DiscountMod = 1-((floor(life_level / 5))/100);
-}
+};
 
 ctrlShow [2330,true];
 (CONTROL(2300,2303)) ctrlSetStructuredText parseText format[
