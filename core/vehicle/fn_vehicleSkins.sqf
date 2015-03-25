@@ -25,12 +25,12 @@ switch (_classname) do
 			 hint "Car skin has been temporarily set to a random non-donator skin.";
 			[[_veh,_newS],"life_fnc_colorVehicle",nil,false] call life_fnc_MP;
 		};
-		if((_skin == 11 OR _skin == 12 OR _skin == 13) AND _don < 5) then {
+		if((_skin == 11 OR _skin == 12) AND _don < 5) then {
 			_newS = random 5;
 			hint "Car skin has been temporarily set to a random non-donator skin.";
 			[[_veh,_newS],"life_fnc_colorVehicle",nil,false] call life_fnc_MP;
 		};
-		if((_skin == 14) AND !license_cop_dea) then {
+		if((_skin == 13) AND !license_cop_dea) then {
 			hint "You are not DEA, skin being set to normal police.";
 			[[_veh,6],"life_fnc_colorVehicle",nil,false] call life_fnc_MP;
 		};
