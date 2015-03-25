@@ -234,7 +234,7 @@ class Life_Client_Core
 		class progressBar {};
 		class fatigueReset {};
 		class handleFlashbang {};		
-		class xpHandler {};
+		
 	};
 	
 	class Network
