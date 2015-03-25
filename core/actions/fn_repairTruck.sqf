@@ -12,7 +12,7 @@ life_interrupted = false;
 if(isNull _veh) exitwith {};
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
 {
-	if("ToolKit" in (items player)) then
+	if("ToolKit" in (items player) && !life_action_inUse) then
 	{
 		life_action_inUse = true;
 		_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
