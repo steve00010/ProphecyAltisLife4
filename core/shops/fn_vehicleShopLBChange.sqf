@@ -44,7 +44,7 @@ _vehicleInfo select 10,
 if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 _vehicleInfo select 12,
 _vehicleInfo select 9,
-((1-_DiscountMod)*100),
+(100-(_DiscountMod * 100)),
 "%"
 ];
 
