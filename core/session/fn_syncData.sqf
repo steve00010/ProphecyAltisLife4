@@ -34,7 +34,10 @@ if(playerside == west) then {  //THIS IS WHAT I ADDED
 
 
 hint localize "STR_Session_SyncData";
-life_session_time = true;
-sleep (5 * 60);
-life_session_time = false;
+[] spawn
+{
+	life_session_time = true;
+	sleep (5 * 60);
+	life_session_time = false;
+};
 
