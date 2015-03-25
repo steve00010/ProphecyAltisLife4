@@ -13,7 +13,7 @@ _skin = _veh getVariable "Life_VEH_color";
 _classname = typeOf _veh;
 _don = FETCH_CONST(life_donator);
 
-diag_log format["%1,%2,%3",_don,_skin,classname];
+
 
 
 switch (_classname) do
