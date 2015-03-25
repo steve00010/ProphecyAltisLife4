@@ -9,6 +9,7 @@
 private ["_xp","_setup"];
 
 if((_this select 0) == 0) then {
+	life_xp = life_xp + 1;
 	life_xpneeded = 20*life_level*sqrt(life_level);
 	player SVAR ["level",life_level,true];
 } else {

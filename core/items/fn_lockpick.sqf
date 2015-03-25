@@ -34,8 +34,8 @@ _cP = 0.01;
 
 while {true} do
 {
-	_previous = animationState player;
-	if(animationState player == _previous) then {
+	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+		sleep 0.4;
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
 	sleep 0.26;
@@ -74,7 +74,9 @@ if(!_isVehicle) then {
 	_dice = random(100);
 	if(_dice < 30) then {
 		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
+		[4] spawn life_fnc_xpHandler;
 		life_vehicles pushBack _curTarget;
+		_curTarget say3d "vehicle_alarm";
 		[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] call life_fnc_MP;
 	} else {
 		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] call life_fnc_MP;

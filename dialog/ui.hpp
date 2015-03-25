@@ -15,7 +15,7 @@
 #define IDC_LIFE_LEVEL_TEXT 1005
 
 /*
-	Name: Dillon "Itsyuka" Modine-Thuen
+	Name: Dillon "Itsyuka" Modine-Thuen && Steve - ProphecyGaming.co.uk
 	File: ui.hpp
 */
 
@@ -41,8 +41,10 @@ class playerHUD {
 		LIFE_WATER_TEXT,
 		LIFE_HEALTH_TEXT,
 		LIFE_CASH_TEXT,
+		LIFE_LEVEL_BACKGROUND,
 		LIFE_BAR_XP,
 		LIFE_LEVEL_TEXT
+		
 	};
 
 	/* Background */
@@ -162,6 +164,15 @@ class playerHUD {
 	};
 	
 	/*XP - ProphecyGaming.co.uk */
+	class LIFE_LEVEL_BACKGROUND : Life_RscText
+	{
+		idc = -1;
+		colorBackground[] = {0.925,0.941,0.945,0.4};
+		x = safezoneX + 0.02;
+		y = safezoneY + 0.02;
+		w = 0.5;
+		h = 0.012 * safezoneH;
+	};
 	class LIFE_BAR_XP: Life_RscProgress
 	{
 		idc = IDC_LIFE_BAR_XP;
@@ -169,7 +180,7 @@ class playerHUD {
 		y = safezoneY + 0.02;
 		w = 0.5;
 		h = 0.012 * safezoneH;
-		colorBar[] = {0.153,0.682,0.376,1};
+		colorBar[] = {0.18,0.722,0.18,1};
 		colorFrame[] = {0.925,0.941,0.945,1};
 	};
 	class LIFE_LEVEL_TEXT: Life_RscText
@@ -181,4 +192,5 @@ class playerHUD {
 		w = 0.1;
 		h = 0.011 * safezoneH;
 	};
+
 };

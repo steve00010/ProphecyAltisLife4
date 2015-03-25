@@ -42,8 +42,9 @@ _cP = 0.01;
 
 while {true} do
 {
-	_previous = animationState player;
-	if(animationState player == _previous) then {
+	
+	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+		sleep 0.4;
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
 	sleep 0.26;

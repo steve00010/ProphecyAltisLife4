@@ -49,4 +49,4 @@ sleep 2;
 
 waitUntil {isTouchingGround player};
 hint "Hope you had fun!";
-[1] spawn life_fnc_xpHandler;
+[3] spawn life_fnc_xpHandler;

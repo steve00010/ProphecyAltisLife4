@@ -21,9 +21,9 @@ _basePrice = SEL(SEL(_vehicleList,_vIndex),1);
 
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
-_DiscountMod = 1;
-if(life_level > 5) then {
-	_DiscountMod = 1-((floor(life_level / 5))/100);
+_DiscountMod = 100;
+if(life_level >= 5) then {
+	_DiscountMod = ceil(100-(life_level / 5));
 };
 
 ctrlShow [2330,true];
@@ -37,14 +37,14 @@ ctrlShow [2330,true];
 (localize "STR_Shop_Veh_UI_Fuel")+ " %7<br/>" +
 (localize "STR_Shop_Veh_UI_Armor")+ " %8",
 [_basePrice] call life_fnc_numberText,
-[round(_basePrice * 1.5 * _DiscountMod)] call life_fnc_numberText,
+[round(_basePrice * 1.5 * ((_DiscountMod)*0.01))] call life_fnc_numberText,
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
 if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 _vehicleInfo select 12,
 _vehicleInfo select 9,
-(100-(_DiscountMod * 100)),
+100 - _DiscountMod,
 "%"
 ];
 
