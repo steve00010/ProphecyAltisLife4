@@ -17,21 +17,21 @@ class Clothing {
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_C_Poloshirt_blue", "Prophecy", 250, { "life_donator", "SCALAR", 1 } },
-			{ "U_C_Poloshirt_burgundy", "Prophecy Donator", 275, { "life_donator", "SCALAR", 1 } },
-			{ "U_C_Poloshirt_redwhite", "Ironman", 150, { "", "", -1 } },
-			{ "U_C_Poloshirt_salmon", "MSI", 175, { "", "", -1 } },
-			{ "U_C_Poloshirt_stripped", "Help for Heroes", 125, { "", "", -1 } },
-			{ "U_C_Poloshirt_tricolour", "Poloshirt Tricolor", 350, { "", "", -1 } },
+			{ "U_C_Poloshirt_burgundy", "Prophecy Donator", 250, { "life_donator", "SCALAR", 1 } },
+			{ "U_C_Poloshirt_redwhite", "Ironman", 250, { "", "", -1 } },
+			{ "U_C_Poloshirt_salmon", "MSI", 250, { "", "", -1 } },
+			{ "U_C_Poloshirt_stripped", "Help for Heroes", 250, { "", "", -1 } },
+			{ "U_C_Poloshirt_tricolour", "Poloshirt Tricolor", 250, { "", "", -1 } },
 			{ "U_C_Poor_2", "Rag tagged clothes", 250, { "", "", -1 } },
-			{ "U_IG_Guerilla2_2", "Green stripped shirt & Pants", 650, { "", "", -1 } },
-			{ "U_IG_Guerilla3_1", "Brown Jacket & Pants", 735, { "", "", -1 } },
-			{ "U_IG_Guerilla2_3", "The Outback Rangler", 1200, { "", "", -1 } },
-			{ "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
-			{ "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
-			{ "U_NikosBody", "Casual Wears", 5000, { "", "", -1 } },
-			{ "U_I_Protagonist_VR", "Green VR Suit", 20000, { "life_donator", "SCALAR", 3 } },
-			{ "U_O_Protagonist_VR", "Red VR Suit", 20000, { "life_donator", "SCALAR", 4 } },
-			{ "U_B_Protagonist_VR", "Blue VR Suit", 20000, { "life_donator", "SCALAR", 5 } }
+			{ "U_IG_Guerilla2_2", "Green stripped shirt & Pants", 250, { "", "", -1 } },
+			{ "U_IG_Guerilla3_1", "Brown Jacket & Pants", 1300, { "", "", -1 } },
+			{ "U_IG_Guerilla2_3", "The Outback Rangler", 1300, { "", "", -1 } },
+			{ "U_C_HunterBody_grn", "The Hunters Look", 1300, { "", "", -1 } },
+			{ "U_OrestesBody", "Surfing On Land", 1500, { "", "", -1 } },
+			{ "U_NikosBody", "Casual Wears", 2000, { "", "", -1 } },
+			{ "U_I_Protagonist_VR", "Green VR Suit", 10000, { "life_donator", "SCALAR", 3 } },
+			{ "U_O_Protagonist_VR", "Red VR Suit", 10000, { "life_donator", "SCALAR", 4 } },
+			{ "U_B_Protagonist_VR", "Blue VR Suit", 10000, { "life_donator", "SCALAR", 5 } }
 		};
 
 		headgear[] = {
@@ -104,8 +104,8 @@ class Clothing {
 
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
-			{ "U_Rangemaster", "Cop Uniform", 25, { "", "", -1 } },
-			{ "U_B_Wetsuit", "WetSuit", 25, { "", "", -1 } },
+			{ "U_Rangemaster", "Cop Uniform", 250, { "", "", -1 } },
+			{ "U_B_Wetsuit", "WetSuit", 250, { "", "", -1 } },
 			{ "U_B_CombatUniform_mcam_worn", "Senior Uniform", 550, { "life_coplevel", "SCALAR", 3 } },
 			{ "U_B_HeliPilotCoveralls", "Pilot Uniform", 550, { "life_coplevel", "SCALAR", 2 } },
 			{ "U_B_CTRG_1", "Swat Uniform", 550, { "life_swatlevel", "SCALAR", 1 } },
@@ -195,7 +195,7 @@ class Clothing {
 
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
-    		{ "U_B_CombatUniform_mcam_worn", "Arc Uniform", 25, { "", "", -1 } }
+    		{ "U_B_CombatUniform_mcam_worn", "Arc Uniform", 2500, { "", "", -1 } }
 		};
 
 		headgear[] = {
@@ -243,14 +243,14 @@ class Clothing {
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
 			{ "U_IG_Guerilla1_1", "", 5000, {"", "", -1} },
-			{ "U_I_G_Story_Protagonist_F", "", 7500, { "", "", -1 } },
-			{ "U_I_G_resistanceLeader_F", "", 11500, { "", "", -1 } },
-			{ "U_O_SpecopsUniform_ocamo", "", 17500, { "", "", -1 } },
-			{ "U_O_PilotCoveralls", "", 15610, { "", "", -1 } },
-			{ "U_IG_leader", "Guerilla Leader", 15340, { "", "", -1 } },
-			{ "U_O_GhillieSuit", "", 50000, { "", "", -1 } },
-			{ "U_O_OfficerUniform_ocamo","Officer",10000,{"","",-1}},
-			{ "U_O_CombatUniform_oucamo","Combat",10000,{"","",-1}}
+			{ "U_I_G_Story_Protagonist_F", "", 5000, { "", "", -1 } },
+			{ "U_I_G_resistanceLeader_F", "", 5000, { "", "", -1 } },
+			{ "U_O_SpecopsUniform_ocamo", "", 5000, { "", "", -1 } },
+			{ "U_O_PilotCoveralls", "", 5000, { "", "", -1 } },
+			{ "U_IG_leader", "Guerilla Leader", 5000, { "", "", -1 } },
+			{ "U_O_GhillieSuit", "", 30000, { "life_donator", "SCALAR", 3 } },
+			{ "U_O_OfficerUniform_ocamo","Officer",5000,{"","",-1}},
+			{ "U_O_CombatUniform_oucamo","Combat",5000,{"","",-1}}
 		};
 
 		headgear[] = {
