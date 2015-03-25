@@ -342,9 +342,9 @@ class CfgVehicles {
 				"textures\vehicles\cop\cop_hunter_back.paa"
             } },
             { "Rebel", "reb", {
-                "\a3\soft_f\MRAP_01\data\mrap_01_base_co.paa",
-				"\a3\soft_f\MRAP_01\data\mrap_01_adds_co.paa"
-            } },
+                "textures\vehicles\hunteruk.paa",
+				"textures\vehicles\hunterback.paa"
+            },{"life_donator",3} },	
 			{ "DEA", "cop", {
                 "textures\vehicles\cop\deahunterbody.paa",
 				"textures\vehicles\cop\swat_hunter_back.paa"				
