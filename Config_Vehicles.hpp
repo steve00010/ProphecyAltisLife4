@@ -257,14 +257,15 @@ class CfgVehicles {
         textures[] = { };
     };
 
-	class B_G_Offroad_01_F {										//Off-Road
-        vItemSpace = 65;
-        storageFee[] = { 1000, 1000, 1000, 1000 };
-		garageSell[] = { 3500, 3500, 3500, 3500 };
+	class B_G_Offroad_01_armed_F {
+        vItemSpace = 10;
+        storageFee[] = { 0, 0, 0, 0 };                 				//Armed Offroad
+		garageSell[] = { 0, 0, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
-        textures[] = { };
+        chopShop = 0;
+        textures[] = { };		
 	};
+
 	class B_G_Offroad_01_repair_F {
         vItemSpace = 65;
         storageFee[] = { 1000, 1000, 1000, 1000 };                 //Repair Offroad
@@ -277,6 +278,7 @@ class CfgVehicles {
 			} }	
         };
     };		
+	
 
 	class B_Truck_01_box_F {										//HEMTT Box
         vItemSpace = 350;
@@ -442,7 +444,13 @@ class CfgVehicles {
 		};
 	};			
 
-	class B_G_Offroad_01_armed_F : B_MRAP_01_F {};	
+	class B_G_Offroad_01_armed_F {										//Off-Road
+        vItemSpace = 10;
+        storageFee[] = { 100000000, , ,  };
+		garageSell[] = { , , ,  };
+        insurance = 0;
+        chopShop = 0;
+        textures[] = { };
 
 	class B_Boat_Armed_01_minigun_F {								//Speedboat Minigun
         vItemSpace = 105;
