@@ -34,530 +34,263 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"Custom Change Log",
 				"
-					This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.
+				1. BASIC SERVER RULES
+
+					ALL RULES ARE SUBJECT TO CHANGE AT ANY TIME
+					No attempting to find cracks within the rules or using excuses to operate within them. Use common sense.
+					Do not play Altis Life if you are not prepared to lose things from time to time, people make mistakes, this is also a game, try to remember that when talking to a player.
+					All Admin Decisions / Judgements / Punishments are final. If you disagree with the outcome, you must contest this using the official ban appeal procedure, A server founder can over-ride any Admin decision at any time.
+					This is a role-play server. You must role-play. Failing to do so is a serious offence and will most likely result in your removal from server. Using bare minimal RP to justify anything is not allowed. This includes the classic 2 seconds to put hands on head or die - This may lead to removal from server depending on administrative judgement.
+					Use respectable names.
+					No voice over side chat/police squad chat.
+					No RDM/VDM. Ever. Just because someone RDMed you does not mean you can RDM them back. 2 wrongs do not make a right and if you seek revenge you may be subject to punishment also. If you are the victim of this you must report it.
+					Combat logging is never allowed. If you disconnect whilst in the middle of a fire-fight/restrained/in active RP it will be considered combat logging. If you genuinely D/C, you must make every effort to get back to the area as soon as possible and tell the person you was RPing with. If you die, you must wait until you re-spawn before disconnecting. If a kidney is removed from you for a genuine role play reason. You MUST NOT Re-spawn/kill yourself. You must make every attempt to get a kidney back. Failure to do so is also considered combat logging
+					Killing a police Negotiator during negotiations is not allowed.
+					You are considered in a critically injured state until you actually re-spawn.
+					When claiming a vehicle it will only be storable in your garage once the server is restarted
+					Police Lights and Sirens are not always an Initiation of Role-play, For Example: If the FED Reserve is being robbed and Police are responding to it with lights on, this does not give you the right to shoot on site unless you are involved with the FED. Police Lights and Sirens are only an Initiation of Role-Play if you are directly involved with the incident.
+
+					2. RANDOM DEATHMATCHING & VEHICLE DEATHMATCHING
+
+					Random Death-match (RDM) is defined as:
+
+					Killing anyone in a safe zone
+					Killing anyone without a role-play cause or initiation
+					Bare minimum RP.
+					Cops / Civilians and Rebels can only engage in a shoot-out if there are reasons relating to a Role-play situation.
+					Shooting a player without giving reasonable time to follow demands is considered RDM.
+					Vehicle Death-match (VDM) is defined as:
+
+					Destroying your vehicle or anyone else's intentionally.
+					Crashing into another vehicle.
+					Running over people.
+					The only time you may ever run over someone is if someone stands in your vehicles way for trolling reasons. In this case, you must stop, sound your horn, ask them to move, and if they continue to refuse you may then slowly move forward. Once you have done all you can to request they move, it is up to the civilian on the road to get out of the way.
+					3. SAFE ZONE RULES
+
+					List of current safe-zones:
+
+					Police HQs.
+					Hospitals
+					Any area with a Green Square Marker
+					Rebel base.
+					Rules of the safe-zone
+
+					If you leave a vehicle in a safe zone it can be stolen or reclaimed by the player you stole it from, hide it properly / claim it or chop shop it.
+					If you come across a vehicle that was stolen from you in your current life (as per NLR) which is in a safe zone, you have the right to attempt to reclaim it by peaceful means. Only vehicles which previously belonged to you can be stolen in a safe-zone. To ensure a peaceful resolution it is sometimes best to contact an Admin.
+					No one is to kill anyone inside the safe-zones.
+					You are not allowed to Rob or Steal in a Safe-Zone.
+					No trolling in the safe-zones. This includes but is not limited to playing music, spam talking and pushing people away from vendors.
+					No knocking people out.
+					No driving about like an idiot.
+					Police may at times arrest those in a safe-zone who are wanted or seen to be committing crimes.
+					There will be no shooting in or shooting out of any safe zone. If role-play is initiated outside a safe-zone and you run to one to avoid the role-play, you are breaking rules.
+					You may not camp or loiter outside a safe-zone either.
+					4. THE NEW LIFE RULE (NLR)
+
+					Civilian New Life Rule
+
+					If you are killed you must wait 15 minutes before returning to the scene of your death.
+					If you die during role-play your past crimes are forgotten, but you also cannot seek revenge.
+					If you are RDM'd, it is not a new life.
+					If you are VDM'd, it is not a new life.
+					If you manually re-spawn, it is not a new life.
+					If you die in a main city, you may not re-spawn inside that city. If you die outside of a city, you must keep 1km clear of that area.
+					Police New Life Rule
+
+					If you are killed you must wait 15 minutes before returning to the scene of your death with more than 6 cops on
+					If you are killed you must wait 5 minutes before returning to the scene of your death with less than 6 cops on
+					If you are RDM'd, it is not a new life
+					If you are VDM'd, it is not a new life
+					If you manually re-spawn, it is not a new life
+					5. ROADBLOCKS/WAR/HOSTAGE/FED RULES/TERRITORY
+
+					Roadblocks
+
+					There are 2 fortified roadblocks on the map. Although they are technically police checkpoints, they can be used when unmanned by the police. If you decide to take over one of these checkpoints, you must initiate RP. You may enforce road tolls/taxes, however if someone pays the charge you place on it, then you must let them pass. Don\'t be an asshole, if someone decides to pay, let them pay and allow them to be on their way.	If you take a check point, you may not just shoot someone randomly from within it. Likewise, if you see someone manning the checkpoint, you may not shoot at them while they are inside it without initiating RP. If police are manning the checkpoint and you enter it/ are seen to be avoiding it, They are within right to search you, your vehicle and also check your licenses.
+					Declaring War
+
+					You may declare war on the government institution of Altis which is represented by the police. To do so, you need to have a valid reason that has actually occurred. Using reasons such as \"High Taxes\" are invalid because you are not actually taxed. Things like Police corruption and police brutality are reasons, only however if you or your affiliates have suffered police brutality or feel a victim from an action caused by police corruption.
+					War is not a reason to shoot unarmed civilians or medics, is it not to be used as a free for all.
+					If you die in a war, you do not return to the city until the war is over.
+					When declaring war, you must state your intentions on side chat, text your intentions via police message and have a minimum of 6 people to declare war.
+					After declaring war, you must wait 10 minutes. This is to allow police forces to prepare and to allow civilians to get to safety.
+					You may not declare war with no intention to do so. This means that you may not use a deceleration of war as a distraction for you to do the fed etc.
+					War can only be declared once in each town every server restart
+					You may not rob the federal reserve whilst war has been declared and vice versa
+					Gangs must give a minimum of 5 minutes notice to the police or the gang who's territory they are attacking
+					You are not allowed to persistently camp a Gangs territory.You may loiter in the area for a minimum of 10 minutes without RP or Combat before you must leave the area entirely.
+					At least 5 cops must be on-line to declare war
+					Hostage Rules
+
+					If the demands are reached, you must release the hostage and not harm the hostage further.
+					You must not harm the police negotiator, however he can be taken hostage in an extreme situation.
+					You must keep in mind that while taking/being taken hostage may be a good RP event, the player being held will be unable to do anything and after a while this may lead to an unpleasant gaming experience. After 30 minutes, provided the hostage is going to go offline, he or she may request to leave.
+					You must not make unreasonable demands. Below is a list in what can be paid out for hostages.
+					Taking a civilian hostage and telling them to give you money from their ATM is classed as RDM
+					Killing a civilian who is complying with your demands is RDM
+
+					Civilian: $25,000 - $50,000
+					Marshall: $35,000 - $60,000
+					Corporal: $40,000 - $65,000
+					Sergeant: $45,000 - $70,000
+					Lieutenant: $55,000 - $80,000
+					Captain: $65,000 - $90,000
+					Chief: $80,000 - $125,000
+					Total Maximum payout (For multiple hostages) : $300,000
+					Fed reserve Rules
+
+					A minimum of 6 cops must be on-line to do rob the Federal Reserve
+					Robbing the fed when not enough cops on to open the vault is considered bug abusing and could result in a ban
+					Shoot on sight is allowed from rebels on cops and vice versa, only within the compound.
+					If you die at the federal reserve as a civ/rebel you may not return for that restart duration
+					6. AVIATION RULES
+
+					Civilian Aviation
+
+					When a properly declared attack is under-way, the attackers may hover in a helicopter, as they are attacking something, but only in the immediate area
+					Repeatedly flying over areas with police to annoy them will be considered  trolling. Trolling is against the server rules.
+					Excessive flybys in any situation will not be allowed. It causes lag on other players and disrupts game-play.
+					Intentionally causing a collision with a helicopter into anything; i.e. other helicopters, vehicles, buildings, will be treated as VDM
+					Flying below 250m over the city constantly. Once is illegal, more than that you risk crashing into the city, thus against server rules
+					Police Aviation
+
+					No helicopter can land within city limits without authorization from the highest ranking officer on-line
+					Unless you have completed pilot training, you may not fly without authorisation from the highest rank on-line.
+					Helicopters cannot fly below 250m over the city or safe zone without authorization
+					Helicopters cannot hover over the city. Cops may only hover over the city if there is an active police operation going on
+					7. COMMUNICATION RULES
+
+					In game text/phone/voice rules.
+
+					No voice on side.
+					No spamming of any kind.
+					Always be respectful.
+					No playing music.
+					If you intend on killing someone, you must interact vocally with them. Initiating RP with the intent of killing someone must not be done on the phone.
+					No excessive abuse. Semi-violent RP is okay within reason, blatantly abusing someone is not.
+					Team-speak rules
+
+					Team-speak channels are split up into areas for a reason. Cops must be in the cop channels at all times.
+					Be respectful.
+					No channel hopping.
+					No spamming of links in channels.
+					No linking offensive material.
+					Civilians cannot be in any cop channels on team-speak
+					8. FERES ARENA
+
+					Feres Arena is a sectioned off free fire zone. You may kill or be killed within the walls limits.
+					RDM/VDM does not apply here.
+					You may not shoot out of the arena / shoot into the arena from the outside.
+					During certain events, this zone will be closed to the public.
+					During certain events, admins will spawn special weapons into the game for use in the arena only. This equipment must be checked out upon leaving. Also, attempting to smuggle this equipment out of the arena will result in a ban.
+					9. REBEL RULES:
+
+					If you are wearing rebel clothing in Kavala / Pyrgos only, police have the right to shoot (but not kill) and detain on sight.
+					In Athira / Sofia you have the right to be there whilst wearing rebel clothing but you may be moved on at police officers discretion. However you must not have any illegal weaponry on show. If you do police may arrest you. Make sure it is hidden (In your backpack etc)
+					If you purchase a rebel license you will only be able to spawn at rebel outpost and houses you have purchased
+					Despite being rebels, members must still adhere to all other server and role-play rules
+					Rebels are NOT allowed to shoot civilians or Police officers on sight. This is still considered RDM and the Rebel licence does not exclude you from this. Role Play MUST always be undertaken, either via Direct Comms or via SMS
+					Rebel territory belongs to the rebels. Police are allowed to enter and all rules/law still apply. However police will be shot on sight if they enter the boundaries displayed on the map
+					No form of Kill on Sight is allowed. Role-play must always be attempted first. Do yourself a favour and send a message, shouting at a player 100m away will not be accepted
+					Robbing a gas station with the sole intent of luring cops in to kill them is counted as RDM along with "robbing" the station from several hundred meters away
+					The rebel off-road is a rental only vehicle. If the police impound it, it will not return to your garage. Cops may destroy vehicles at the higher ranking officers discretion.
+					10. ARC Rules
+
+					When you load into ARC you need to purchase a license, this is your operator license and gives you the right to carry your weapon in towns and cities and drive ARC vehicles, you will also need to buy a Silver and Crystal License to manufacture ARC materials , if you are found to be using these things without the license you can be jailed by the police and your contract revoked.
+					If we are fired upon at any time, we have the right to defend ourselves, but we cannot shoot first, Or Commit any Crimes.
+					We are a Logistics Company and that is our Primary concern, we only assist the Police when asked directly to do so by them contacting us on our messaging service. We do not take the Law into our own hands.
+					We are provided weapons to defend ourselves. And they are to be used as defence only, we are allowed to carry our weapons in any area of Altis as long as they are on our backs and the safety is on and we hold the ARC License.
+					We are provided with uniforms and marked vehicles. And we are only allowed to be on active duty while in these vehicles or wearing our uniform (Please remember to sync data, no excuses for not).
+					As a Member of ARC it is your responsibility to aid the citizens of Altis by using the equipment available to you, this means you are required to tow vehicles, repair vehicles and provide security at ARC and Heritage sites.
+					You can request Wanted lists from the Police and pursue criminals at the will of the Police, failure to notify the Police before Hunting a wanted Criminal can result in your contract being revoked.
+					If you detain a criminal or kill a wanted criminal it is to be reported to the Police immediately, so any wanted level obtained on yourself can be validated and pardoned, you will need to provide evidence of your actions.
+					Anyone that is not ARC who is found in the Wildlife Grounds, Silver mine or Crystal mine, Heritage sites (this includes Kavala Castle) is considered to be Trespassing, it is your job to move them on and if they do not comply you can detain them and deliver them to the Police.
+					11. POLICE RULES:
+
+					Core Rules
+					ROLEPLAY!
+					Not in any case will you break role-play, you also should not be acting as an Admin or Moderator. Deal with people breaking the LAW not the RULES.
+					Example for not role-playing: Put your hands up we have guns pointed at you then turn around and start spraying everyone down. Act like you would in real life. Rambo is not real.
+					Be reasonable. Always listen to things being said to you. Sending someone to jail will most likely cost them a lot of money and potentially their rebel license.
+					Any police officer is to follow orders from higher ranking officers at all times. Police Hierarchy must be uphold at all times.When not agreeing with the officer in charge, first do it, talk and question afterwards.
+					Police officers are to always wear their proper Gear given to them by ranking up. Wearing gear not suited for your rank is strictly prohibited. Higher ranked gear is only allowed when issued to you by a higher ranking officer as a reward.
+					Police officers always need probable cause to pull over, question or restrain a citizen. Example for probable cause: See a truck driving from the weed fields, you can pull them over to search their truck for drugs.
+					All active cops must be in TeamSpeak within the police channels.
+					Police can call on the assistance of the Logistics Company ARC and the Armed Hellcat if they feel overwhelmed, if Rebels are using an Armed Off-road or if they have major Air superiority that ground units can not deal with, The Hellcat can be flown at any time of the day but the weapons should only ever be used in extreme circumstances or if Ordered by a Captain or above.
+					Police may raid the houses within a town as long as they provide at least 5 minutes warning to the respective Player.
+					The following speeds are to be enforced by the Altis Police Force for the absolute safety of the citizens of Kavala and all travelling beyond the city.
+
+					Inside major cities:
+					Small roads: 50km/h
+					Main roads: 65km/h
+
+					Outside major cities:
+					Small roads: 80km/h
+					Main roads: 110km/h
+					Role-play
+					As a member of the Prophecy Gaming Police Department you will try to uphold the law to the best of your abilities. Do not use your position as a cop to deal with server rules and issues. If in any case you break any server rules yourself, you will be dealt accordingly like every other player on the server. If you see any player breaking server rules, you will have to come up with proof like every other player on the server.
+
+					Use your position as a cop to set the good example for everyone on the Prophecy Gaming 
+					server. Always role-play, and never abuse your position of power.
+
+					Interaction and Arresting Citizens
+					All interaction with any kind of citizen will always go by PGPD RP rules.
+					If any citizen breaks any law they will be held responsible and dealt with accordingly.
+
+					Dealing with law breaking citizen:
+					Tell them to stop what they are doing. Give them the opportunity to surrender peacefully.
+					If they are unwilling to comply, you are allowed to use necessary force to bring them in.
+					Clearly tell them what & why you’re doing and what will happen next.
+					Vehicle Traffic law & Summary Offences:
+					When a Vehicle Traffic law has been broken or a Summary Offence has been committed, issue the suspect the appropriate ticket and give them opportunity to pay. If they refuse 2x you can send them to jail. Clearly tell them why they are being sent to jail.
+
+					Indictable Offense:
+					Once arrested they will be taken to a Police HQ for processing. After committing a Felony the criminal will be sent to jail. Jail time will depend on the height of the bounty.
+					$0 (no bounty) = 15minutes in jail
+					$1 - $24.999 = 20minutes in jail
+					$25.000 - $49.999 = 25minutes in jail
+					$50.000 and higher = 30minutes in jail
+					Paying a ticket will set the bounty price to $0, paying actually decreases your jail time! Give them the opportunity to request Coffee and Donuts before sending them off to jail (no 
+					need to offer). For roleplay purposes ticket prices can be negotiable, going to jail however is not negotiable.
+
+					Tickets & Bounty’s
+					All tickets paid after any crime will go directly into the bank account of the officer dealing with the case. All bounty prices will be added to the bank account of the officer who sends he criminal to jail. For every crime Ticket & Bounty prices are the same.
+
+					Reviving
+					Police officers can revive another officer once every 15 minutes, the same as medic rules. Seriously injured criminals can be revived in order to arrest them. Cops however are not medics and will not travel across the map to provide medical assistance.
+
+					Impounding Vehicles
+					Any vehicle that appears to be left behind can be impounded by the police. Whether or not the vehicle should be impounded is judged by the highest ranking officer on scene.
+					- Do not impound any vehicles while active roleplay is initiated.
+					Vehicles used in criminal activities can be destroyed at the discretion of the highest ranking police officer on at the time.
+
+					Team-speak
+					You do not mute your speaker on Team-speak. When clear comms are needed let everyone know! You do mute your microphone when speaking in game. This can easily be done in the 
+					Team-speak settings: SETTING > OPTION > HOTKEYS > Set:
+					CAPSLOCK (down) - MUTE MICROPHONE
+					CAPSLOCK (up) - UNMUTE MICROPHONE
+					12. MEDIC RULES:
+
+					You may only revive a player once in a 15 minute time scale
+					You cannot pick up or wear any equipment that is not available to you in the medic store. This includes weaponry/clothing etc
+					You must be in the medic teamspeak channel at all times
+					Cops should be revived before rebels. Although you are not to take sides, you must allow police to restore order to an area. Reviving rebels while in a fire fight cops would not help and as such, during an active fire-fight you should see police permission before entering an active combat zone.
+					You may not give out information such as enemy position to other players. Doing this will be seen as meta gaming and may result in your removal from the server.
+					12. FAQ
+
+					What can I be banned for?
+
+					Prophecy gaming staff members may issue out bans for the following reasons.
+					Hacking / Cheating / Exploiting / Glitching / Duping
+					RDM & VDM
+					EMS are NOT to be killed, attacked or taken hostage without RP reason.
+					Racism (We operate a zero tolerance policy on racism and racial slurs)
+					Abuse
+					Trolling
+					Collective Admin Discretion
 				"
 		]
 	];
 
-		player createDiaryRecord ["serverrules",
-		[
-			"Exploits", 
-				"
-				These are considered exploits, and you will not be kicked, but banned.<br/><br/>
-
-				1. Getting out of jail via any method other than paying bail or escaping via helicopter.<br/>
-				2. Killing yourself to get out of roleplay. Getting out of being tazed, restrained, arrested, jail, etc. If the log shows you got arrested, then you died, you will be banned. Do not pay bail and kill yourself for an easy ride home. Walk you lazy turd.<br/>
-				3. Duping items and/or money. If someone sends you an unobtainable amount of money right at the start of the game, report to an admin IMMEDIATELY and transfer said money to an admin. Do this ASAP or an admin could ban you if they see that much on you without question.<br/>
-				4. Using clearly hacked items. If a hacker comes in and spawns unobtainable items, you could be banned for using said items. Report the items to the admins immediately and stay away from them.<br/>
-				5. Abusing bugs or game mechanics for gain. Is there a replicating gun somewhere? Report it and leave it alone. If an admin catches you abusing the glitch, ban.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord["safezones",
-		[
-			"Safe Zones",
-				"
-					If bombing (bombing can be intentionally exploding a vehicle), robbing, or killing occurs around these or in these areas it is punishable by ban.<br/><br/>
-					
-					Any vehicle spawn (shop or garage)<br/>
-					Any weapon shop<br/>
-					All Police HQs<br/>
-					Kavala Market, Police Can arrest you in a Safe Zone if you are wanted.<br/>
-					Rebel Base<br/>
-				"
-		]
-	];
-					
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Bannable Offenses", 
-				"
-				Consider this your one and only warning.<br/><br/>
-				
-				1. Hacking<br/>
-				2. Cheating<br/>
-				3. Exploiting (See 'Exploits')<br/>
-				4. Being kicked 5 or more times.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Cop Interaction", 
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Civilians can be arrested for looking in cops' backpacks/vehicles. Constantly doing this will result in your removal from the server.<br/>
-				2. Civilians can be arrested for following cops in game in order to give away their position.<br/>
-				3. Civilians or Rebels who take up arms to kill cops in town or elsewhere for no RP reason will be considered RDMing. See RDMing section.<br/>
-				4. Following and or harassing cops for long periods of time will be considered griefing and/or spamming, and will result in your removal from the server.<br/>
-				5. Actively blocking cops from doing their duties can lead to your arrest. Constantly doing this will result in your removal from the server.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Boats", 
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Repeatedly pushing boats without permission.<br/>
-				2. Pushing a boat with the intention of hurting or killing someone. This is not RP, it is just a flaw in the mechanics.<br/>
-				3. Purposefully running over swimmers/divers.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Aviation", 
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Purposefully ramming a helicopter into anything. Other helicopters, vehicles, buildings.<br/>
-				2. Flying below 150m over the city constantly. Once is illegal, more than that you risk crashing into the city, thus against server rules.<br/>
-				3. Stealing helicopters without proper warning and significant time for the driver to lock the vehicle. If they land and run away without locking, fine, if they just get out and you get in before they get a chance to lock it, no no.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Vehicles", 
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Purposefully running people over (VRDM). There are accidents, and then there is going out of your way to run someone over.<br/>
-				2. Purposefully throwing yourself in front of vehicles in order to die/get hurt.<br/>
-				3. Ramming into other vehicles in order to cause an explosion.<br/>
-				4. Constantly trying to enter vehicles that do not belong to you in order to grief the vehicle owner, and not trying to RP.<br/>
-				5. Stealing a vehicle just to crash it or otherwise destroy it.<br/>
-				6. Purchasing multiple vehicles for the purpose of doing any of the above.<br/>
-				7. The only reason for shooting at a vehicle would be to disable it and/or fire warning shots in a role-play scenario.You are not to deliberately destroy enemies vehicles.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Communication Rules", 
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Side Chat may not be used to play music or otherwise micspam.<br/>
-				2. Spamming any chat channel will result in your removal.<br/>
-				4. Teamspeak channels are split up into areas for a reason. Cops must be in the cop channels at all times.<br/>
-				5. Civilians cannot be in any cop channels on teamspeak in order to gather information on their location or movements. Civs caught doing this will be removed the channel. Repeat offenders can be kicked or banned from both the game and teamspeak.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["serverrules",
-		[
-			"Random Deathmatching (RDM)", 
-				"
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-				
-				1. Killing anyone without a roleplay cause.<br/>
-				2. Declaring a rebellion is not a cause to kill anyone, even cops.<br/>
-				3. Cops and civilians/rebels can only commence in a shootout if there are reasons relating to a crime.<br/>
-				4. If you are killed in the crossfire of a fight, it is not RDM.<br/>
-				5. Killing someone in an attempt to protect yourself or others is not RDMing.<br/>
-				6. Shooting a player without giving reasonable time to follow demands is considered RDM.<br/><br/>
-				
-				These are all judged by admins on a case by case basis.<br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["serverrules",
-		[
-			"New Life Rule", 
-				"
-				The New Life Rule applies to police and civilians.<br/><br/>
-				
-				Items on this list may result in your removal from the server and/or ban, based on the admins discretion.<br/><br/>
-
-				1. If you are killed you must wait 15 minutes before returning to the scene of your death.<br/>
-				2. If you die during roleplay your past crimes are forgotten, but you also cannot seek revenge.<br/>
-				3. If you are RDM'd, it is not a new life.<br/>
-				4. If you manually respawn, it is not a new life.<br/>
-				5. If you purposefully kill yourself to avoid roleplay, it is not a new life.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["serverrules",
-		[
-			"Don't Be A Dick!", 
-				"
-				If an Admin has to tell you that you are being a dick, you are doing dickish things.<br/>
-				Causing others grief, disrupting roleplay, the list goes on.<br/>
-				Just don't be a dick okay?<br/>
-				This rule may be invoked at an Admin's discretion.<br/><br/>
-				"
-		]
-	];
-	
-// Police Section
-	player createDiaryRecord ["policerules",
-		[
-			"Crisis Negotiation",
-				"
-				Crisis Negotiation must be handled by a Qualified Officer. If one is not available, the person with the next highest rank must handle the situation.<br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["policerules",
-		[
-			"The Federal Reserve",
-				"
-				1. The Federal Reserve is illegal for civilians to enter, unless they have been given authorization. If civilians enter without authorization they are to be escorted off-site or arrested if they persist.
-				2. Helicopters flying over the Federal Reserve may be asked to leave and disabled if they refuse.<br/>
-				2. If the Federal Reserve is getting robbed, it is encouraged that all available officers move in to stop it.<br/>
-				3. Nearby officers should immediately head to the Federal Reserve to assist. Petty crimes can be dropped during a robbery.<br/>
-				4. Lethal force on bank robbers may be used if no other alternative is available. Every option to taze and arrest the person should be made first.<br/>
-				5. Police may not fire blindly into the building.<br/>
-				6. The police should evacuate the civilians from the building during a robbery.<br/>
-				7. Any civilian who actively makes an attempt to block the police from entering the building may be treated as an accomplice.<br/>
-				8. Supervisory officers may hire individuals or contract a group of people to work as security guards for the bank. See 'Contracting' section for more information.<br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["policerules",
-		[
-			"Aviation",
-				"
-				1. No helicopter can land within city limits without authorization from the highest ranking officer online. (Exceptions being what is listed below.)<br/>
-				Kavala: The hospital helipad (037129) or docks (031128).<br/>
-				Athira: The sports field (138185) or behind the DMV (140188).<br/>
-				Pyrgos: The fields North/East of DMV (170127)<br/>
-				Sofia: Opposite the car shop (258214) or the fields Southeast of the garage (257212)<br/>
-				Small towns: An appropriate location may be chosen. This is to be judged by officers on a case by case basis.<br/><br/>
-				
-				2. Helicopters may not land on roads.<br/>
-				3. Police may temporarily forbid landing at  but it cannot remain closed for a long period of time.<br/>
-				4. Helicopters cannot fly below 150m over the city without authorization.<br/>
-				5. Helicopters cannot hover over the city. Cops may only hover over the city if there is an active police operation going on.<br/><br/>
-
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Illegal Areas", 
-				"
-				1. Gang areas are not considered illegal. Thus a cop may enter without a raid, but may not restrain or stop anyone inside without probable cause/illegal activity. (Talking to the gang NPC is NOT probable cause/illegal activity.)<br/>
-				2. Do not enter an illegal area unless it is part of a raid. see Raiding/Camping.<br/>
-				3. If you chase someone into an illegal area, call for backup.<br/>
-				4. Under no circumstances is an officer allowed to camp any illegal area for extended periods of time, you can briefly stake it out, but that is it.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Patrolling", 
-				"
-				1. Police may patrol the island's roads and towns searching for abandoned vehicles and criminal activity.<br/>
-				2. Patrols can be done on foot or vehicle inside of a town.<br/>
-				3. Patrols do include illegal areas, but only as an observation or drive by.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Checkpoints", 
-				"
-				Cops are encouraged to setup checkpoints in strategic areas to help combat illegal activity and promote safety on the road.<br/><br/>
-				
-				1. A checkpoint must consist of 3 or more officers, utilizing 2 or more vehicles. An ATV does not count as one of the required vehicles, but may still be used.<br/>
-				2. A checkpoint can not be setup within 300m of an illegal area. Basically, you cannot set one up on top of an illegal area.<br/>
-				3. Checkpoints may only be setup on roads, but it does not have to be on a crossroad.<br/>
-				4. Checkpoints do not have to be marked on the map.<br/><br/>
-
-
-				Proper Checkpoint Procedure:<br/>
-				1. Have the driver stop the vehicle at a safe distance and turn off the engine.<br/>
-				2. Ask the driver and any passengers if they have any weapons.<br/>
-				3. Ask the driver and any passengers to exit the vehicle. If they have weapons, do not immediately restrain them when they get out, tell them to lower their weapons and given them a reasonable amount of time to do so.<br/>
-				4. Ask them where they are headed to and from.<br/>
-				5. Ask if they will submit to a search.<br/>
-				6. If they allow a search, you may restrain them and search them.<br/>
-				7. If they do not submit to a search, you must let them go, unless there is probable cause.<br/>
-				8. After the search is done, you may allow them to re-enter their vehicle and drive away.<br/>
-				9. In case anything illegal is found, the person may be ticketed or arrested depending on the crime.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Vehicles", 
-				"
-				1. Vehicles in the parking lot, or are reasonably parked elsewhere should be left alone.<br/>
-				2. Vehicles that look abandoned, broken, with no driver, can be impounded.<br/>
-				3. Boats should be parked reasonably on shore.<br/>
-				4. Any vehicle that hasn't moved in a significant amount of time may be impounded.<br/>
-				5. Impounding is an essential job for a cop, it helps keep the server clean and less laggy.<br/>
-				6. If in doubt, always search the vehicle and message the owner(s) before impounding.<br/>
-				7. Police speedboats or Hunter HMGs may be used to assist in apprehending criminals. The weapon should be used to disable vehicles, not to blow them up.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["policerules",
-		[
-			"Speeding", 
-				"
-				The following speeds are to be enforced by the Altis Police Force for the absolute safety of the citizens of Kavala and all travelling beyond the city.<br/><br/>
-				
-				Inside major cities:<br/>
-				Small roads: 50km/h<br/>
-				Main roads: 65km/h<br/>
-				Outside major cities:<br/>
-				Small roads: 80km/h<br/>
-				Main roads: 110km/h<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"City Protocol", 
-				"
-				1. Officers may patrol major cities - Kavala, Athira, Pyrgos and Sofia.<br/>
-				2. Officers may stop by the car shop to make sure there are no cars that need to be impounded.<br/>
-				3. Officers may not stand around or loiter in the centre of town.<br/>
-				4. Officers may enter the town in a large number should a rebellious act occur. After the area is clear, they need to leave the town again.<br/>
-				5. Martial law may not be declared at any time.<br/>
-				6. The Police HQ buildings are illegal for civilians to enter without authorization, however it is NOT illegal for civilians to be nearby unless they are causing a nuisance.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Arresting and Ticketing",
-				"
-				Arresting should be done to criminals who are considered a danger to themselves or others.<br/><br/>
-
-				1. You may not arrest someone if you have given them a ticket and they paid it.<br/>
-				2. You must tell the suspect why they are being arrested before you arrest them.<br/>
-				3. If a civilian is wanted, you may arrest them. Do not kill them, unless the situation falls under the 'Use of Lethal Force' section.<br/><br/>
-
-
-				Ticketing a civilian is considered a warning for the civilian. If they break a law, but do not pose a threat to anyone, you may ticket a civilian.<br/><br/>
-
-				1. Tickets must be a reasonable price.<br/>
-				2. Ticket prices should be based off of the crimes committed.<br/>
-				3. Refusal to pay a legit ticket is grounds for arrest.<br/>
-				4. Giving a civilian and illegitimate ticket, such as $100k for speeding, etc., is not allowed and will result in your removal from the police department.<br/><br/>
-				
-				A complete list of all crimes and the appropriate punishments should be given to officers during training. If in doubt, or if you have not been trained, ask a higher ranking officer what to do.<br/><br/>
-				
-				The list is available at crime.sealteamsloth.com<br/><br/>
-				"
-		]
-	];
-		
-	player createDiaryRecord ["policerules",
-		[
-			"Weapons", 
-				"
-				A cop is NEVER allowed to supply civilians with weapons. This will get you banned from the server and removed from being a cop.<br/><br/>
-
-				Legal Weapons for Civilians to carry with a permit:<br/>
-				1. P07<br/>
-				2. Rook<br/>
-				3. ACP-C2<br/>
-				4. Zubr<br/>
-				5. 4-five<br/>
-				6. PDW2000<br/><br/>
-
-				Any other weapon (Including Silenced P07 [Considered a Police Weapon]) is illegal.<br/><br/>
-
-				1. Civilians are not allowed to have a weapon out within the town limits.<br/>
-				2. Civilians may have a gun out when they are not in the town. However they should submit to a license search if confronted by an officer and should have the gun lowered (Press Ctrl Twice).<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Use of Non-Lethal Force",
-				"
-				At this time the Taser (Silenced P07) is the only form of Non-Lethal Force.<br/><br/>
-
-				1. Taser should be used to incapacitate non complying civilians in order to restrain them.<br/>
-				2. Do not discharge your Taser unless you intend to incapacitate a civilian, randomly discharging your weapon will result in your suspension.<br/>
-				3. Only use your Taser in compliance with the laws and the rules, do NOT enforce your will on others.<br/><br/>
-				"
-		]
-	];
-
-	player createDiaryRecord ["policerules",
-		[
-			"Raiding/Camping",
-				"
-				Raiding is defined as a squad of police officers invading an area of high criminal activity in order to stop the criminals in illegal acts.<br/><br/>
-
-				1. In order to raid an area, the cops must have at least 4 officers involved, one of which must be a Sergeant or above.<br/>
-				2. All civilians in a raid area may be restrained and searched. If nothing illegal is found, you must let them go.<br/>
-				3. If illegals are found during a search, you may proceed to arrest or fine as usual.<br/>
-				5. Lethal force is only authorized as described under 'Use of Lethal Force'.<br/>
-				6. After the area is secure, the officers must leave the area.<br/>
-				7. An area cannot be raided again for 20 minutes after a previous raid.<br/>
-				8. If the raid is a failure (All officers die), the 20 minute timer still applies to those officers.<br/>
-				9. Backup may be called in, but it may not consist of fallen officers (see 'New Life Rule').<br/><br/>
-
-				Camping is defined as the prolong stay of an officer in an area.<br/><br/>
-
-				1. Checkpoints are not considered camping. See Checkpoint section for a definition of proper checkpoint procedures.<br/>
-				2. See Bank Robbery and Agia Marina Protocol sections for more info on camping in the main town.<br/>
-				3. Camping of illegal areas is staying longer than needed after a raid, or if officers do not conduct a raid but continue to watch and take action against civilians entering the area.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Chain of Command",
-				"
-				The highest ranking officer on duty is in charge of the police force outside of admins currently online. The high ranking officer is expected to follow the rules and guidelines of his/her rank, and must report to the admin in case any action need be taken.<br/><br/>
-
-				Police Chain of Command:<br/>
-				1. Chief<br/>
-				2. Deputy Chief<br/>
-				3. Superintendent<br/>
-				4. Captain<br/>
-				5. Lieutenant<br/>
-				6. Sergeant<br/>
-				7. Senior Patrol Officer<br/>
-				8. Patrol Officer<br/>
-				9. Cadet<br/><br/>
-
-				Cops in game who are not enrolled/accepted into the SPD are the lowest tier and have no say in police operations.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Use of Lethal Force",
-				"
-				1. Use of Lethal force is only permitted for the protection of your life, another officers life, or a civilians life, if and only if non-lethal force would not be effective.<br/>
-				2. Discharging of a weapon when not under threat or not during training exercises is not allowed. Officers caught in violation of this rule will be removed from the server and suspended from the SPD.<br/>
-				3. Failure to follow proper weapons discipline and procedure will get you removed from the server and suspended from the SPD.<br/><br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord ["policerules",
-		[
-			"Teamspeak Rule",
-				"
-				1. All cops must be on Teamspeak 3 in a designated cop channel. Failure to be on Teamspeak during an admin check will result in your immediate dismissal from the server.<br/>
-				2. Please join Teamspeak BEFORE you spawn in as a cop, heck, join Teamspeak before you even join the server.<br/><br/>
-				"
-		]
-	];
-	
-	
-	
-// Illegal Items Section
-	player createDiaryRecord ["illegalitems",
-		[
-			"Rebel Rules",
-				"
-				A rebel is one who rises in armed resistance against a government. In this case it would be the police. However, due to the small amount of police compared to the possible amount of rebels, do not attack the police without a reason, please be civil and use common sense, and don't take the word rebel literally, but instead how it will make this server fun for all.<br/><br/>
-				1. A rebel must first form a gang, and then declare intentions.<br/>
-				2. Resistance does not excuse RDMing (See RDMing in General Rules)<br/>
-				3. Resistance roleplay should be conducted in more ways than constantly robbing the bank or shooting police officers.<br/>
-				4. Resistance must be coordinated.<br/>
-				5. A PROPER reason must be behind each and every attack.<br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["illegalitems",
-		[
-			"Gang Rules",
-				"
-				1. Being in a gang is not illegal. Only when illegal crimes are committed.<br/>
-				2. Being in a gang area is not illegal. Only when partaking in illegal activities.<br/>
-				3. Gangs may hold and control gang areas. Other gangs may attack a controlling gang to compete for control of a gang area.<br/>
-				4. To declare war on another gang, the leader must announce it in global and all gang members of both gangs must be notified. For a more long term gang war, a declaration should be made on the forums.<br/>
-				5. Gangs may not kill unarmed civilians, unless said civilian is part of a rival gang and in your gangs controlled area.<br/>
-				6. Gangs may not kill civilians, unless they are under threat. Killing unarmed civilians because they do not comply is considered RDM, but you can injure/damage.<br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["illegalitems",
-		[
-			"Illegal Vehicles",
-				"
-				A civilian in control of the following prohibited vehicles is subject to the consequences defined in the unauthorized control of a prohibited vehicle law.<br/><br/>
-
-				1. Ifrit<br/>
-				2. Speedboat<br/>
-				3. Hunter<br/>
-				4. Police Offroad<br/>
-				"
-		]
-	];
-	player createDiaryRecord ["illegalitems",
-		[
-			"Illegal Weapons",
-				"
-				A civilian in possession of the following is subject to the consequences as defined in the illegal possession of a firearm law.<br/><br/>
-
-				1. MX Series<br/>
-				2. Katiba Series<br/>
-				3. TRG Series<br/>
-				4. Mk.20 Series<br/>
-				5. Mk.18 ABR<br/>
-				6. SDAR Rifle<br/>
-				7. Sting SMG<br/>
-				8. Silenced P07 (Taser)<br/>
-				9. Any explosives<br/><br/>
-				"
-		]
-	];
-	player createDiaryRecord ["illegalitems",
-		[
-			"Illegal Items",
-				"
-				The following items are illegal to posses:<br/><br/>
-				1. Turtle<br/>
-				2. Cocaine<br/>
-				3. Heroin<br/>
-				4. Cannabis<br/>
-				5. Marijuana<br/><br/>
-				"
-		]
-	];
 
 	
-// Controls Section
-
-	player createDiaryRecord ["controls",
-		[
-			"",
-				"
-				Y: Open Player Menu<br/>
-				U: Lock and unlock cars<br/>
-				F: Cop Siren (if cop)<br/>
-				T: Vehicle Trunk<br/>
-				Left Shift + R: Restrain (Cop Only)<br/>
-				Left Shift + G: Knock out / stun (Civ Only, used for robbing them)<br/>
-				Left Windows: Main Interaction key which is used for picking up items/money, gathering, interacting with cars (repair,etc) and for cops to interact with civilians. Can be rebound to a single key like H by pressing ESC->Configure->Controls->Custom->Use Action 10<br/>
-				Left Shift + L: Activates cop siren lights (as a cop).<br/>
-				Left Shift + H: Holster's your pistol<br/>
-				"
-		]
-	];
