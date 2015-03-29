@@ -2,14 +2,6 @@ waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
 
 player createDiarySubject ["changelog","Change Log"];
-player createDiarySubject ["serverrules","General Rules"];
-player createDiarySubject ["policerules","Police Procedures/Rules"];
-player createDiarySubject ["safezones","Safe Zones (No Killing)"];
-//player createDiarySubject ["civrules","Civilian Rules"];
-player createDiarySubject ["illegalitems","Illegal Activity"];
-//player createDiarySubject ["gangrules","Gang Rules"];
-//player createDiarySubject ["terrorrules","Terrorism Rules"];
-player createDiarySubject ["controls","Controls"];
 
 /*  Example
 	player createDiaryRecord ["", //Container
@@ -21,15 +13,6 @@ player createDiarySubject ["controls","Controls"];
 		]
 	];
 */
-	player createDiaryRecord["changelog",
-		[
-			"Official Change Log",
-				"
-					The official change log can be found on the BIS forums (search Altis Life RPG)
-				"
-		]
-	];
-	
 	player createDiaryRecord["changelog",
 		[
 			"Custom Change Log",
