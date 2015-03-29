@@ -125,6 +125,13 @@
 			<Italian>Vendi</Italian>
 			<Portuguese>Vender</Portuguese>
 		</Key>
+		<Key ID="STR_Global_ChangeLocks">
+			<Original>Claim</Original>
+			<German>Claim</German>
+			<French>Claim</French>
+			<Italian>Claim</Italian>
+			<Portuguese>Claim</Portuguese>
+		</Key>		
 		<Key ID="STR_Global_Buy">
 			<Original>Buy</Original>
 			<German>Kaufen</German>
