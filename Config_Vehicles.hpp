@@ -444,14 +444,6 @@ class CfgVehicles {
 		};
 	};			
 
-	class B_G_Offroad_01_armed_F {										//Off-Road
-        vItemSpace = 10;
-        storageFee[] = { 100000000, , ,  };
-		garageSell[] = { , , ,  };
-        insurance = 0;
-        chopShop = 0;
-        textures[] = { };
-
 	class B_Boat_Armed_01_minigun_F {								//Speedboat Minigun
         vItemSpace = 105;
         storageFee[] = { 1500, 1500, 1500, 1500 };
