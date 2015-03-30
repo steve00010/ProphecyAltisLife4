@@ -265,6 +265,15 @@ class CfgVehicles {
         chopShop = 0;
         textures[] = { };		
 	};
+	
+	class B_G_Offroad_01_F {
+        vItemSpace = 10;
+        storageFee[] = { 1000, 1000, 1000, 1000 };                 	//Offroad
+		garageSell[] = { 3500, 3500, 3500, 3500 };
+        insurance = 2500;
+        chopShop = 5000;
+        textures[] = { };		
+	};	
 
 	class B_G_Offroad_01_repair_F {
         vItemSpace = 65;
