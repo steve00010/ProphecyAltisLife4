@@ -267,7 +267,7 @@ class CfgVehicles {
 	};
 	
 	class B_G_Offroad_01_F {
-        vItemSpace = 10;
+        vItemSpace = 65;
         storageFee[] = { 1000, 1000, 1000, 1000 };                 	//Offroad
 		garageSell[] = { 3500, 3500, 3500, 3500 };
         insurance = 2500;
