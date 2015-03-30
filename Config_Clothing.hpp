@@ -121,7 +121,7 @@ class Clothing {
 			{ "H_Cap_blk", "Cap", 100, { "life_coplevel", "SCALAR", 2 } },
 			{ "H_PilotHelmetHeli_B", "Pilot Helmet", 100, { "life_coplevel", "SCALAR", 2 } },
 			{ "H_Beret_blk_POLICE", "Police Beret", 100, { "life_coplevel", "SCALAR", 4 } },
-			{ "H_Watchcap_bl", "Police Beanie", 100, { "life_coplevel", "SCALAR", 4 } }
+			{ "H_Watchcap_blk", "Police Beanie", 100, { "life_coplevel", "SCALAR", 4 } }
 			
 		};
 
