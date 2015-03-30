@@ -244,6 +244,7 @@ class Mission
 	{
 		briefingName="Altis Life RPG";
 		overviewText="Prophecy Gaming Altis Life RPG 4.2";
+		resistanceEast=1;
 		startWind=0;
 		forecastWind=0;
 		forecastWaves=0;
