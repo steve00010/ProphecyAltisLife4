@@ -230,7 +230,7 @@ class VirtualItems {
 	VITEMMACRO(bottledwhiskey, "STR_Item_BottledWhiskey", "bottledwhiskey", 5, 3500, 4500, true, 5, "icons\bottledwhiskey.paa") 
 	VITEMMACRO(moonshine, "STR_Item_Moonshine", "moonshine", 3, 4000, 5000, true, 3, "icons\moonshine.paa")
 	VITEMMACRO(mash, "STR_Item_Mash", "mash", 2, 10, 10, false, 1, "icons\mash.paa")
-	VITEMMACRO(goldbarp, "STR_Item_GoldBarp", "goldBarp", 12, -1, 85000, true, -1, "icons\goldbarp.paa")
+	VITEMMACRO(goldbarp, "STR_Item_GoldBarp", "goldbarp", 12, -1, 85000, true, -1, "icons\goldbarp.paa")
 	VITEMMACRO(underwatercharge, "STR_Item_BChargewater", "underwatercharge", 15, 35000, -1, true, -1, "icons\underwatercharge.paa")
 	
 	//Misc
