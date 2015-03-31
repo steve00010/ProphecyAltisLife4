@@ -3426,6 +3426,10 @@
 		</Key>
 		<Key ID="STR_Item_GoldBarp">
 			<Original>Gold Scrap</Original>
+			<German>Gold Scrap</German>
+			<French>Gold Scrap</French>
+			<Italian>Gold Scrap</Italian>
+			<Portuguese>Gold Scrap</Portuguese>			
 		</Key>
 		<Key ID="STR_Item_Cornmeal">
 			<Original>Cornmeal</Original>
