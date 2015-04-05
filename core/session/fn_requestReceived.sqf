@@ -83,8 +83,8 @@ switch(playerSide) do {
 		CONST(life_medicLevel, parseNumber(SEL(_this,7)));
 		CONST(life_coplevel,0);
 		CONST(life_arclevel,0);	
-		life_level = SEL(_this,12);
-		life_xp = SEL(_this,13);		
+		life_level = SEL(_this,10);
+		life_xp = SEL(_this,11);		
 	};
 		case east: {
 		CONST(life_arclevel,parseNumber(SEL(_this,7)));	
